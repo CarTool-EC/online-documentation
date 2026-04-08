@@ -1,0 +1,256 @@
+Validation, Conformance & Compliance Testing
+============================================
+
+Ensuring the quality, interoperability and trustworthiness of digital
+public services requires a clear distinction between validation,
+conformance and compliance, as each of these activities serves a
+different purpose in the engineering and governance of interoperable
+solutions.
+
+This section defines these concepts, describes their relationship with
+the European Interoperability Reference Architecture, and establishes
+the mechanisms, levels and profiles through which solutions can be
+assessed.
+
+Distinguishing Validation, Conformance and Compliance Testing
+-------------------------------------------------------------
+
+The quality and trustworthiness of interoperable digital public services
+depend on three complementary assurance mechanisms: validation,
+conformance, and compliance. Although related, each addresses a
+different dimension of correctness and must therefore be assessed
+independently. This section clarifies their purpose and scope within the
+European Interoperability Reference Architectures.
+
+Validation
+~~~~~~~~~~
+
+Validation determines whether the architecture and its design correctly
+reflect the functional, non-functional and interoperability requirements
+identified during the analysis phase. It assesses the
+fitness-for-purpose of the solution and its ability to fulfil policy
+objectives, user needs and domain-specific constraints.
+
+Validation focuses on:
+
+- Alignment with functional, non-functional and interoperability
+  requirements.
+
+- Correct interpretation of legal and policy objectives.
+
+- Coherence across the LOST interoperability views.
+
+- Appropriateness and justification of architectural assumptions and
+  constraints.
+
+- Correct derivation of design artefacts from EIRA-based requirement
+  analysis.
+
+Validation includes verification against the architecture principles of
+ELAP, ensuring that interoperability principles guide the transformation
+from requirements (EIRA) to design (eGovERA).
+
+Conformance
+~~~~~~~~~~~
+
+Conformance verifies whether the architecture correctly applies the
+European Interoperability Reference Architectures, including the use of
+prescribed building blocks, principles, modelling rules and design
+patterns. It ensures that the solution is consistent with the
+interoperability-by-design approach defined by EIRA and eGovERA.
+
+Conformance assesses:
+
+- Correct instantiation and reuse of ABBs and SBBs.
+
+- Adherence to EIF, EIRA and eGovERA architecture principles.
+
+- Proper structuring of the architecture using LOST interoperability
+  views.
+
+- Traceability between requirements (analysis) and solution components
+  (design).
+
+- Compliance with ArchiMate modelling rules and well-formedness
+  constraints.
+
+- Appropriate integration of reusable interoperability solutions and
+  EU-level enablers.
+
+Conformance is an architecture-driven verification activity and may
+involve automated model checking, use of the Interoperability Test Bed,
+and expert architectural review.
+
+Compliance
+~~~~~~~~~~
+
+Compliance assesses whether the solution conforms to binding EU and
+national legislation, sectoral regulatory frameworks and policy-driven
+requirements. It ensures that the solution can be lawfully deployed and
+operated within the European administrative and legal ecosystem.
+
+Compliance checks include:
+
+- Fulfilment of the binding interoperability requirements of the
+  Interoperable Europe Act.
+
+- Alignment with the GDPR and data protection principles.
+
+- Requirements derived from the Data Governance Act, the Data Act and
+  the Open Data Directive.
+
+- Relevant sector-specific legislation (e.g. health, taxation, customs).
+
+- Security, accessibility, procurement and digital inclusion
+  requirements.
+
+Compliance is a law- and policy-driven activity, and provides legal
+assurance that the solution operates within the applicable regulatory
+framework.
+
+Conformance Levels
+------------------
+
+Conformance levels define the extent to which a digital public service
+solution must adhere to the European Interoperability Reference
+Architectures. They enable proportional, transparent and repeatable
+assessment across different contexts while ensuring that
+interoperability-by-design is consistently applied.
+
+Three conformance levels are established:
+
+Mandatory Conformance
+~~~~~~~~~~~~~~~~~~~~~
+
+Mandatory elements must be satisfied for any solution claiming alignment
+with the reference architectures. These requirements ensure baseline
+interoperability, legal validity and architectural correctness.
+
+Mandatory conformance includes:
+
+- Application of the ELAP architecture principles.
+
+- Use of the LOST interoperability views (Legal, Organisational,
+  Semantic, Technical).
+
+- Use of ArchiMate as the architecture ontology.
+
+- Use of relevant mandatory ABBs/SBBs.
+
+- Passing the ITB-based conformance validation for mandatory
+  well-formedness rules.
+
+Recommended Conformance
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Recommended elements significantly enhance solution quality,
+interoperability and reusability, but allow flexibility depending on
+organisational maturity or domain needs.
+
+Recommended conformance includes:
+
+- Adoption of reusable EU interoperability assets (semantic resources,
+  catalogues, API interfaces).
+
+- Use of recommended SBBs for common architectural patterns (e.g.
+  identity, logging, catalogues, messaging).
+
+- Application of advanced modelling practices ensuring stronger
+  traceability and maintainability.
+
+- Integration with federated data space enablers where applicable.
+
+Recommended conformance is strongly encouraged and increases long-term
+sustainability, but is not strictly required.
+
+Optional Conformance
+~~~~~~~~~~~~~~~~~~~~
+
+Optional elements may be applied to improve performance, usability or
+domain specificity depending on contextual needs.
+
+Optional conformance may include:
+
+- Domain-specific modelling extensions.
+
+- Optional architectural accelerators or cross-domain enablers.
+
+- Additional SBBs not required for general interoperability.
+
+Optional elements never compromise the mandatory principles or the
+structural integrity of LOST-aligned models.
+
+Compliance Profiles
+-------------------
+
+Compliance profiles specify how the reference architectures should be
+interpreted and applied across different operational contexts. They
+enable proportionality and support both horizontal and sector-specific
+digital transformation strategies.
+
+Three main profiles are defined.
+
+Cross-Border Compliance Profile
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This profile applies to solutions operating across borders or involving
+joint implementation by Member States and EU institutions.
+
+It places emphasis on:
+
+- Cross-border legal interoperability and recognition.
+
+- High-level semantic harmonisation (datasets, vocabularies,
+  ontologies).
+
+- Consistent use of EU-level building blocks and shared enablers.
+
+- Mandatory conformance to ELAP principles and LOST views.
+
+- Mandatory passing of the ITB conformance validator for cross-border
+  scenarios.
+
+Sector-Specific Compliance Profile
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This profile applies to digital public services in specialised policy
+domains such as health, justice, mobility, taxation, customs or social
+security.
+
+It requires:
+
+- Incorporation of domain-specific legislation and regulatory
+  obligations.
+
+- Use or alignment with sectoral semantic models, datasets and
+  standards.
+
+- Domain-specific ABBs and SBBs derived from EIRA/eGovERA but enriched
+  with domain constraints.
+
+- Additional compliance checks related to safety, criticality or domain
+  assurance.
+
+Organisational Compliance Profile
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This profile applies to solutions implemented within a single public
+administration or organisational cluster. It focuses on:
+
+- Alignment with internal strategies, governance structures and digital
+  capabilities.
+
+- Adoption of reusable building blocks at organisational level.
+
+- Tailored modelling choices that remain compatible with ELAP and LOST
+  views.
+
+Gradual adoption of mandatory conformance elements according to
+organisational maturity.
+
+|Dibujo de una persona El contenido generado por IA puede ser
+incorrecto.|
+
+   8
+
+   Governance & Lifecycle
