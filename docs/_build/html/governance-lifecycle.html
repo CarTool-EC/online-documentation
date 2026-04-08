@@ -1,0 +1,271 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Governance &amp; Lifecycle &mdash; EIRA &amp; eGovERA Documentation 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index1.html" class="icon icon-home">
+            EIRA & eGovERA Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Governance &amp; Lifecycle</a><ul>
+<li><a class="reference internal" href="#maintenance-and-evolution-of-the-reference-architecture">Maintenance and evolution of the Reference Architecture</a><ul>
+<li><a class="reference internal" href="#change-management-process-lifecycle">Change Management process - lifecycle</a></li>
+<li><a class="reference internal" href="#semantic-versioning-scheme">Semantic versioning Scheme</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#maintaining-and-evolving-the-reference-architecture-specification">Maintaining and evolving the Reference Architecture Specification</a></li>
+<li><a class="reference internal" href="#community-feedback-mechanisms">Community feedback mechanisms</a><ul>
+<li><a class="reference internal" href="#the-interoperable-europe-portal-collection-13">The Interoperable Europe Portal Collection [13]_</a></li>
+<li><a class="reference internal" href="#the-interoperable-architecture-solutions-github-space">The Interoperable Architecture Solutions GitHub Space</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index1.html">EIRA & eGovERA Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index1.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Governance &amp; Lifecycle</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/governance-lifecycle.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="governance-lifecycle">
+<h1>Governance &amp; Lifecycle<a class="headerlink" href="#governance-lifecycle" title="Link to this heading"></a></h1>
+<p>This section describes how the Reference Architecture is governed,
+maintained, and evolved through defined governance and lifecycle
+mechanisms. The evolution of the Reference Architecture follows a
+user-centric, problem-solving approach, ensuring that it is continuously
+maintained and adapted to provide maximum support to user needs.</p>
+<p>The current specification, which documents the Reference Architecture,
+constitutes one of its release components and is therefore subject to
+the lifecycle described below. However, the maintenance of this document
+has certain specific characteristics, which are addressed later in this
+section.</p>
+<section id="maintenance-and-evolution-of-the-reference-architecture">
+<h2>Maintenance and evolution of the Reference Architecture<a class="headerlink" href="#maintenance-and-evolution-of-the-reference-architecture" title="Link to this heading"></a></h2>
+<p>To remain relevant, usable, and aligned with evolving interoperability
+needs, the Reference Architecture is subject to continuous maintenance
+and controlled evolution. This section describes the mechanisms through
+which changes are identified, assessed, implemented, and released. It
+establishes a structured change management lifecycle and a corresponding
+versioning scheme, ensuring that evolution is predictable, transparent,
+and aligned with user needs while preserving architectural coherence and
+stability.</p>
+<section id="change-management-process-lifecycle">
+<h3>Change Management process - lifecycle<a class="headerlink" href="#change-management-process-lifecycle" title="Link to this heading"></a></h3>
+<p>The Reference Architecture is maintained through a formal change
+management process organised as a continuous cycle. This lifecycle
+ensure that changes requests are systematically collected evaluated, and
+implemented, while providing clarity on their scope, impact, and release
+implications. The change management process consists of the following
+steps:</p>
+<ul class="simple">
+<li><p><strong>Requirements gathering:</strong> A continuous process through which
+potential improvements are gathered and classified. Each change
+request is described and categorised according to its scope
+(bug/patch, minor, or major).</p></li>
+<li><p><strong>Change requests analysis</strong>: Based on the description and the scope,
+and the urgency of the requests, these are analysed with two
+objectives:</p>
+<ul>
+<li><p>1) to develop a detailed understanding of the proposed modifications
+and their impact on the Reference Architecture;</p></li>
+<li><p>2) to determine the type of release required (major, minor, or
+bug/patch).</p></li>
+</ul>
+</li>
+<li><p><strong>Change requests implementation:</strong> Following the analysis and
+approval, the identified changes are implemented in the Reference
+Architecture and its associated release components, in accordance with
+the defined scope.</p></li>
+<li><p><strong>Release:</strong> The final step of the lifecycle, in which the updated
+Reference Architecture and its release components are formally
+published and made publicly available.</p></li>
+</ul>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="_images/image10.svg"><img alt="_images/image10.svg" src="_images/image10.svg" style="width: 4.21795in; height: 2.41199in;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Figure 1 Change Management Process Overview</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="semantic-versioning-scheme">
+<h3>Semantic versioning Scheme<a class="headerlink" href="#semantic-versioning-scheme" title="Link to this heading"></a></h3>
+<p>As introduced when describing the change management process, changes to
+the Reference Architecture are categorised into three types in alignment
+with the semantic versioning schema <a href="#id9"><span class="problematic" id="id1">[12]_</span></a>: major, minor.</p>
+<p>There are three types of changes that are considered in the change
+management process:</p>
+<ul class="simple">
+<li><p><strong>Major changes (Major release).</strong> A major change affects fundamental
+aspects of the Reference Architecture. Examples include the
+restructuring of core concepts within an EIRA view that has a
+significant impact on other architectural views or policy domains.
+Such changes typically affect related solutions and implementations
+and therefore require a dedicated rollout and transition plan to
+ensure controlled adoption. Major releases are generally not backward
+compatible.</p></li>
+<li><p><strong>Minor changes (Minor Release).</strong> A minor change is typically
+backward compatible and includes, for example, the addition of a new
+building block or a refinement of an existing definition. Minor
+releases may coexist across implementations without causing
+significant interoperability disruptions.</p></li>
+<li><p><strong>Bug/Patches (Bug Release).</strong> A bug or patch release addresses small
+corrections, such as typographical errors, editorial issues, or
+clarifications of concepts that were previously ambiguous or
+insufficiently defined. These changes do not alter the architectural
+structure or intent.</p></li>
+</ul>
+</section>
+</section>
+<section id="maintaining-and-evolving-the-reference-architecture-specification">
+<h2>Maintaining and evolving the Reference Architecture Specification<a class="headerlink" href="#maintaining-and-evolving-the-reference-architecture-specification" title="Link to this heading"></a></h2>
+<p>This document constitutes a discrete release component of the Reference
+Architecture, and therefore requires dedicated lifecycle and maintenance
+provisions. The following figure shows the overall evolution logic of
+the Reference Architecture and shows how the evolution of this
+specification is integrated within that lifecycle.</p>
+<p><a href="#id5"><span class="problematic" id="id6">|Gráfico, Escala de tiempo El contenido generado por IA puede ser
+incorrecto.|</span></a></p>
+<p>Figure 2 Specification Lifecycle timeline</p>
+<p>The specification is designed to support a sustainable lifecycle while
+remaining aligned with the latest changes to the Reference Architecture.
+To achieve this, the document deliberately minimises dependencies on
+volatile elements, such as exhaustive lists of Architecture Building
+Blocks (ABBs) or Solution Building Blocks (SBBs). These elements are
+instead maintained as living resources in GitHub and on the
+Interoperable Europe Portal.</p>
+<p>Following the image above, a new refactored documentation will be
+created to ensure the alignment with major changes (a major version) as
+defined above in section <a class="reference external" href="#semantic-versioning-scheme">Semantic versioning
+Scheme</a>.</p>
+<p>In addition, the specification is published and maintained online and is
+made available in downloadable formats (e.g. PDF and DOCX) to support
+reuse, consultation, and offline access.</p>
+</section>
+<section id="community-feedback-mechanisms">
+<h2>Community feedback mechanisms<a class="headerlink" href="#community-feedback-mechanisms" title="Link to this heading"></a></h2>
+<p>This section describes the mechanisms and channels through which
+stakeholders and users can provide feedback and propose changes to the
+Reference Architecture. Community input plays a key role in ensuring
+that the Reference Architecture remains relevant, practical, and aligned
+with real interoperability needs. Feedback can be submitted through the
+following channels.</p>
+<section id="the-interoperable-europe-portal-collection-13">
+<h3>The Interoperable Europe Portal Collection <a href="#id10"><span class="problematic" id="id2">[13]_</span></a><a class="headerlink" href="#the-interoperable-europe-portal-collection-13" title="Link to this heading"></a></h3>
+<p>The Reference Architecture is made available through the
+Interoperability Europe Portal, which serves as the European
+Commission’s one-stop shop for the publication of interoperable
+solutions.</p>
+<p>Through the general collection for the action and the specific solution
+for the Reference Architecture, users can contact the EC functional
+mailbox to provide feedback. This channel enables users to submit
+comments, suggestions, and requests for improvement related to the
+Reference Architecture and its release components.</p>
+</section>
+<section id="the-interoperable-architecture-solutions-github-space">
+<h3>The Interoperable Architecture Solutions GitHub Space<a class="headerlink" href="#the-interoperable-architecture-solutions-github-space" title="Link to this heading"></a></h3>
+<p>The action also maintains a GitHub space <a href="#id11"><span class="problematic" id="id3">[14]_</span></a> where the different
+architecture solutions are stored, managed, and published. These
+repositories constitute the authoritative source for the content
+published on the Interoperable Europe Portal.</p>
+<p>Users can provide feedback directly through these repositories by using
+the GitHub Issues functionality. As all release components of the EIRA
+and eGovERA are publicly available. All feedback received through GitHub
+is processed in accordance with the change management process described
+earlier in this specification. Regardless of the outcome of the analysis
+(whether a change request leads to implementation or is rejected) users
+receive a response explaining the rationale behind the decision.</p>
+<p><a href="#id7"><span class="problematic" id="id8">|Dibujo de una persona El contenido generado por IA puede ser
+incorrecto.|</span></a></p>
+<blockquote>
+<div><p>9</p>
+<p>Appendices</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Interoperability Architecture Solutions Action.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
