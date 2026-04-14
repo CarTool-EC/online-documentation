@@ -168,9 +168,4 @@ assurance, offering a replicable blueprint for other public
 administrations seeking interoperable, cross border ready digital public
 services
 
-|Dibujo de una persona El contenido generado por IA puede ser
-incorrecto.|
-
-   7
-
    Conformance & Compliance
