@@ -530,11 +530,4 @@ administrations to pursue digital transformation systematically while
 maintaining both organisational strategic alignment and European
 interoperability compliance.
 
-|Dibujo de una persona El contenido generado por IA puede ser
-incorrecto.|
-
-   3
-
-   Reference Architecture Views
-
-   & Viewpoints
+   Reference Architecture Views & Viewpoints
