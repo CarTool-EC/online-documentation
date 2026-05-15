@@ -160,5 +160,3 @@ Document Conventions and Terminology
 - Solution Building Block (SBB): Concrete implementation of ABBs.
 
 - Interoperability Views: Legal, Organisational, Semantic, Technical.
-
-   Conceptual Foundations

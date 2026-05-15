@@ -28,12 +28,13 @@ root_doc = 'index1'
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+html_css_files = ['custom.css']
 
 html_theme_options = {
-    'analytics_id': '',  # Add your GA4 ID if needed
     'analytics_anonymize_ip': False,
-    'logo_only': False,
-    'prev_next_buttons_location': 'bottom',  # Show prev/next navigation
+    'logo_only': True,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
     'style_external_links': True,
     'vcs_pageview_mode': '',
     'style_nav_header_background': '#2980B9',

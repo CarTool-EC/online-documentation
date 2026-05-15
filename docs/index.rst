@@ -1,7 +1,0 @@
-.. This file is kept for backward compatibility. The main documentation
-.. starts from index1.rst
-
-.. toctree::
-   :hidden:
-
-   index1

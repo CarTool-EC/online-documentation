@@ -145,7 +145,3 @@ selection and implementation of these SBBs:
   delivery systems, or domain-specific solutions for areas like
   e-procurement, health information exchange, or social security
   coordination.
-
-   6
-
-   Architecture Patterns & Use Cases
