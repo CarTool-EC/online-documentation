@@ -7,7 +7,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'EIRA & eGovERA Documentation'
-copyright = '2026, Interoperability Architecture Solutions Action'
+copyright = '© Copyright 2026, European Commission, DIGIT.'
+html_show_sphinx = False
 author = 'Interoperability Architecture Solutions Action'
 release = '1.0.0'
 
@@ -33,7 +34,6 @@ html_css_files = ['custom.css']
 html_theme_options = {
     'analytics_anonymize_ip': False,
     'logo_only': True,
-    'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': True,
     'vcs_pageview_mode': '',
