@@ -1,118 +1,89 @@
+/* ===== Layout ===== */
+
+.wy-body-for-nav {
+    background: #ffffff;
+}
+
+.wy-nav-content-wrapper {
+    background: transparent;
+}
+
+.wy-nav-content {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 3rem 4rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+/* ===== Typography spacing ===== */
+
 div.body {
     max-width: none !important;
 }
 
-.wy-nav-content {
-    max-width: none !important;
+.rst-content {
+    line-height: 1.75;
+    font-size: 16px;
 }
 
-.track-table tr th {
-    background-color: #2980B9;
-    color: white;
-    text-align: right;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+.rst-content h1,
+.rst-content h2,
+.rst-content h3 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
-.track-table tr:first-child th {
-    border-top: 0px solid white;
-    border-bottom: 0px solid white;
+/* ===== Sidebar ===== */
+
+.wy-side-nav-search {
+    background-color: #011E2E;
+    padding: 1.5rem 1rem;
 }
 
-.track-table tr:last-child th {
-    border-top: 0px solid white;
-    border-bottom: 0px solid white;
+.wy-side-nav-search img.logo {
+    max-width: 220px;
+    padding: 0;
 }
 
-.track-table p {
-    line-height: 0px;
-    margin-bottom: 0px;
-    font-size: 95%;
+/* Hide duplicated title text */
+.wy-side-nav-search>a {
+    font-size: 0;
 }
 
-.track-table tr td {
-    white-space: normal;
+/* ===== Navigation ===== */
+
+.wy-nav-side {
+    box-shadow: none;
+    border-right: 1px solid #e8e8e8;
 }
 
-.reference-table tr td {
-    background-color: #2980B9 !important;
-    color: white;
+.wy-menu-vertical a {
+    color: #d6dde3;
+    font-size: 14px;
 }
 
-.large-text {
-    font-size: 150%;
-    font-weight: bold;
-    font-style: italic;
-    line-height: 1.5em;
+.wy-menu-vertical a:hover {
+    background: rgba(255, 255, 255, 0.06);
 }
 
-.option-table td {
-    white-space: normal !important;
-    word-wrap: break-word;
-    font-size: 100% !important;
-    text-align: justify;
+.wy-menu-vertical li.current>a {
+    background: transparent;
+    color: #212121;
+    border: none;
 }
 
-div.expandable-container {
-    border: 1px solid #e1e4e5;
+/* ===== Content ===== */
+
+.rst-content code.literal,
+.rst-content tt.literal {
+    border-radius: 6px;
+    padding: 2px 6px;
 }
 
-div.expandable-message:hover {
-    background: #d4d4d4;
-}
-
-div.expandable-message {
-    cursor: pointer;
-    padding: 10px;
-    background: #e1e4e5;
-}
-
-div.expandable-message-text {
-    display: inline;
-    font-style: italic;
-}
-
-div.expandable-message-icon {
-    float: right;
-    font-size: large;
-}
-
-div.expandable {
-    padding: 10px;
-}
-
-.admonition.itb-design,
-.admonition.itb-testing {
-    background: #f1f1f1;
-}
-
-.admonition.itb-design>.admonition-title:before {
-    content: "\f058";
-    margin-right: 10px;
-}
-
-.admonition.itb-design>.admonition-title {
-    background: #3b81bb;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.admonition.itb-testing>.admonition-title {
-    background: #343131;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.admonition.itb-testing>.admonition-title:before {
-    content: "\f058";
-    margin-right: 10px;
-}
-
-.wy-menu-vertical li.toctree-l4.current>a,
-.wy-menu-vertical li.toctree-l4.current li.toctree-l5>a {
-    background: #adadad;
-}
-
-.rst-content table code.literal {
-    white-space: inherit;
+.rst-content pre.literal-block,
+.rst-content div[class^='highlight'] {
+    border-radius: 10px;
+    border: none;
 }
