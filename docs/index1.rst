@@ -1,4 +1,4 @@
-EIRA & eGovERA Documentation
+EIRA & eGovERA Specification
 ============================
 
 Welcome to the comprehensive documentation for the European Interoperability Reference Architecture (EIRA) 
