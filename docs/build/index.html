@@ -6,10 +6,11 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; EIRA &amp; eGovERA Documentation 1.0.0 documentation</title>
+  <title>EIRA &amp; eGovERA Specification &mdash; Reference Architecture Specification: EIRA &amp; eGovERA 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=e259c36e" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b55727a9" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
@@ -17,9 +18,11 @@
       <script src="_static/documentation_options.js?v=8d563738"></script>
       <script src="_static/doctools.js?v=fd6eb6e6"></script>
       <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. Introduction" href="introduction.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -30,8 +33,9 @@
 
           
           
-          <a href="index1.html">
-            
+          <a href="#" class="icon icon-home">
+            Reference Architecture Specification: EIRA & eGovERA
+              <img src="_static/logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -72,15 +76,15 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index1.html">EIRA & eGovERA Documentation</a>
+          <a href="#">Reference Architecture Specification: EIRA & eGovERA</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index1.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">EIRA &amp; eGovERA Specification</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -90,23 +94,109 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="toctree-wrapper compound">
+  <section id="eira-egovera-specification">
+<h1>EIRA &amp; eGovERA Specification<a class="headerlink" href="#eira-egovera-specification" title="Link to this heading"></a></h1>
+<p>Welcome to the comprehensive documentation for the European Interoperability Reference Architecture (EIRA)
+and the eGovernment European Reference Architecture (eGovERA). This documentation provides detailed guidance
+on designing and implementing interoperable digital public services across the European public sector.</p>
+<p><strong>Quick Navigation:</strong></p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#purpose-of-this-specification">1.1. Purpose of this Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#scope">1.2. Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#target-audience">1.3. Target Audience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#relationship-to-other-frameworks-and-standards">1.4. Relationship to Other Frameworks and Standards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#document-conventions-and-terminology">1.5. Document Conventions and Terminology</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conceptual-foundations.html">2. Conceptual Foundations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="conceptual-foundations.html#the-european-interoperability-reference-architecture-eira">2.1. The European Interoperability Reference Architecture, EIRA©</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conceptual-foundations.html#the-egovernment-european-reference-architecture-egovera">2.2. The eGovernment European Reference Architecture, eGovERA©</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conceptual-foundations.html#purposes-of-eira-and-egovera">2.3. Purposes of EIRA and eGovERA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conceptual-foundations.html#unit-of-analysis">2.4. Unit of analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conceptual-foundations.html#use-cases-for-the-reference-architectures">2.5. Use cases for the Reference Architectures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conceptual-foundations.html#the-role-of-architecture-principles">2.6. The role of Architecture Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conceptual-foundations.html#diving-into-core-components-abbs-sbbs-views-and-viewpoints">2.7. Diving into core components (ABBs, SBBs, views, and viewpoints).</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conceptual-foundations.html#the-eira-ontology">2.8. The (EIRA) Ontology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conceptual-foundations.html#key-interoperability-enablers-viewpoint">2.9. Key Interoperability Enablers (viewpoint)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conceptual-foundations.html#the-ra-and-related-standards-and-specifications-archimate-paaf">2.10. The RA and related standards and specifications (ArchiMate©, PAAF)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conceptual-foundations.html#references">2.11. References</a></li>
+</ul>
+</li>
+</ul>
 </div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Architecture &amp; Design</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="architecture-building-blocks-abbs.html">1. Architecture Building Blocks (ABBs)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="architecture-building-blocks-abbs.html#definition-and-role-of-architecture-building-blocks">1.1. Definition and role of Architecture Building Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture-building-blocks-abbs.html#relationships-and-dependencies-between-architecture-building-blocks">1.2. Relationships and Dependencies Between Architecture Building Blocks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference-architecture-views-viewpoints.html">2. Reference Architecture Views &amp; Viewpoints</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference-architecture-views-viewpoints.html#views">2.1. Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference-architecture-views-viewpoints.html#viewpoints">2.2. Viewpoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference-architecture-views-viewpoints.html#views-and-viewpoints-differences-and-purposes">2.3. Views and viewpoints, differences and purposes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="architecture-patterns-case-studies.html">3. Architecture Patterns &amp; Case Studies</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="architecture-patterns-case-studies.html#architecture-patterns">3.1. Architecture patterns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture-patterns-case-studies.html#the-domain-specific-reference-architectures-health-customs-and-tax">3.2. The Domain Specific Reference Architectures: Health, Customs, and Tax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture-patterns-case-studies.html#case-studies-the-reference-architectures-in-use">3.3. Case studies, the Reference Architectures in use</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture-patterns-case-studies.html#references">3.4. References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="solution-building-blocks-sbbs.html">4. Solution Building Blocks (SBBs)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="solution-building-blocks-sbbs.html#what-are-solution-building-block-in-the-eira">4.1. What are Solution Building Block in the EIRA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solution-building-blocks-sbbs.html#sbbs-and-standards-or-specifications">4.2. SBBs and standards or specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solution-building-blocks-sbbs.html#sbbs-as-cots-oss-or-complete-solutions">4.3. SBBs as COTS, OSS or complete solutions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Implementation &amp; Governance</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="governance-lifecycle.html">1. Governance &amp; Lifecycle</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="governance-lifecycle.html#maintenance-and-evolution-of-the-reference-architecture">1.1. Maintenance and evolution of the Reference Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="governance-lifecycle.html#maintaining-and-evolving-the-reference-architecture-specification">1.2. Maintaining and evolving the Reference Architecture Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="governance-lifecycle.html#community-feedback-mechanisms">1.3. Community feedback mechanisms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="governance-lifecycle.html#references">1.4. References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="validation-conformance-compliance-testing.html">2. Validation, Conformance &amp; Compliance Testing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="validation-conformance-compliance-testing.html#distinguishing-validation-conformance-and-compliance-testing">2.1. Distinguishing Validation, Conformance and Compliance Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validation-conformance-compliance-testing.html#conformance-levels">2.2. Conformance Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validation-conformance-compliance-testing.html#compliance-profiles">2.3. Compliance Profiles</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendices.html">Appendices</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction.html" class="btn btn-neutral float-right" title="1. Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2026, Interoperability Architecture Solutions Action.</p>
+    <p>&#169; Copyright © Copyright 2026, European Commission, DIGIT.</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
 
 </footer>
