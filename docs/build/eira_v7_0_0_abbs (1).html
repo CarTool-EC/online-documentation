@@ -1,0 +1,1913 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EIRA v7.0.0 — Architecture Building Blocks &mdash; Reference Architecture Specification: EIRA &amp; eGovERA 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b55727a9" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="index1.html" class="icon icon-home">
+            Reference Architecture Specification: EIRA & eGovERA
+              <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conceptual-foundations.html">2. Conceptual Foundations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Architecture &amp; Design</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="architecture-building-blocks-abbs.html">1. Architecture Building Blocks (ABBs)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-architecture-views-viewpoints.html">2. Reference Architecture Views &amp; Viewpoints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture-patterns-case-studies.html">3. Architecture Patterns &amp; Case Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solution-building-blocks-sbbs.html">4. Solution Building Blocks (SBBs)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Implementation &amp; Governance</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="governance-lifecycle.html">1. Governance &amp; Lifecycle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation-conformance-compliance-testing.html">2. Validation, Conformance &amp; Compliance Testing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendices.html">Appendices</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="frontmatter.html">Interoperability Architecture Solutions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index1.html">Reference Architecture Specification: EIRA & eGovERA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index1.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">EIRA v7.0.0 — Architecture Building Blocks</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/eira_v7_0_0_abbs (1).rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="eira-v7-0-0-architecture-building-blocks">
+<h1>EIRA v7.0.0 — Architecture Building Blocks<a class="headerlink" href="#eira-v7-0-0-architecture-building-blocks" title="Link to this heading"></a></h1>
+<p>This page lists all Architecture Building Blocks (ABBs) defined in EIRA v7.0.0,
+organised by view following the LOST interoperability layers.</p>
+<section id="legal-view">
+<h2>Legal View<a class="headerlink" href="#legal-view" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>PURI</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Properties of Binding Instrument</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/BindingInstrumentRequirement">http://data.europa.eu/dr8/BindingInstrumentRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Delegation of Powers Provisioning Digital Public Services</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DelegationOfPowersProvisioningDigitalPublicServicesAssessment">http://data.europa.eu/dr8/DelegationOfPowersProvisioningDigitalPublicServicesAssessment</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital-ready Policymaking</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Digital-readyPolicymakingBusinessProcess">http://data.europa.eu/dr8/Digital-readyPolicymakingBusinessProcess</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of European Legal Act</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EuropeanLegalActRequirement">http://data.europa.eu/dr8/EuropeanLegalActRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of European Legal Interoperability Agreeement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EuropeanLegalInteroperabilityAgreementContract">http://data.europa.eu/dr8/EuropeanLegalInteroperabilityAgreementContract</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Granularity of Legal Requirements</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/GranularityOfLegalRequirementsAssessment">http://data.europa.eu/dr8/GranularityOfLegalRequirementsAssessment</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Legal Act</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LegalActRequirement">http://data.europa.eu/dr8/LegalActRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Legal Act Representation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LegalActRepresentationRepresentation">http://data.europa.eu/dr8/LegalActRepresentationRepresentation</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Legal Agreement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LegalAgreementContract">http://data.europa.eu/dr8/LegalAgreementContract</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Legal Clauses</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LegalClausesRequirement">http://data.europa.eu/dr8/LegalClausesRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Legal Interoperability Agreement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LegalInteroperabilityAgreementContract">http://data.europa.eu/dr8/LegalInteroperabilityAgreementContract</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Legislation Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LegislationCatalogueBusinessObject">http://data.europa.eu/dr8/LegislationCatalogueBusinessObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Legislation on Data Information and Knowledge Exchange</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LegislationOnDataInformationAndKnowledgeExchangeBusinessObject">http://data.europa.eu/dr8/LegislationOnDataInformationAndKnowledgeExchangeBusinessObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Legislation on Digital Public Services</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LegislationOnDigitalPublicServicesBusinessObject">http://data.europa.eu/dr8/LegislationOnDigitalPublicServicesBusinessObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of National Legal Act</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/NationalLegalActRequirement">http://data.europa.eu/dr8/NationalLegalActRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of National Legal Interoperability Agreement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/NationalLegalInteroperabilityAgreementContract">http://data.europa.eu/dr8/NationalLegalInteroperabilityAgreementContract</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Non-binding Instrument</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Non-bindingInstrumentRequirement">http://data.europa.eu/dr8/Non-bindingInstrumentRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Public Policy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PublicPolicyCourseOfAction">http://data.europa.eu/dr8/PublicPolicyCourseOfAction</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Public Policy Constraint</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PublicPolicyConstraintConstraint">http://data.europa.eu/dr8/PublicPolicyConstraintConstraint</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Public Policy Context</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PublicPolicyContextConstraint">http://data.europa.eu/dr8/PublicPolicyContextConstraint</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Public Policy Objective</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PublicPolicyObjectiveGoal">http://data.europa.eu/dr8/PublicPolicyObjectiveGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Shared Legal Content</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SharedLegalContentGrouping">http://data.europa.eu/dr8/SharedLegalContentGrouping</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="organisational-view">
+<h2>Organisational View<a class="headerlink" href="#organisational-view" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>PURI</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Properties of Adaptive Configuration</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AdaptiveConfigurationBusinessInterface">http://data.europa.eu/dr8/AdaptiveConfigurationBusinessInterface</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Agent</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AgentBusinessRole">http://data.europa.eu/dr8/AgentBusinessRole</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Agreement of the Use on Common Infrastructure</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AgreementOfTheUseOnCommonInfrastructureContract">http://data.europa.eu/dr8/AgreementOfTheUseOnCommonInfrastructureContract</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Agreement on Data Sharing</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AgreementOnDataSharingContract">http://data.europa.eu/dr8/AgreementOnDataSharingContract</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Agreement on Interoperability Security</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AgreementOnInteroperabilitySecurityContract">http://data.europa.eu/dr8/AgreementOnInteroperabilitySecurityContract</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Agreement on Privacy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AgreementOnPrivacyContract">http://data.europa.eu/dr8/AgreementOnPrivacyContract</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Agreement on Provision of Digital Public Services</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AgreementOnProvisionOfDigitalPublicServicesContract">http://data.europa.eu/dr8/AgreementOnProvisionOfDigitalPublicServicesContract</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Architecture Principle</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ArchitecturePrinciplePrinciple">http://data.europa.eu/dr8/ArchitecturePrinciplePrinciple</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Business</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/BusinessStakeholder">http://data.europa.eu/dr8/BusinessStakeholder</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Holder</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataHolderBusinessRole">http://data.europa.eu/dr8/DataHolderBusinessRole</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Owner</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataOwnerBusinessRole">http://data.europa.eu/dr8/DataOwnerBusinessRole</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Desktop App</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DesktopAppBusinessInterface">http://data.europa.eu/dr8/DesktopAppBusinessInterface</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Agenda</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalAgendaGoal">http://data.europa.eu/dr8/DigitalAgendaGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Business Capability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalBusinessCapabilityCapability">http://data.europa.eu/dr8/DigitalBusinessCapabilityCapability</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Governance Plan</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalGovernancePlanBusinessObject">http://data.europa.eu/dr8/DigitalGovernancePlanBusinessObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Public Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalPublicServiceBusinessService">http://data.europa.eu/dr8/DigitalPublicServiceBusinessService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Public Service Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalPublicServiceCatalogueBusinessObject">http://data.europa.eu/dr8/DigitalPublicServiceCatalogueBusinessObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Public Service Consumer</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalPublicServiceConsumerBusinessRole">http://data.europa.eu/dr8/DigitalPublicServiceConsumerBusinessRole</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Public Service Delivery</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalPublicServiceDeliveryBusinessInterface">http://data.europa.eu/dr8/DigitalPublicServiceDeliveryBusinessInterface</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Public Service Delivery Model</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalPublicServiceDeliveryModelBusinessCollaboration">http://data.europa.eu/dr8/DigitalPublicServiceDeliveryModelBusinessCollaboration</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Public Service Human Agent</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalPublicServiceHumanAgentBusinessActor">http://data.europa.eu/dr8/DigitalPublicServiceHumanAgentBusinessActor</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Public Service Machine Agent</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalPublicServiceMachineAgentBusinessActor">http://data.europa.eu/dr8/DigitalPublicServiceMachineAgentBusinessActor</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Public Service Provider</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalPublicServiceProviderBusinessRole">http://data.europa.eu/dr8/DigitalPublicServiceProviderBusinessRole</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Public Service Provision</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalPublicServiceProvisionBusinessFunction">http://data.europa.eu/dr8/DigitalPublicServiceProvisionBusinessFunction</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Solution Requirement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionRequirementRequirement">http://data.europa.eu/dr8/DigitalSolutionRequirementRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digitalisation Roadmap</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalisationRoadmapWorkPackage">http://data.europa.eu/dr8/DigitalisationRoadmapWorkPackage</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of European Library of Architecture Principles</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EuropeanLibraryOfArchitecturePrinciplesPrinciple">http://data.europa.eu/dr8/EuropeanLibraryOfArchitecturePrinciplesPrinciple</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Individual</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/IndividualStakeholder">http://data.europa.eu/dr8/IndividualStakeholder</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Information</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InformationBusinessObject">http://data.europa.eu/dr8/InformationBusinessObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Interoperability Framework</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InteroperabilityFrameworkBusinessObject">http://data.europa.eu/dr8/InteroperabilityFrameworkBusinessObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Interoperability Specification</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InteroperabilitySpecificationContract">http://data.europa.eu/dr8/InteroperabilitySpecificationContract</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Interoperability Strategy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InteroperabilityStrategyGoal">http://data.europa.eu/dr8/InteroperabilityStrategyGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Interoperable Digital Public Service Implementation Orientation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InteroperableDigitalPublicServiceImplementationOrientationConstraint">http://data.europa.eu/dr8/InteroperableDigitalPublicServiceImplementationOrientationConstraint</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Legal Entity</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LegalEntityStakeholder">http://data.europa.eu/dr8/LegalEntityStakeholder</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Means for Public Policy Objectives Convergence Assurance and Control</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MeansForPublicPolicyObjectivesConvergenceAssuranceAndControlConstraint">http://data.europa.eu/dr8/MeansForPublicPolicyObjectivesConvergenceAssuranceAndControlConstraint</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Mobile App</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MobileAppBusinessInterface">http://data.europa.eu/dr8/MobileAppBusinessInterface</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Organisation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OrganisationStakeholder">http://data.europa.eu/dr8/OrganisationStakeholder</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Organisational Agreement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OrganisationalAgreementContract">http://data.europa.eu/dr8/OrganisationalAgreementContract</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Organisational Interoperability Agreement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OrganisationalInteroperabilityAgreementContract">http://data.europa.eu/dr8/OrganisationalInteroperabilityAgreementContract</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Privacy Framework</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PrivacyFrameworkBusinessObject">http://data.europa.eu/dr8/PrivacyFrameworkBusinessObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Public Administration</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PublicAdministrationStakeholder">http://data.europa.eu/dr8/PublicAdministrationStakeholder</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Security Framework</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SecurityFrameworkBusinessObject">http://data.europa.eu/dr8/SecurityFrameworkBusinessObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Service App</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ServiceAppBusinessInterface">http://data.europa.eu/dr8/ServiceAppBusinessInterface</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Shared Organisational Content</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SharedOrganisationalContentGrouping">http://data.europa.eu/dr8/SharedOrganisationalContentGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Solution Building Block</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SolutionBuildingBlockArtifact">http://data.europa.eu/dr8/SolutionBuildingBlockArtifact</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Web App</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/WebAppBusinessInterface">http://data.europa.eu/dr8/WebAppBusinessInterface</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="semantic-view">
+<h2>Semantic View<a class="headerlink" href="#semantic-view" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>PURI</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Properties of Base Registry</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/BaseRegistryDataObject">http://data.europa.eu/dr8/BaseRegistryDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Catalogue Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CatalogueEnablersGrouping">http://data.europa.eu/dr8/CatalogueEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Controlled Vocabulary</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ControlledVocabularyDataObject">http://data.europa.eu/dr8/ControlledVocabularyDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataDataObject">http://data.europa.eu/dr8/DataDataObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data &amp; Data Intances Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataAndDataInstancesEnablersGrouping">http://data.europa.eu/dr8/DataAndDataInstancesEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Exposure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataExposureEnablersGrouping">http://data.europa.eu/dr8/DataExposureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Format</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataFormatDataObject">http://data.europa.eu/dr8/DataFormatDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Mapping</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataMappingDataObject">http://data.europa.eu/dr8/DataMappingDataObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Mapping Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataMappingCatalogueDataObject">http://data.europa.eu/dr8/DataMappingCatalogueDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Model</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataModelDataObject">http://data.europa.eu/dr8/DataModelDataObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Policy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataPolicyBusinessObject">http://data.europa.eu/dr8/DataPolicyBusinessObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Portability Policy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataPortabilityPolicyBusinessObject">http://data.europa.eu/dr8/DataPortabilityPolicyBusinessObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Representation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataRepresentationRepresentation">http://data.europa.eu/dr8/DataRepresentationRepresentation</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Representation Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataRepresentationEnablersGrouping">http://data.europa.eu/dr8/DataRepresentationEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Syntax</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataSyntaxDataObject">http://data.europa.eu/dr8/DataSyntaxDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Syntax Mapping Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataSyntaxMappingCatalogueDataObject">http://data.europa.eu/dr8/DataSyntaxMappingCatalogueDataObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Dataset</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DatasetDataObject">http://data.europa.eu/dr8/DatasetDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Dataset Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DatasetCatalogueDataObject">http://data.europa.eu/dr8/DatasetCatalogueDataObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Forms Structure</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/FormsStructureDataObject">http://data.europa.eu/dr8/FormsStructureDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Hash Code</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/HashCodeDataObject">http://data.europa.eu/dr8/HashCodeDataObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Knowledge</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/KnowledgeRepresentation">http://data.europa.eu/dr8/KnowledgeRepresentation</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Linked Data</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LinkedDataRepresentation">http://data.europa.eu/dr8/LinkedDataRepresentation</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Linked Data Event Stream</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LinkedDataEventStreamRepresentation">http://data.europa.eu/dr8/LinkedDataEventStreamRepresentation</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Linked Open Data</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LinkedOpenDataRepresentation">http://data.europa.eu/dr8/LinkedOpenDataRepresentation</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Master Data</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MasterDataDataObject">http://data.europa.eu/dr8/MasterDataDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Master Data Policy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MasterDataPolicyBusinessObject">http://data.europa.eu/dr8/MasterDataPolicyBusinessObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Metadata</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MetadataDataObject">http://data.europa.eu/dr8/MetadataDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Metadata Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MetadataCatalogueDataObject">http://data.europa.eu/dr8/MetadataCatalogueDataObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Ontologies Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OntologiesCatalogueDataObject">http://data.europa.eu/dr8/OntologiesCatalogueDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Ontology</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OntologyDataObject">http://data.europa.eu/dr8/OntologyDataObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Open Data</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OpenDataRepresentation">http://data.europa.eu/dr8/OpenDataRepresentation</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Open Data Policy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OpenDataPolicyBusinessObject">http://data.europa.eu/dr8/OpenDataPolicyBusinessObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Privacy Policy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PrivacyPolicyBusinessObject">http://data.europa.eu/dr8/PrivacyPolicyBusinessObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Reference Data</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ReferenceDataDataObject">http://data.europa.eu/dr8/ReferenceDataDataObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Security Policy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SecurityPolicyBusinessObject">http://data.europa.eu/dr8/SecurityPolicyBusinessObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Semantic Agreement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SemanticAgreementContract">http://data.europa.eu/dr8/SemanticAgreementContract</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Semantic Functional content</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SemanticFunctionalContentGrouping">http://data.europa.eu/dr8/SemanticFunctionalContentGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Semantic Governance content</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SemanticGovernanceContentGrouping">http://data.europa.eu/dr8/SemanticGovernanceContentGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Semantic Interoperability Agreement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SemanticInteroperabilityAgreementContract">http://data.europa.eu/dr8/SemanticInteroperabilityAgreementContract</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Semantic Specifications Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SemanticSpecificationsEnablersGrouping">http://data.europa.eu/dr8/SemanticSpecificationsEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Shared Knowledge Content</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SharedKnowledgeContentGrouping">http://data.europa.eu/dr8/SharedKnowledgeContentGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Software Components Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SoftwareComponentsCatalogueDataObject">http://data.europa.eu/dr8/SoftwareComponentsCatalogueDataObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Virtual Dataset</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/VirtualDatasetDataObject">http://data.europa.eu/dr8/VirtualDatasetDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Vocabulary</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/VocabularyDataObject">http://data.europa.eu/dr8/VocabularyDataObject</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="technical-view-application">
+<h2>Technical View — Application<a class="headerlink" href="#technical-view-application" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>PURI</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Properties of Access Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AccessManagementApplicationComponent">http://data.europa.eu/dr8/AccessManagementApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Access Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AccessManagementApplicationService">http://data.europa.eu/dr8/AccessManagementApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Accounting</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AccountingApplicationService">http://data.europa.eu/dr8/AccountingApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Analytics Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AnalyticsEnablersGrouping">http://data.europa.eu/dr8/AnalyticsEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of API</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/APIApplicationInterface">http://data.europa.eu/dr8/APIApplicationInterface</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of API Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/APICatalogueApplicationComponent">http://data.europa.eu/dr8/APICatalogueApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of API Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/APICatalogueDataObject">http://data.europa.eu/dr8/APICatalogueDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of API Discovery and Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/APIDiscoveryAndCatalogueApplicationService">http://data.europa.eu/dr8/APIDiscoveryAndCatalogueApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of API Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/APIEnablersGrouping">http://data.europa.eu/dr8/APIEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Application Presentation Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ApplicationPresentationEnablersGrouping">http://data.europa.eu/dr8/ApplicationPresentationEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Artificial Intelligence</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ArtificialIntelligenceApplicationComponent">http://data.europa.eu/dr8/ArtificialIntelligenceApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Artificial Intelligence</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ArtificialIntelligenceApplicationService">http://data.europa.eu/dr8/ArtificialIntelligenceApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Artificial Intelligence Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ArtificialIntelligenceEnablersGrouping">http://data.europa.eu/dr8/ArtificialIntelligenceEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Audit</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AuditApplicationComponent">http://data.europa.eu/dr8/AuditApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Audit</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AuditApplicationService">http://data.europa.eu/dr8/AuditApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Authentication</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AuthenticationApplicationService">http://data.europa.eu/dr8/AuthenticationApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Authorisation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AuthorisationApplicationService">http://data.europa.eu/dr8/AuthorisationApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Blockchain</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/BlockchainApplicationComponent">http://data.europa.eu/dr8/BlockchainApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Blockchain</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/BlockchainApplicationService">http://data.europa.eu/dr8/BlockchainApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Blockchain Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/BlockchainEnablersGrouping">http://data.europa.eu/dr8/BlockchainEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Centralized Identity Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CentralizedIdentityManagementApplicationService">http://data.europa.eu/dr8/CentralizedIdentityManagementApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Conformance Test Scenario</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ConformanceTestScenarioBusinessObject">http://data.europa.eu/dr8/ConformanceTestScenarioBusinessObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Conformance Testing</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ConformanceTestingApplicationComponent">http://data.europa.eu/dr8/ConformanceTestingApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Conformance Testing</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ConformanceTestingApplicationService">http://data.europa.eu/dr8/ConformanceTestingApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Content Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ContentManagementApplicationService">http://data.europa.eu/dr8/ContentManagementApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Credential Issuance Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CredentialIssuanceServiceApplicationService">http://data.europa.eu/dr8/CredentialIssuanceServiceApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Credential Issuer</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CredentialIssuerApplicationComponent">http://data.europa.eu/dr8/CredentialIssuerApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Credential Revocation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CredentialRevocationApplicationComponent">http://data.europa.eu/dr8/CredentialRevocationApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Credential Revocation Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CredentialRevocationServiceApplicationService">http://data.europa.eu/dr8/CredentialRevocationServiceApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Credential Verification Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CredentialVerificationServiceApplicationService">http://data.europa.eu/dr8/CredentialVerificationServiceApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Credential Verifier</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CredentialVerifierApplicationComponent">http://data.europa.eu/dr8/CredentialVerifierApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Analytics</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataAnalyticsApplicationComponent">http://data.europa.eu/dr8/DataAnalyticsApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Analytics</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataAnalyticsApplicationService">http://data.europa.eu/dr8/DataAnalyticsApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Catalogue Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataCatalogueManagementApplicationService">http://data.europa.eu/dr8/DataCatalogueManagementApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Exchange</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataExchangeApplicationComponent">http://data.europa.eu/dr8/DataExchangeApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Exchange</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataExchangeApplicationService">http://data.europa.eu/dr8/DataExchangeApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Exchange Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataExchangeEnablersGrouping">http://data.europa.eu/dr8/DataExchangeEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Extraction, Transformation and Loading</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataExtractionTransformationAndLoadingApplicationService">http://data.europa.eu/dr8/DataExtractionTransformationAndLoadingApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Extraction, Transformation, and Loading</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataExtractionTransformationAndLoadingApplicationComponent">http://data.europa.eu/dr8/DataExtractionTransformationAndLoadingApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Governance</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataGovernanceApplicationService">http://data.europa.eu/dr8/DataGovernanceApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Integration</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataIntegrationApplicationService">http://data.europa.eu/dr8/DataIntegrationApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Integration Plugins Manager</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataIntegrationPluginsManagerApplicationService">http://data.europa.eu/dr8/DataIntegrationPluginsManagerApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataManagementApplicationComponent">http://data.europa.eu/dr8/DataManagementApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataManagementApplicationService">http://data.europa.eu/dr8/DataManagementApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Management Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataManagementEnablersGrouping">http://data.europa.eu/dr8/DataManagementEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Persistence</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataPersistenceApplicationComponent">http://data.europa.eu/dr8/DataPersistenceApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Persistence</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataPersistenceApplicationService">http://data.europa.eu/dr8/DataPersistenceApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Policy Engine</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataPolicyEngineApplicationService">http://data.europa.eu/dr8/DataPolicyEngineApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Publication</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataPublicationApplicationComponent">http://data.europa.eu/dr8/DataPublicationApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Publication</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataPublicationApplicationService">http://data.europa.eu/dr8/DataPublicationApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Quality</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataQualityApplicationComponent">http://data.europa.eu/dr8/DataQualityApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Quality</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataQualityApplicationService">http://data.europa.eu/dr8/DataQualityApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Space</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataSpaceApplicationService">http://data.europa.eu/dr8/DataSpaceApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Space Connector</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataSpaceConnectorApplicationService">http://data.europa.eu/dr8/DataSpaceConnectorApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Space Connector Consumer</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataSpaceConnectorConsumerApplicationService">http://data.europa.eu/dr8/DataSpaceConnectorConsumerApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Space Connector Provider</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataSpaceConnectorProviderApplicationService">http://data.europa.eu/dr8/DataSpaceConnectorProviderApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Virtualization</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataVirtualizationApplicationComponent">http://data.europa.eu/dr8/DataVirtualizationApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Virtualization</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataVirtualizationApplicationService">http://data.europa.eu/dr8/DataVirtualizationApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Dataspace Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataspaceEnablersGrouping">http://data.europa.eu/dr8/DataspaceEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Decentralized Identity Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DecentralizedIdentityManagementApplicationService">http://data.europa.eu/dr8/DecentralizedIdentityManagementApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of DID Resolution Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DIDResolutionServiceApplicationService">http://data.europa.eu/dr8/DIDResolutionServiceApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of DID Resolver</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DIDResolverApplicationComponent">http://data.europa.eu/dr8/DIDResolverApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Identity Wallet</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalIdentityWalletApplicationComponent">http://data.europa.eu/dr8/DigitalIdentityWalletApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Identity Wallet Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalIdentityWalletServiceApplicationService">http://data.europa.eu/dr8/DigitalIdentityWalletServiceApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Solution</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionApplicationComponent">http://data.europa.eu/dr8/DigitalSolutionApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Solution</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionApplicationService">http://data.europa.eu/dr8/DigitalSolutionApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Workplace</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalWorkplaceApplicationComponent">http://data.europa.eu/dr8/DigitalWorkplaceApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Workplace</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalWorkplaceApplicationService">http://data.europa.eu/dr8/DigitalWorkplaceApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Workplace Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalWorkplaceEnablersGrouping">http://data.europa.eu/dr8/DigitalWorkplaceEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of e-Archiving</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/E-ArchivingApplicationComponent">http://data.europa.eu/dr8/E-ArchivingApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of e-Archiving</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/E-ArchivingApplicationService">http://data.europa.eu/dr8/E-ArchivingApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of e-Seal Creation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/E-SealCreationApplicationService">http://data.europa.eu/dr8/E-SealCreationApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of e-Seal Preservation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/E-SealPreservationApplicationService">http://data.europa.eu/dr8/E-SealPreservationApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of e-Seal Verification and Validation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/E-SealVerificationAndValidationApplicationService">http://data.europa.eu/dr8/E-SealVerificationAndValidationApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of e-Signature Creation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/E-SignatureCreationApplicationService">http://data.europa.eu/dr8/E-SignatureCreationApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of e-Signature Preservation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/E-SignaturePreservationApplicationService">http://data.europa.eu/dr8/E-SignaturePreservationApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of e-Signature Verification and Validation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/E-SignatureVerificationAndValidationApplicationService">http://data.europa.eu/dr8/E-SignatureVerificationAndValidationApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of e-Timestamp Creation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/E-TimestampCreationApplicationService">http://data.europa.eu/dr8/E-TimestampCreationApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of e-Timestamp Verification and Validation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/E-TimestampVerificationAndValidationApplicationService">http://data.europa.eu/dr8/E-TimestampVerificationAndValidationApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Federated Data Catalogue Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/FederatedDataCatalogueManagementApplicationService">http://data.europa.eu/dr8/FederatedDataCatalogueManagementApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Forms Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/FormsManagementApplicationComponent">http://data.europa.eu/dr8/FormsManagementApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Forms Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/FormsManagementApplicationService">http://data.europa.eu/dr8/FormsManagementApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Human Interface</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/HumanInterfaceApplicationInterface">http://data.europa.eu/dr8/HumanInterfaceApplicationInterface</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Identification</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/IdentificationApplicationComponent">http://data.europa.eu/dr8/IdentificationApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Identification and Access Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/IdentificationAndAccessEnablersGrouping">http://data.europa.eu/dr8/IdentificationAndAccessEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Identity management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/IdentityManagementApplicationService">http://data.europa.eu/dr8/IdentityManagementApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Integrity Verification</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/IntegrityVerificationApplicationService">http://data.europa.eu/dr8/IntegrityVerificationApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Interoperable Digital Solution</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InteroperableDigitalSolutionApplicationComponent">http://data.europa.eu/dr8/InteroperableDigitalSolutionApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Knowledge Discovery</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/KnowledgeDiscoveryApplicationComponent">http://data.europa.eu/dr8/KnowledgeDiscoveryApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Knowledge Discovery</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/KnowledgeDiscoveryApplicationService">http://data.europa.eu/dr8/KnowledgeDiscoveryApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Knowledge Discovery Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/KnowledgeDiscoveryEnablersGrouping">http://data.europa.eu/dr8/KnowledgeDiscoveryEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Knowledge Triplestore</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/KnowledgeTriplestoreDataObject">http://data.europa.eu/dr8/KnowledgeTriplestoreDataObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Machine to Machine Interface</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MachineToMachineInterfaceApplicationInterface">http://data.europa.eu/dr8/MachineToMachineInterfaceApplicationInterface</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Machine Translation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MachineTranslationApplicationComponent">http://data.europa.eu/dr8/MachineTranslationApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Machine Translation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MachineTranslationApplicationService">http://data.europa.eu/dr8/MachineTranslationApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Metadata Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MetadataManagementApplicationComponent">http://data.europa.eu/dr8/MetadataManagementApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Metadata Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MetadataManagementApplicationService">http://data.europa.eu/dr8/MetadataManagementApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Observability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ObservabilityApplicationService">http://data.europa.eu/dr8/ObservabilityApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Observability and Monitoring Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ObservabilityAndMonitoringEnablersGrouping">http://data.europa.eu/dr8/ObservabilityAndMonitoringEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Orchestration</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OrchestrationApplicationComponent">http://data.europa.eu/dr8/OrchestrationApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Orchestration</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OrchestrationApplicationService">http://data.europa.eu/dr8/OrchestrationApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Orchestration Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OrchestrationEnablersGrouping">http://data.europa.eu/dr8/OrchestrationEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Privacy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PrivacyApplicationComponent">http://data.europa.eu/dr8/PrivacyApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Privacy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PrivacyApplicationService">http://data.europa.eu/dr8/PrivacyApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Privacy Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PrivacyEnablersGrouping">http://data.europa.eu/dr8/PrivacyEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Public Administration Single Window</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationComponent">http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Public Administration Single Window</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationService">http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Registered Electronic Delivery</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/RegisteredElectronicDeliveryApplicationService">http://data.europa.eu/dr8/RegisteredElectronicDeliveryApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Registration</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/RegistrationApplicationService">http://data.europa.eu/dr8/RegistrationApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Request Validation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/RequestValidationApplicationService">http://data.europa.eu/dr8/RequestValidationApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Security Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SecurityEnablersGrouping">http://data.europa.eu/dr8/SecurityEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Self-Soverign Identity</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SelfSovereignIdentityApplicationComponent">http://data.europa.eu/dr8/SelfSovereignIdentityApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Service Discovery and Registry</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ServiceDiscoveryAndRegistryApplicationService">http://data.europa.eu/dr8/ServiceDiscoveryAndRegistryApplicationService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Service Level Agreement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ServiceLevelAgreementContract">http://data.europa.eu/dr8/ServiceLevelAgreementContract</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Service Registry</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ServiceRegistryDataObject">http://data.europa.eu/dr8/ServiceRegistryDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Shared Application Content</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SharedApplicationContentGrouping">http://data.europa.eu/dr8/SharedApplicationContentGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Shared Platform</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SharedPlatformApplicationComponent">http://data.europa.eu/dr8/SharedPlatformApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Technical Agreement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TechnicalAgreementContract">http://data.europa.eu/dr8/TechnicalAgreementContract</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Technical Governance content</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TechnicalGovernanceContentGrouping">http://data.europa.eu/dr8/TechnicalGovernanceContentGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Technical Interoperability Agreement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TechnicalInteroperabilityAgreementContract">http://data.europa.eu/dr8/TechnicalInteroperabilityAgreementContract</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Test Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TestEnablersGrouping">http://data.europa.eu/dr8/TestEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Translation Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TranslationEnablersGrouping">http://data.europa.eu/dr8/TranslationEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Trust Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TrustEnablersGrouping">http://data.europa.eu/dr8/TrustEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Trust Service Provisioning</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TrustServiceProvisioningApplicationComponent">http://data.europa.eu/dr8/TrustServiceProvisioningApplicationComponent</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of User Experience Management Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/UserExperienceManagementEnablersGrouping">http://data.europa.eu/dr8/UserExperienceManagementEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Vocabulary Hub</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/VocabularyHubApplicationService">http://data.europa.eu/dr8/VocabularyHubApplicationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Web Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/WebServiceApplicationInterface">http://data.europa.eu/dr8/WebServiceApplicationInterface</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="technical-view-infrastructure">
+<h2>Technical View — Infrastructure<a class="headerlink" href="#technical-view-infrastructure" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>PURI</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Properties of Access Management Platform</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AccessManagementPlatformSystemSoftware">http://data.europa.eu/dr8/AccessManagementPlatformSystemSoftware</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Access Management Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AccessManagementService">http://data.europa.eu/dr8/AccessManagementService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Agenda Management Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AgendaManagementService">http://data.europa.eu/dr8/AgendaManagementService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of AI Feature Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AIFeatureTechnologyService">http://data.europa.eu/dr8/AIFeatureTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of AI Governance Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AIGovernanceTechnologyService">http://data.europa.eu/dr8/AIGovernanceTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of AI Model Fine-Tuning Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AIModelFineTuningTechnologyService">http://data.europa.eu/dr8/AIModelFineTuningTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of AI Model Inference Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AIModelInferenceTechnologyService">http://data.europa.eu/dr8/AIModelInferenceTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of AI Model Lifecycle Management Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AIModelLifecycleManagementTechnologyService">http://data.europa.eu/dr8/AIModelLifecycleManagementTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of AI Model Monitoring Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AIModelMonitoringTechnologyService">http://data.europa.eu/dr8/AIModelMonitoringTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of AI Model Registry Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AIModelRegistryTechnologyService">http://data.europa.eu/dr8/AIModelRegistryTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of AI Model Training Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AIModelTrainingTechnologyService">http://data.europa.eu/dr8/AIModelTrainingTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Alerting &amp; Notification Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AlertingNotificationServiceTechnologyService">http://data.europa.eu/dr8/AlertingNotificationServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Analytical Query Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AnalyticalQueryServiceTechnologyService">http://data.europa.eu/dr8/AnalyticalQueryServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Analytics Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AnalyticsInfrastructureEnablersGrouping">http://data.europa.eu/dr8/AnalyticsInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of API Contract Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/APIContractService">http://data.europa.eu/dr8/APIContractService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of API Gateway</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/APIGatewayTechnologyService">http://data.europa.eu/dr8/APIGatewayTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of API Manager</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/APIManagerTechnologyService">http://data.europa.eu/dr8/APIManagerTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Application Integration Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ApplicationIntegrationInfrastructureEnablersGrouping">http://data.europa.eu/dr8/ApplicationIntegrationInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Application Server</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ApplicationServerTechnologyService">http://data.europa.eu/dr8/ApplicationServerTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Artifact Repository Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ArtifactRepositoryTechnologyService">http://data.europa.eu/dr8/ArtifactRepositoryTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Artificial Intelligence Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ArtificialIntelligenceInfrastructureEnablersGrouping">http://data.europa.eu/dr8/ArtificialIntelligenceInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Audit Event Collection</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AuditEventCollectionTechnologyService">http://data.europa.eu/dr8/AuditEventCollectionTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Audit Trail &amp; Evidence</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AuditTrailEvidenceTechnologyService">http://data.europa.eu/dr8/AuditTrailEvidenceTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Backup</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/BackupTechnologyService">http://data.europa.eu/dr8/BackupTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Batch Analytics Processing Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/BatchAnalyticsProcessingServiceTechnologyService">http://data.europa.eu/dr8/BatchAnalyticsProcessingServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Block Storage</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/BlockStorageTechnologyService">http://data.europa.eu/dr8/BlockStorageTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Blockchain Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/BlockchainInfrastructureEnablersGrouping">http://data.europa.eu/dr8/BlockchainInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Blockchain Ledger</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/BlockchainLedgerTechnologyService">http://data.europa.eu/dr8/BlockchainLedgerTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Business Process Manager</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/BusinessProcessManagerTechnologyService">http://data.europa.eu/dr8/BusinessProcessManagerTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Caching Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CachingServiceTechnologyService">http://data.europa.eu/dr8/CachingServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Cloud Computing Facility</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CloudComputingFacilityFacility">http://data.europa.eu/dr8/CloudComputingFacilityFacility</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Cloud Private Network</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CloudPrivateNetworkCommunicationNetwork">http://data.europa.eu/dr8/CloudPrivateNetworkCommunicationNetwork</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Compliance Reporting</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ComplianceReportingTechnologyService">http://data.europa.eu/dr8/ComplianceReportingTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Computing Hosting, Networking, and Data Hosting Infrastructure Registry</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ComputingHostingNetworkingAndDataHostingInfrastructureRegistryTechnologyService">http://data.europa.eu/dr8/ComputingHostingNetworkingAndDataHostingInfrastructureRegistryTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Computing Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ComputingInfrastructureEnablersGrouping">http://data.europa.eu/dr8/ComputingInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Consent Management Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ConsentManagementTechnologyService">http://data.europa.eu/dr8/ConsentManagementTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Container</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ContainerSystemSoftware">http://data.europa.eu/dr8/ContainerSystemSoftware</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Container Registry</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ContainerRegistryTechnologyService">http://data.europa.eu/dr8/ContainerRegistryTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Containers Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ContainersInfrastructureEnablersGrouping">http://data.europa.eu/dr8/ContainersInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Containers Manager</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ContainersManagerTechnologyService">http://data.europa.eu/dr8/ContainersManagerTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Containers Orchestrator</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ContainersOrchestratorTechnologyService">http://data.europa.eu/dr8/ContainersOrchestratorTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Content Delivery Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ContentDeliveryInfrastructureEnablersGrouping">http://data.europa.eu/dr8/ContentDeliveryInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Content Delivery Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ContentDeliveryServiceTechnologyService">http://data.europa.eu/dr8/ContentDeliveryServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Content Management Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ContentManagementService">http://data.europa.eu/dr8/ContentManagementService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Lake Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataLakeInfrastructureEnablersGrouping">http://data.europa.eu/dr8/DataLakeInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Lake Storage</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataLakeStorageTechnologyService">http://data.europa.eu/dr8/DataLakeStorageTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Publication Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataPublicationTechnologyService">http://data.europa.eu/dr8/DataPublicationTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Database Cache Manager</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DatabaseCacheManagerTechnologyService">http://data.europa.eu/dr8/DatabaseCacheManagerTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Database Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DatabaseInfrastructureEnablersGrouping">http://data.europa.eu/dr8/DatabaseInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Desktop Computer</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DesktopComputerDevice">http://data.europa.eu/dr8/DesktopComputerDevice</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of DevOps &amp; Platform Engineering Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DevOpsPlatformEngineeringInfrastructureEnablersGrouping">http://data.europa.eu/dr8/DevOpsPlatformEngineeringInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Workplace Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalWorkplaceInfrastructureEnablersGrouping">http://data.europa.eu/dr8/DigitalWorkplaceInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Directory Access Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DirectoryAccessTechnologyService">http://data.europa.eu/dr8/DirectoryAccessTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Directory Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DirectoryService">http://data.europa.eu/dr8/DirectoryService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Distributed Blockchain Network</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DistributedBlockchainNetworkTechnologyService">http://data.europa.eu/dr8/DistributedBlockchainNetworkTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Distributed File System</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DistributedFileSystemTechnologyService">http://data.europa.eu/dr8/DistributedFileSystemTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Domain Name Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DomainNameServiceTechnologyService">http://data.europa.eu/dr8/DomainNameServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of e-Timestamp Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/e-TimestampService">http://data.europa.eu/dr8/e-TimestampService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Edge Computing</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EdgeComputingTechnologyCollaboration">http://data.europa.eu/dr8/EdgeComputingTechnologyCollaboration</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Enterprise Service Bus</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EnterpriseServiceBusTechnologyService">http://data.europa.eu/dr8/EnterpriseServiceBusTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Environment Management Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EnvironmentManagementTechnologyService">http://data.europa.eu/dr8/EnvironmentManagementTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Event Manager</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EventManagerTechnologyService">http://data.europa.eu/dr8/EventManagerTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of External Facility</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ExternalFacilityFacility">http://data.europa.eu/dr8/ExternalFacilityFacility</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of External Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ExternalServiceTechnologyService">http://data.europa.eu/dr8/ExternalServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Facility Location</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/FacilityLocationLocation">http://data.europa.eu/dr8/FacilityLocationLocation</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Federated Identity Provider</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/FederatedIdentityProviderTechnologyService">http://data.europa.eu/dr8/FederatedIdentityProviderTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of File Storage</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/FileStorageTechnologyService">http://data.europa.eu/dr8/FileStorageTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Firewall</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/FirewallTechnologyService">http://data.europa.eu/dr8/FirewallTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Gateway</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/GatewayTechnologyService">http://data.europa.eu/dr8/GatewayTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Graph Database Manager</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/GraphDatabaseManagerTechnologyService">http://data.europa.eu/dr8/GraphDatabaseManagerTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of GraphQL Server</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/GraphQLServerTechnologyService">http://data.europa.eu/dr8/GraphQLServerTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Health &amp; Availability Monitoring</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/HealthAvailabilityMonitoringTechnologyService">http://data.europa.eu/dr8/HealthAvailabilityMonitoringTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Hosting Facility</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/HostingFacilityFacility">http://data.europa.eu/dr8/HostingFacilityFacility</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Hybrid Cloud Facility</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/HybridCloudFacilityFacility">http://data.europa.eu/dr8/HybridCloudFacilityFacility</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of IaaS</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/IaaSTechnologyService">http://data.europa.eu/dr8/IaaSTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Identification Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/IdentificationService">http://data.europa.eu/dr8/IdentificationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Identity and Access Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/IdentityAndAccessInfrastructureEnablersGrouping">http://data.europa.eu/dr8/IdentityAndAccessInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Identity Mapping Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/IdentityMappingServiceTechnologyService">http://data.europa.eu/dr8/IdentityMappingServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Identity Provider</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/IdentityProviderTechnologyService">http://data.europa.eu/dr8/IdentityProviderTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Infrastructure Provisioning Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InfrastructureProvisioningTechnologyService">http://data.europa.eu/dr8/InfrastructureProvisioningTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Inmutable Database Manager</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InmutableDatabaseManagerTechnologyService">http://data.europa.eu/dr8/InmutableDatabaseManagerTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Integrity Verification Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/IntegrityVerificationService">http://data.europa.eu/dr8/IntegrityVerificationService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Load Balancer</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LoadBalancerTechnologyService">http://data.europa.eu/dr8/LoadBalancerTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Local Area Network</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LocalAreaNetworkCommunicationNetwork">http://data.europa.eu/dr8/LocalAreaNetworkCommunicationNetwork</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Log Analytics &amp; Search</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LogAnalyticsSearchTechnologyService">http://data.europa.eu/dr8/LogAnalyticsSearchTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Log Collection Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LogCollectionServiceTechnologyService">http://data.europa.eu/dr8/LogCollectionServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Log Storage &amp; Retention</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LogStorageRetentionTechnologyService">http://data.europa.eu/dr8/LogStorageRetentionTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Management Console</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ManagementConsoleTechnologyService">http://data.europa.eu/dr8/ManagementConsoleTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Management Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ManagementInfrastructureEnablersGrouping">http://data.europa.eu/dr8/ManagementInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Message Broker</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MessageBrokerTechnologyService">http://data.europa.eu/dr8/MessageBrokerTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Message Transformation &amp; Mapping Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MessageTransformationMappingServiceTechnologyService">http://data.europa.eu/dr8/MessageTransformationMappingServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Networking Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/NetworkingInfrastructureEnablersGrouping">http://data.europa.eu/dr8/NetworkingInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of NoSQL Database Manager</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/NoSQLDatabaseManagerTechnologyService">http://data.europa.eu/dr8/NoSQLDatabaseManagerTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Object-Oriented Database Manager</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Object-OrientedDatabaseManagerTechnologyService">http://data.europa.eu/dr8/Object-OrientedDatabaseManagerTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Observability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ObservabilityApplicationComponent">http://data.europa.eu/dr8/ObservabilityApplicationComponent</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of On Premise Facility</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OnPremiseFacilityFacility">http://data.europa.eu/dr8/OnPremiseFacilityFacility</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Operating System Platform</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OperatingSystemPlatform">http://data.europa.eu/dr8/OperatingSystemPlatform</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Orchestration Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OrchestrationInfrastructureEnablersGrouping">http://data.europa.eu/dr8/OrchestrationInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of PaaS</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PaaSTechnologyService">http://data.europa.eu/dr8/PaaSTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Physical Computing Infrastructure</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PhysicalComputingInfrastructureEquipment">http://data.europa.eu/dr8/PhysicalComputingInfrastructureEquipment</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Physical Network Infrastructure</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PhysicalNetworkInfrastructureEquipment">http://data.europa.eu/dr8/PhysicalNetworkInfrastructureEquipment</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Physical Power Supply Infrastructure</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PhysicalPowerSupplyInfrastructureEquipment">http://data.europa.eu/dr8/PhysicalPowerSupplyInfrastructureEquipment</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Physical Security Infrastructure</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PhysicalSecurityInfrastructureEquipment">http://data.europa.eu/dr8/PhysicalSecurityInfrastructureEquipment</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Pipeline Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PipelineTechnologyService">http://data.europa.eu/dr8/PipelineTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of PKI Certificate Manager</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PKICertificateManagerTechnologyService">http://data.europa.eu/dr8/PKICertificateManagerTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Private Cloud Computing Facility</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PrivateCloudComputingFacilityFacility">http://data.europa.eu/dr8/PrivateCloudComputingFacilityFacility</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Private Network</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PrivateNetworkCommunicationNetwork">http://data.europa.eu/dr8/PrivateNetworkCommunicationNetwork</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Private Subnetwork</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PrivateSubnetworkCommunicationNetwork">http://data.europa.eu/dr8/PrivateSubnetworkCommunicationNetwork</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Protocol Mediation Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ProtocolMediationServiceTechnologyService">http://data.europa.eu/dr8/ProtocolMediationServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Public Cloud Computing Facility</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PublicCloudComputingFacilityFacility">http://data.europa.eu/dr8/PublicCloudComputingFacilityFacility</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Public Network</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PublicNetworkCommunicationNetwork">http://data.europa.eu/dr8/PublicNetworkCommunicationNetwork</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Recovery</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/RecoveryTechnologyService">http://data.europa.eu/dr8/RecoveryTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Relational Database Manager</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/RelationalDatabaseManagerTechnologyService">http://data.europa.eu/dr8/RelationalDatabaseManagerTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Release Management Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ReleaseManagementTechnologyService">http://data.europa.eu/dr8/ReleaseManagementTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Remote Desktop</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/RemoteDesktopTechnologyService">http://data.europa.eu/dr8/RemoteDesktopTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Remote Desktop Client</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/RemoteDesktopClientDevice">http://data.europa.eu/dr8/RemoteDesktopClientDevice</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Reporting and Dashboarding</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ReportingAndDashboardingTechnologyService">http://data.europa.eu/dr8/ReportingAndDashboardingTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Request Validation Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/RequestValidationTechnologyService">http://data.europa.eu/dr8/RequestValidationTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Router</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/RouterTechnologyService">http://data.europa.eu/dr8/RouterTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Saas</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SaasTechnologyService">http://data.europa.eu/dr8/SaasTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Schedule Management Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ScheduleManagementService">http://data.europa.eu/dr8/ScheduleManagementService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Secrets &amp; Key Management Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SecretsAndKeyManagementTechnologyService">http://data.europa.eu/dr8/SecretsAndKeyManagementTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Secure Public Network</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SecurePublicNetworkCommunicationNetwork">http://data.europa.eu/dr8/SecurePublicNetworkCommunicationNetwork</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Sensor</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SensorDevice">http://data.europa.eu/dr8/SensorDevice</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Server</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ServerNode">http://data.europa.eu/dr8/ServerNode</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Serverless Orchestrator</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ServerlessOrchestratorTechnologyService">http://data.europa.eu/dr8/ServerlessOrchestratorTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Service Registry Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ServiceRegistryTechnologyService">http://data.europa.eu/dr8/ServiceRegistryTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Shared Infrastructure Content</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SharedInfrastructureContentGrouping">http://data.europa.eu/dr8/SharedInfrastructureContentGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Smart Device</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SmartDeviceDevice">http://data.europa.eu/dr8/SmartDeviceDevice</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Source Code Analysis Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SourceCodeAnalysisTechnologyService">http://data.europa.eu/dr8/SourceCodeAnalysisTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Source Code Management Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SourceCodeManagementTechnologyService">http://data.europa.eu/dr8/SourceCodeManagementTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Storage Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/StorageInfrastructureEnablersGrouping">http://data.europa.eu/dr8/StorageInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Streaming Analytics Processing Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/StreamingAnalyticsProcessingServiceTechnologyService">http://data.europa.eu/dr8/StreamingAnalyticsProcessingServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Streaming Server</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/StreamingServerTechnologyService">http://data.europa.eu/dr8/StreamingServerTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Technical Infrastructure Functional content</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TechnicalInfrastructureFunctionalContentGrouping">http://data.europa.eu/dr8/TechnicalInfrastructureFunctionalContentGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Technology Interface</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TechnologyInterfaceTechnologyInterface">http://data.europa.eu/dr8/TechnologyInterfaceTechnologyInterface</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Telemetry</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TelemetryTechnologyService">http://data.europa.eu/dr8/TelemetryTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Token Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TokenServiceTechnologyService">http://data.europa.eu/dr8/TokenServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Traffic Protection Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TrafficProtectionServiceTechnologyService">http://data.europa.eu/dr8/TrafficProtectionServiceTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Trust Infrastructure Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TrustInfrastructureEnablersGrouping">http://data.europa.eu/dr8/TrustInfrastructureEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Virtual Machine</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/VirtualMachineNode">http://data.europa.eu/dr8/VirtualMachineNode</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Virtual Private Network</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/VirtualPrivateNetworkTechnologyService">http://data.europa.eu/dr8/VirtualPrivateNetworkTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Vulnerability Scanning Service</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/VulnerabilityScanningTechnologyService">http://data.europa.eu/dr8/VulnerabilityScanningTechnologyService</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Web Server</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/WebServerTechnologyService">http://data.europa.eu/dr8/WebServerTechnologyService</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Wide Area Networking</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/WideAreaNetworkingGrouping">http://data.europa.eu/dr8/WideAreaNetworkingGrouping</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="unclassified-non-lost-view">
+<h2>Unclassified — Non-LOST View<a class="headerlink" href="#unclassified-non-lost-view" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>PURI</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Properties of Access Control Policy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AccessControlPolicyGoal">http://data.europa.eu/dr8/AccessControlPolicyGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Accessibility</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AccessibilityGoal">http://data.europa.eu/dr8/AccessibilityGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Accessibility</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AccessibilityRequirement">http://data.europa.eu/dr8/AccessibilityRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Accountability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AccountabilityRequirement">http://data.europa.eu/dr8/AccountabilityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Adaptability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AdaptabilityGoal">http://data.europa.eu/dr8/AdaptabilityGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Adequacy Recognition</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AdequacyRecognitionGoal">http://data.europa.eu/dr8/AdequacyRecognitionGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Agility</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AgilityRequirement">http://data.europa.eu/dr8/AgilityRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Agility Requirements Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AgilityRequirementsCatalogueGrouping">http://data.europa.eu/dr8/AgilityRequirementsCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Alerts and monitoring</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AlertsAndMonitoringRequirement">http://data.europa.eu/dr8/AlertsAndMonitoringRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of API contract</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/APIContractRequirement">http://data.europa.eu/dr8/APIContractRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of API Design</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/APIDesignGoal">http://data.europa.eu/dr8/APIDesignGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Application of Service Monitoring Tools</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ApplicationOfServiceMonitoringToolsGoal">http://data.europa.eu/dr8/ApplicationOfServiceMonitoringToolsGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Application of Service Monitoring Tools Configuration</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ApplicationOfServiceMonitoringToolsConfigurationGoal">http://data.europa.eu/dr8/ApplicationOfServiceMonitoringToolsConfigurationGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Archivability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ArchivabilityRequirement">http://data.europa.eu/dr8/ArchivabilityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Asynchronous Procesing</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AsynchronousProcesingGoal">http://data.europa.eu/dr8/AsynchronousProcesingGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Auditability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AuditabilityRequirement">http://data.europa.eu/dr8/AuditabilityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Authentication</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AuthenticationRequirement">http://data.europa.eu/dr8/AuthenticationRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Authentication Mechanism</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AuthenticationMechanismGoal">http://data.europa.eu/dr8/AuthenticationMechanismGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Authenticity</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AuthenticityRequirement">http://data.europa.eu/dr8/AuthenticityRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Authorization</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AuthorizationRequirement">http://data.europa.eu/dr8/AuthorizationRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Availability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AvailabilityRequirement">http://data.europa.eu/dr8/AvailabilityRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Availability Requirements Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AvailabilityRequirementsCatalogueGrouping">http://data.europa.eu/dr8/AvailabilityRequirementsCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Big-Data Architecture</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Big-DataArchitectureGoal">http://data.europa.eu/dr8/Big-DataArchitectureGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Caching Strategy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CachingStrategyGoal">http://data.europa.eu/dr8/CachingStrategyGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Cloud-Native Architecture</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Cloud-NativeArchitectureGoal">http://data.europa.eu/dr8/Cloud-NativeArchitectureGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Coding Standards</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CodingStandardsGoal">http://data.europa.eu/dr8/CodingStandardsGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Compatibility</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CompatibilityRequirement">http://data.europa.eu/dr8/CompatibilityRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Compliance</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ComplianceRequirement">http://data.europa.eu/dr8/ComplianceRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Compliance Monitoring and Auditing</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ComplianceMonitoringAndAuditingGoal">http://data.europa.eu/dr8/ComplianceMonitoringAndAuditingGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Compliance with Data Privacy Regulations</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ComplianceWithDataPrivacyRegulationsGoal">http://data.europa.eu/dr8/ComplianceWithDataPrivacyRegulationsGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Confidentiality</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ConfidentialityRequirement">http://data.europa.eu/dr8/ConfidentialityRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Configurability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ConfigurabilityRequirement">http://data.europa.eu/dr8/ConfigurabilityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Consistency</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ConsistencyRequirement">http://data.europa.eu/dr8/ConsistencyRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Containerization and Orchestration</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ContainerizationAndOrchestrationGoal">http://data.europa.eu/dr8/ContainerizationAndOrchestrationGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Content Delivery Network</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ContentDeliveryNetworkGoal">http://data.europa.eu/dr8/ContentDeliveryNetworkGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Continous Security Monitoring</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ContinousSecurityMonitoringGoal">http://data.europa.eu/dr8/ContinousSecurityMonitoringGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Cross-Border Data Exchange</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Cross-BorderDataExchangeGoal">http://data.europa.eu/dr8/Cross-BorderDataExchangeGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Cross-Border Identification Business</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Cross-BorderIdentificationBusinessGoal">http://data.europa.eu/dr8/Cross-BorderIdentificationBusinessGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Cross-Border Semantic Data Management</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Cross-BorderSemanticDataManagementGoal">http://data.europa.eu/dr8/Cross-BorderSemanticDataManagementGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Cross-border User Authentication Operations</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Cross-borderUserAuthenticationOperationsGoal">http://data.europa.eu/dr8/Cross-borderUserAuthenticationOperationsGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Exchange Deployment</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataExchangeDeploymentGoal">http://data.europa.eu/dr8/DataExchangeDeploymentGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Exchanger Operations</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataExchangerOperationsGoal">http://data.europa.eu/dr8/DataExchangerOperationsGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Notification Deployment</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataNotificationDeploymentGoal">http://data.europa.eu/dr8/DataNotificationDeploymentGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Protection Measures</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataProtectionMeasuresGoal">http://data.europa.eu/dr8/DataProtectionMeasuresGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Subscription Capability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataSubscriptionCapabilityGoal">http://data.europa.eu/dr8/DataSubscriptionCapabilityGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Subscription Deployment</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataSubscriptionDeploymentGoal">http://data.europa.eu/dr8/DataSubscriptionDeploymentGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Database Schema Design</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DatabaseSchemaDesignGoal">http://data.europa.eu/dr8/DatabaseSchemaDesignGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Database Sharding</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DatabaseShardingGoal">http://data.europa.eu/dr8/DatabaseShardingGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Deployability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DeployabilityRequirement">http://data.europa.eu/dr8/DeployabilityRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Deployment stamps</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DeploymentStampsRequirement">http://data.europa.eu/dr8/DeploymentStampsRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Detail-Level Requirement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Detail-LevelRequirementRequirement">http://data.europa.eu/dr8/Detail-LevelRequirementRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Detail-Level RequirementLeftover</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Detail-LevelRequirementLeftoverRequirement">http://data.europa.eu/dr8/Detail-LevelRequirementLeftoverRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Public Service Governance Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/egovera/DigitalPublicServiceGovernancePrincipleCatalogueGrouping">http://data.europa.eu/dr8/egovera/DigitalPublicServiceGovernancePrincipleCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Public Service Implementation Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/egovera/DigitalPublicServiceImplementationPrincipleCatalogueGrouping">http://data.europa.eu/dr8/egovera/DigitalPublicServiceImplementationPrincipleCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Public Service Strategy (Public Policy Cycle) Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/egovera/DigitalPublicServiceStrategyPrincipleCatalogueGrouping">http://data.europa.eu/dr8/egovera/DigitalPublicServiceStrategyPrincipleCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Solution Architecture Decision</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionArchitectureDecisionGoal">http://data.europa.eu/dr8/DigitalSolutionArchitectureDecisionGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Solution Architecture Decision Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionArchitectureDecisionCatalogueGrouping">http://data.europa.eu/dr8/DigitalSolutionArchitectureDecisionCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Solution Assumption</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionAssumptionConstraint">http://data.europa.eu/dr8/DigitalSolutionAssumptionConstraint</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Solution Business Architecture Decision Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionBusinessArchitectureDecisionCatalogueGrouping">http://data.europa.eu/dr8/DigitalSolutionBusinessArchitectureDecisionCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Solution Constraint</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionConstraintConstraint">http://data.europa.eu/dr8/DigitalSolutionConstraintConstraint</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Solution Functional Requirement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionFunctionalRequirementRequirement">http://data.europa.eu/dr8/DigitalSolutionFunctionalRequirementRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Solution High Availability and Resilience Architecture Decision Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionHighAvailabilityAndResilienceArchitectureDecisionCatalogueGrouping">http://data.europa.eu/dr8/DigitalSolutionHighAvailabilityAndResilienceArchitectureDecisionCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Solution Maintenability &amp; Quality Architecture Decision Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionMaintenabilityQualityArchitectureDecisionCatalogueGrouping">http://data.europa.eu/dr8/DigitalSolutionMaintenabilityQualityArchitectureDecisionCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Solution Non-Functional Requirement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionNon-FunctionalRequirementRequirement">http://data.europa.eu/dr8/DigitalSolutionNon-FunctionalRequirementRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Solution Non-Functional Requirements Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionNon-FunctionalRequirementsCatalogueGrouping">http://data.europa.eu/dr8/DigitalSolutionNon-FunctionalRequirementsCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Solution Portability and Scalability Architecture Decision Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionPortabilityAndScalabilityArchitectureDecisionCatalogueGrouping">http://data.europa.eu/dr8/DigitalSolutionPortabilityAndScalabilityArchitectureDecisionCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Solution Scalability Architecture Decision Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionScalabilityArchitectureDecisionCatalogueGrouping">http://data.europa.eu/dr8/DigitalSolutionScalabilityArchitectureDecisionCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Solution Security, Privacy and Compliance Architecture Decision Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionSecurityPrivacyAndComplianceArchitectureDecisionCatalogueGrouping">http://data.europa.eu/dr8/DigitalSolutionSecurityPrivacyAndComplianceArchitectureDecisionCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Digital Solution Technical Architecture Decision Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionTechnicalArchitectureDecisionCatalogueGrouping">http://data.europa.eu/dr8/DigitalSolutionTechnicalArchitectureDecisionCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Digital Solution Usability Architecture Decision Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DigitalSolutionUsabilityArchitectureDecisionCatalogueGrouping">http://data.europa.eu/dr8/DigitalSolutionUsabilityArchitectureDecisionCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Disaster recovery</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DisasterRecoveryRequirement">http://data.europa.eu/dr8/DisasterRecoveryRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Disaster Recovery Plan</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DisasterRecoveryPlanGoal">http://data.europa.eu/dr8/DisasterRecoveryPlanGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Documentation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DocumentationGoal">http://data.europa.eu/dr8/DocumentationGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Durability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DurabilityRequirement">http://data.europa.eu/dr8/DurabilityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Durability Requirements Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DurabilityRequirementsCatalogueGrouping">http://data.europa.eu/dr8/DurabilityRequirementsCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Dynamic Location of Data provider</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DynamicLocationOfDataProviderGoal">http://data.europa.eu/dr8/DynamicLocationOfDataProviderGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of EIF Interoperability Level</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EIFInteroperabilityLevelBusinessObject">http://data.europa.eu/dr8/EIFInteroperabilityLevelBusinessObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of EIF Principle</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EIFPrinciplePrinciple">http://data.europa.eu/dr8/EIFPrinciplePrinciple</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of EIRA Architecture Building Block</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EIRAArchitectureBuildingBlockRequirement">http://data.europa.eu/dr8/EIRAArchitectureBuildingBlockRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of EIRA Dimension</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EIRADimensionConstraint">http://data.europa.eu/dr8/EIRADimensionConstraint</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of EIRA Library of Interoperability Specifications</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EIRALibraryOfInteroperabilitySpecificationsContract">http://data.europa.eu/dr8/EIRALibraryOfInteroperabilitySpecificationsContract</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of EIRA View</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EIRAViewRequirement">http://data.europa.eu/dr8/EIRAViewRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of EIRA Viewpoint</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EIRAViewpointRequirement">http://data.europa.eu/dr8/EIRAViewpointRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Elastic Cloud Infrastructure</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ElasticCloudInfrastructureGoal">http://data.europa.eu/dr8/ElasticCloudInfrastructureGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Elasticity</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ElasticityRequirement">http://data.europa.eu/dr8/ElasticityRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Encryption Standards</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EncryptionStandardsGoal">http://data.europa.eu/dr8/EncryptionStandardsGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Enterprise Architecture Framework (EAF) alignment guidelines</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EnterpriseArchitectureFrameworkAlignmentGuidelinesGrouping">http://data.europa.eu/dr8/EnterpriseArchitectureFrameworkAlignmentGuidelinesGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Event-Driven Architecture</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Event-DrivenArchitectureGoal">http://data.europa.eu/dr8/Event-DrivenArchitectureGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Extensibility</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ExtensibilityRequirement">http://data.europa.eu/dr8/ExtensibilityRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Extensibility Requirements Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ExtensibilityRequirementsCatalogueGrouping">http://data.europa.eu/dr8/ExtensibilityRequirementsCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Fault tolerance</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/FaultToleranceRequirement">http://data.europa.eu/dr8/FaultToleranceRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Geodes</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/GeodesRequirement">http://data.europa.eu/dr8/GeodesRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Horizontal Scaling</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/HorizontalScalingGoal">http://data.europa.eu/dr8/HorizontalScalingGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Installability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InstallabilityGoal">http://data.europa.eu/dr8/InstallabilityGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Integration Thrid-Party Systems</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/IntegrationThrid-PartySystemsGoal">http://data.europa.eu/dr8/IntegrationThrid-PartySystemsGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Integrity</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/IntegrityRequirement">http://data.europa.eu/dr8/IntegrityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Internazionalization and Localization</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InternazionalizationAndLocalizationGoal">http://data.europa.eu/dr8/InternazionalizationAndLocalizationGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Interoperability Requirement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InteroperabilityRequirementRequirement">http://data.europa.eu/dr8/InteroperabilityRequirementRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Interoperable Solution</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InteroperableDigitalSolutionArtifact">http://data.europa.eu/dr8/InteroperableDigitalSolutionArtifact</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Key Interoperability Enabler</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/KeyInteroperabilityEnablerRequirement">http://data.europa.eu/dr8/KeyInteroperabilityEnablerRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Latency</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LatencyRequirement">http://data.europa.eu/dr8/LatencyRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Learnability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LearnabilityRequirement">http://data.europa.eu/dr8/LearnabilityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Learning</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LearningGoal">http://data.europa.eu/dr8/LearningGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Legality</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LegalityRequirement">http://data.europa.eu/dr8/LegalityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Load Balancing Strategy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LoadBalancingStrategyGoal">http://data.europa.eu/dr8/LoadBalancingStrategyGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Logging</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/LoggingRequirement">http://data.europa.eu/dr8/LoggingRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Maintainability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MaintainabilityRequirement">http://data.europa.eu/dr8/MaintainabilityRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Managing Self-Description Schemas in the Federated Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ManagingSelf-DescriptionSchemasInTheFederatedCatalogueGoal">http://data.europa.eu/dr8/ManagingSelf-DescriptionSchemasInTheFederatedCatalogueGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Microservice Architecture</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MicroserviceArchitectureGoal">http://data.europa.eu/dr8/MicroserviceArchitectureGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Modularity and reusability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ModularityAndReusabilityRequirement">http://data.europa.eu/dr8/ModularityAndReusabilityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Monetization Strategy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MonetizationStrategyGoal">http://data.europa.eu/dr8/MonetizationStrategyGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Monolithic Architecture</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/MonolithicArchitectureGoal">http://data.europa.eu/dr8/MonolithicArchitectureGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Network Optimization</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/NetworkOptimizationGoal">http://data.europa.eu/dr8/NetworkOptimizationGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Nonrepudiation</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/NonrepudiationRequirement">http://data.europa.eu/dr8/NonrepudiationRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Not Implemented Architecture Principles Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/egovera/NotImplementedArchitecturePrinciplesCatalogueGrouping">http://data.europa.eu/dr8/egovera/NotImplementedArchitecturePrinciplesCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Observability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ObservabilityRequirement">http://data.europa.eu/dr8/ObservabilityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Observability Requirements Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ObservabilityRequirementsCatalogueGrouping">http://data.europa.eu/dr8/ObservabilityRequirementsCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Operability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/OperabilityGoal">http://data.europa.eu/dr8/OperabilityGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Performance Testing and Tuning</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PerformanceTestingAndTuningGoal">http://data.europa.eu/dr8/PerformanceTestingAndTuningGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Pluggability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PluggabilityRequirement">http://data.europa.eu/dr8/PluggabilityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Privacy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/PrivacyRequirement">http://data.europa.eu/dr8/PrivacyRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Problem Statement</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ProblemStatementGrouping">http://data.europa.eu/dr8/ProblemStatementGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Provide a Service Catalog</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ProvideAServiceCatalogGoal">http://data.europa.eu/dr8/ProvideAServiceCatalogGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Provisioning Capability Publication</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ProvisioningCapabilityPublicationGoal">http://data.europa.eu/dr8/ProvisioningCapabilityPublicationGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Recoverability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/RecoverabilityRequirement">http://data.europa.eu/dr8/RecoverabilityRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Replaceability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ReplaceabilityGoal">http://data.europa.eu/dr8/ReplaceabilityGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Replication</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ReplicationRequirement">http://data.europa.eu/dr8/ReplicationRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Resiliency</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ResiliencyRequirement">http://data.europa.eu/dr8/ResiliencyRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Resiliency Requirements Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ResiliencyRequirementsCatalogueGrouping">http://data.europa.eu/dr8/ResiliencyRequirementsCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Retention and Data Deletion</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/RetentionAndDataDeletionGoal">http://data.europa.eu/dr8/RetentionAndDataDeletionGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Role-Based Access Control</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Role-BasedAccessControlGoal">http://data.europa.eu/dr8/Role-BasedAccessControlGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Scalability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ScalabilityRequirement">http://data.europa.eu/dr8/ScalabilityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Scalability for Growth</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ScalabilityForGrowthGoal">http://data.europa.eu/dr8/ScalabilityForGrowthGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Scalability Requirements Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ScalabilityRequirementsCatalogueGrouping">http://data.europa.eu/dr8/ScalabilityRequirementsCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Secure Communications</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SecureCommunicationsGoal">http://data.europa.eu/dr8/SecureCommunicationsGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Security</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SecurityRequirement">http://data.europa.eu/dr8/SecurityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Security Incident Response</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SecurityIncidentResponseGoal">http://data.europa.eu/dr8/SecurityIncidentResponseGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Security Incident Response Plan</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SecurityIncidentResponsePlanGoal">http://data.europa.eu/dr8/SecurityIncidentResponsePlanGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Security Requirements Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SecurityRequirementsCatalogueGrouping">http://data.europa.eu/dr8/SecurityRequirementsCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Security Testing</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SecurityTestingGoal">http://data.europa.eu/dr8/SecurityTestingGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Semantic Capability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SemanticCapabilityGoal">http://data.europa.eu/dr8/SemanticCapabilityGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Serveless Architecture</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/ServelessArchitectureGoal">http://data.europa.eu/dr8/ServelessArchitectureGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Service-Oriented Architecture</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/Service-OrientedArchitectureGoal">http://data.europa.eu/dr8/Service-OrientedArchitectureGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Solution Specification</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/SolutionSpecificationDataObject">http://data.europa.eu/dr8/SolutionSpecificationDataObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Technology Stack Selection</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TechnologyStackSelectionGoal">http://data.europa.eu/dr8/TechnologyStackSelectionGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Tiered levels of support</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TieredLevelsOfSupportRequirement">http://data.europa.eu/dr8/TieredLevelsOfSupportRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Traffic pattern</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/TrafficPatternRequirement">http://data.europa.eu/dr8/TrafficPatternRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Usability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/UsabilityRequirement">http://data.europa.eu/dr8/UsabilityRequirement</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Usability Requirements Catalogue</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/UsabilityRequirementsCatalogueGrouping">http://data.europa.eu/dr8/UsabilityRequirementsCatalogueGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Use GNU GPL as License</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/UseGNUGPLAsLicenseGoal">http://data.europa.eu/dr8/UseGNUGPLAsLicenseGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of User Interface</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/UserInterfaceGoal">http://data.europa.eu/dr8/UserInterfaceGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Version Control</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/VersionControlGoal">http://data.europa.eu/dr8/VersionControlGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Vertical Scaling</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/VerticalScalingGoal">http://data.europa.eu/dr8/VerticalScalingGoal</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="unclassified-no-view-assigned">
+<h2>Unclassified — No View Assigned<a class="headerlink" href="#unclassified-no-view-assigned" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>PURI</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Properties of Achieve Interoperability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AchieveInteroperabilityGoal">http://data.europa.eu/dr8/AchieveInteroperabilityGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Achieve Legal Interoperability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AchieveLegalInteroperabilityGoal">http://data.europa.eu/dr8/AchieveLegalInteroperabilityGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Achieve Organisational Interoperability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AchieveOrganisationalInteroperabilityGoal">http://data.europa.eu/dr8/AchieveOrganisationalInteroperabilityGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Achieve Semantic Interoperability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AchieveSemanticInteroperabilityGoal">http://data.europa.eu/dr8/AchieveSemanticInteroperabilityGoal</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Achieve Technical Interoperability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AchieveTechnicalInteroperabilityGoal">http://data.europa.eu/dr8/AchieveTechnicalInteroperabilityGoal</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Analytical Capacity</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/AnalyticalCapacityValue">http://data.europa.eu/dr8/AnalyticalCapacityValue</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Capability</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CapabilityRequirement">http://data.europa.eu/dr8/CapabilityRequirement</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Coordination Capacity</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CoordinationCapacityValue">http://data.europa.eu/dr8/CoordinationCapacityValue</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Creation of Interoperable European Solutions</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/CreationOfInteroperableEuropeanSolutionsDriver">http://data.europa.eu/dr8/CreationOfInteroperableEuropeanSolutionsDriver</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Data Contract</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataContractDataObject">http://data.europa.eu/dr8/DataContractDataObject</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Data Policy</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DataPolicyDataObject">http://data.europa.eu/dr8/DataPolicyDataObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Delivery Capacity</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/DeliveryCapacityValue">http://data.europa.eu/dr8/DeliveryCapacityValue</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of EIRA Ontology</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EIRAOntologyMeaning">http://data.europa.eu/dr8/EIRAOntologyMeaning</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of European Interoperability Reference Architecture</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/EuropeanInteroperabilityReferenceArchitectureAssessment">http://data.europa.eu/dr8/EuropeanInteroperabilityReferenceArchitectureAssessment</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Interoperability Dimension</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InteroperabilityDimensionBusinessObject">http://data.europa.eu/dr8/InteroperabilityDimensionBusinessObject</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Interoperable European Solution</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/InteroperableEuropeanSolutionOutcome">http://data.europa.eu/dr8/InteroperableEuropeanSolutionOutcome</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Key Behavioural IoP Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/KeyBehaviouralIoPEnablersAssessment">http://data.europa.eu/dr8/KeyBehaviouralIoPEnablersAssessment</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Key Governance IoP Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/KeyGovernanceIoPEnablersAssessment">http://data.europa.eu/dr8/KeyGovernanceIoPEnablersAssessment</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Key Interoperability Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/KeyInteroperabilityEnablersGrouping">http://data.europa.eu/dr8/KeyInteroperabilityEnablersGrouping</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Properties of Key Structural IoP Enablers</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/KeyStructuralIoPEnablersAssessment">http://data.europa.eu/dr8/KeyStructuralIoPEnablersAssessment</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Properties of Regulatory Capacity</p></td>
+<td><p><a class="reference external" href="http://data.europa.eu/dr8/RegulatoryCapacityValue">http://data.europa.eu/dr8/RegulatoryCapacityValue</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Copyright 2026, European Commission, DIGIT.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

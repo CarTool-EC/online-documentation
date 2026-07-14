@@ -1,2 +1,5 @@
-sphinx
+Sphinx
 sphinx-rtd-theme
+sphinx-design
+myst-parser
+sphinx-copybutton

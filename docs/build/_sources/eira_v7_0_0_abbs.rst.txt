@@ -1,0 +1,1681 @@
+.. list-table:: EIRA v7.0.0 — Architecture Building Blocks
+   :header-rows: 1
+   :widths: 30 35 35
+
+   * - View
+     - Name
+     - PURI
+   * - Legal
+     - Properties of Binding Instrument
+     - http://data.europa.eu/dr8/BindingInstrumentRequirement
+   * - Legal
+     - Properties of Delegation of Powers Provisioning Digital Public Services
+     - http://data.europa.eu/dr8/DelegationOfPowersProvisioningDigitalPublicServicesAssessment
+   * - Legal
+     - Properties of Digital-ready Policymaking
+     - http://data.europa.eu/dr8/Digital-readyPolicymakingBusinessProcess
+   * - Legal
+     - Properties of European Legal Act
+     - http://data.europa.eu/dr8/EuropeanLegalActRequirement
+   * - Legal
+     - Properties of European Legal Interoperability Agreeement
+     - http://data.europa.eu/dr8/EuropeanLegalInteroperabilityAgreementContract
+   * - Legal
+     - Properties of Granularity of Legal Requirements
+     - http://data.europa.eu/dr8/GranularityOfLegalRequirementsAssessment
+   * - Legal
+     - Properties of Legal Act
+     - http://data.europa.eu/dr8/LegalActRequirement
+   * - Legal
+     - Properties of Legal Act Representation
+     - http://data.europa.eu/dr8/LegalActRepresentationRepresentation
+   * - Legal
+     - Properties of Legal Agreement
+     - http://data.europa.eu/dr8/LegalAgreementContract
+   * - Legal
+     - Properties of Legal Clauses
+     - http://data.europa.eu/dr8/LegalClausesRequirement
+   * - Legal
+     - Properties of Legal Interoperability Agreement
+     - http://data.europa.eu/dr8/LegalInteroperabilityAgreementContract
+   * - Legal
+     - Properties of Legislation Catalogue
+     - http://data.europa.eu/dr8/LegislationCatalogueBusinessObject
+   * - Legal
+     - Properties of Legislation on Data Information and Knowledge Exchange
+     - http://data.europa.eu/dr8/LegislationOnDataInformationAndKnowledgeExchangeBusinessObject
+   * - Legal
+     - Properties of Legislation on Digital Public Services
+     - http://data.europa.eu/dr8/LegislationOnDigitalPublicServicesBusinessObject
+   * - Legal
+     - Properties of National Legal Act
+     - http://data.europa.eu/dr8/NationalLegalActRequirement
+   * - Legal
+     - Properties of National Legal Interoperability Agreement
+     - http://data.europa.eu/dr8/NationalLegalInteroperabilityAgreementContract
+   * - Legal
+     - Properties of Non-binding Instrument
+     - http://data.europa.eu/dr8/Non-bindingInstrumentRequirement
+   * - Legal
+     - Properties of Public Policy
+     - http://data.europa.eu/dr8/PublicPolicyCourseOfAction
+   * - Legal
+     - Properties of Public Policy Constraint
+     - http://data.europa.eu/dr8/PublicPolicyConstraintConstraint
+   * - Legal
+     - Properties of Public Policy Context
+     - http://data.europa.eu/dr8/PublicPolicyContextConstraint
+   * - Legal
+     - Properties of Public Policy Objective
+     - http://data.europa.eu/dr8/PublicPolicyObjectiveGoal
+   * - Legal
+     - Properties of Shared Legal Content
+     - http://data.europa.eu/dr8/SharedLegalContentGrouping
+   * - Organisational
+     - Properties of Adaptive Configuration
+     - http://data.europa.eu/dr8/AdaptiveConfigurationBusinessInterface
+   * - Organisational
+     - Properties of Agent
+     - http://data.europa.eu/dr8/AgentBusinessRole
+   * - Organisational
+     - Properties of Agreement of the Use on Common Infrastructure
+     - http://data.europa.eu/dr8/AgreementOfTheUseOnCommonInfrastructureContract
+   * - Organisational
+     - Properties of Agreement on Data Sharing
+     - http://data.europa.eu/dr8/AgreementOnDataSharingContract
+   * - Organisational
+     - Properties of Agreement on Interoperability Security
+     - http://data.europa.eu/dr8/AgreementOnInteroperabilitySecurityContract
+   * - Organisational
+     - Properties of Agreement on Privacy
+     - http://data.europa.eu/dr8/AgreementOnPrivacyContract
+   * - Organisational
+     - Properties of Agreement on Provision of Digital Public Services
+     - http://data.europa.eu/dr8/AgreementOnProvisionOfDigitalPublicServicesContract
+   * - Organisational, Semantic, Technical - Application, Technical - Infrastructure
+     - Properties of Architecture Principle
+     - http://data.europa.eu/dr8/ArchitecturePrinciplePrinciple
+   * - Organisational
+     - Properties of Business
+     - http://data.europa.eu/dr8/BusinessStakeholder
+   * - Organisational
+     - Properties of Data Holder
+     - http://data.europa.eu/dr8/DataHolderBusinessRole
+   * - Organisational
+     - Properties of Data Owner
+     - http://data.europa.eu/dr8/DataOwnerBusinessRole
+   * - Organisational
+     - Properties of Desktop App
+     - http://data.europa.eu/dr8/DesktopAppBusinessInterface
+   * - Organisational
+     - Properties of Digital Agenda
+     - http://data.europa.eu/dr8/DigitalAgendaGoal
+   * - Organisational
+     - Properties of Digital Business Capability
+     - http://data.europa.eu/dr8/DigitalBusinessCapabilityCapability
+   * - Organisational
+     - Properties of Digital Governance Plan
+     - http://data.europa.eu/dr8/DigitalGovernancePlanBusinessObject
+   * - Organisational
+     - Properties of Digital Public Service
+     - http://data.europa.eu/dr8/DigitalPublicServiceBusinessService
+   * - Organisational
+     - Properties of Digital Public Service Catalogue
+     - http://data.europa.eu/dr8/DigitalPublicServiceCatalogueBusinessObject
+   * - Organisational
+     - Properties of Digital Public Service Consumer
+     - http://data.europa.eu/dr8/DigitalPublicServiceConsumerBusinessRole
+   * - Organisational
+     - Properties of Digital Public Service Delivery
+     - http://data.europa.eu/dr8/DigitalPublicServiceDeliveryBusinessInterface
+   * - Organisational
+     - Properties of Digital Public Service Delivery Model
+     - http://data.europa.eu/dr8/DigitalPublicServiceDeliveryModelBusinessCollaboration
+   * - Organisational
+     - Properties of Digital Public Service Human Agent
+     - http://data.europa.eu/dr8/DigitalPublicServiceHumanAgentBusinessActor
+   * - Organisational
+     - Properties of Digital Public Service Machine Agent
+     - http://data.europa.eu/dr8/DigitalPublicServiceMachineAgentBusinessActor
+   * - Organisational
+     - Properties of Digital Public Service Provider
+     - http://data.europa.eu/dr8/DigitalPublicServiceProviderBusinessRole
+   * - Organisational
+     - Properties of Digital Public Service Provision
+     - http://data.europa.eu/dr8/DigitalPublicServiceProvisionBusinessFunction
+   * - Organisational, Semantic, Technical - Application, Technical - Infrastructure
+     - Properties of Digital Solution Requirement
+     - http://data.europa.eu/dr8/DigitalSolutionRequirementRequirement
+   * - Organisational
+     - Properties of Digitalisation Roadmap
+     - http://data.europa.eu/dr8/DigitalisationRoadmapWorkPackage
+   * - Organisational, Semantic, Technical - Application, Technical - Infrastructure
+     - Properties of European Library of Architecture Principles
+     - http://data.europa.eu/dr8/EuropeanLibraryOfArchitecturePrinciplesPrinciple
+   * - Organisational
+     - Properties of Individual
+     - http://data.europa.eu/dr8/IndividualStakeholder
+   * - Organisational
+     - Properties of Information
+     - http://data.europa.eu/dr8/InformationBusinessObject
+   * - Organisational
+     - Properties of Interoperability Framework
+     - http://data.europa.eu/dr8/InteroperabilityFrameworkBusinessObject
+   * - Organisational, Semantic, Technical - Application, Technical - Infrastructure
+     - Properties of Interoperability Specification
+     - http://data.europa.eu/dr8/InteroperabilitySpecificationContract
+   * - Organisational
+     - Properties of Interoperability Strategy
+     - http://data.europa.eu/dr8/InteroperabilityStrategyGoal
+   * - Organisational
+     - Properties of Interoperable Digital Public Service Implementation Orientation
+     - http://data.europa.eu/dr8/InteroperableDigitalPublicServiceImplementationOrientationConstraint
+   * - Organisational
+     - Properties of Legal Entity
+     - http://data.europa.eu/dr8/LegalEntityStakeholder
+   * - Organisational
+     - Properties of Means for Public Policy Objectives Convergence Assurance and Control
+     - http://data.europa.eu/dr8/MeansForPublicPolicyObjectivesConvergenceAssuranceAndControlConstraint
+   * - Organisational
+     - Properties of Mobile App
+     - http://data.europa.eu/dr8/MobileAppBusinessInterface
+   * - Organisational
+     - Properties of Organisation
+     - http://data.europa.eu/dr8/OrganisationStakeholder
+   * - Organisational
+     - Properties of Organisational Agreement
+     - http://data.europa.eu/dr8/OrganisationalAgreementContract
+   * - Organisational
+     - Properties of Organisational Interoperability Agreement
+     - http://data.europa.eu/dr8/OrganisationalInteroperabilityAgreementContract
+   * - Organisational
+     - Properties of Privacy Framework
+     - http://data.europa.eu/dr8/PrivacyFrameworkBusinessObject
+   * - Organisational
+     - Properties of Public Administration
+     - http://data.europa.eu/dr8/PublicAdministrationStakeholder
+   * - Organisational
+     - Properties of Security Framework
+     - http://data.europa.eu/dr8/SecurityFrameworkBusinessObject
+   * - Organisational
+     - Properties of Service App
+     - http://data.europa.eu/dr8/ServiceAppBusinessInterface
+   * - Organisational
+     - Properties of Shared Organisational Content
+     - http://data.europa.eu/dr8/SharedOrganisationalContentGrouping
+   * - Organisational, Semantic, Technical - Application, Technical - Infrastructure
+     - Properties of Solution Building Block
+     - http://data.europa.eu/dr8/SolutionBuildingBlockArtifact
+   * - Organisational
+     - Properties of Web App
+     - http://data.europa.eu/dr8/WebAppBusinessInterface
+   * - Semantic
+     - Properties of Base Registry
+     - http://data.europa.eu/dr8/BaseRegistryDataObject
+   * - Semantic
+     - Properties of Catalogue Enablers
+     - http://data.europa.eu/dr8/CatalogueEnablersGrouping
+   * - Semantic
+     - Properties of Controlled Vocabulary
+     - http://data.europa.eu/dr8/ControlledVocabularyDataObject
+   * - Semantic
+     - Properties of Data
+     - http://data.europa.eu/dr8/DataDataObject
+   * - Semantic
+     - Properties of Data & Data Intances Enablers
+     - http://data.europa.eu/dr8/DataAndDataInstancesEnablersGrouping
+   * - Semantic
+     - Properties of Data Exposure Enablers
+     - http://data.europa.eu/dr8/DataExposureEnablersGrouping
+   * - Semantic
+     - Properties of Data Format
+     - http://data.europa.eu/dr8/DataFormatDataObject
+   * - Semantic
+     - Properties of Data Mapping
+     - http://data.europa.eu/dr8/DataMappingDataObject
+   * - Semantic
+     - Properties of Data Mapping Catalogue
+     - http://data.europa.eu/dr8/DataMappingCatalogueDataObject
+   * - Semantic
+     - Properties of Data Model
+     - http://data.europa.eu/dr8/DataModelDataObject
+   * - Semantic
+     - Properties of Data Policy
+     - http://data.europa.eu/dr8/DataPolicyBusinessObject
+   * - Semantic
+     - Properties of Data Portability Policy
+     - http://data.europa.eu/dr8/DataPortabilityPolicyBusinessObject
+   * - Semantic
+     - Properties of Data Representation
+     - http://data.europa.eu/dr8/DataRepresentationRepresentation
+   * - Semantic
+     - Properties of Data Representation Enablers
+     - http://data.europa.eu/dr8/DataRepresentationEnablersGrouping
+   * - Semantic
+     - Properties of Data Syntax
+     - http://data.europa.eu/dr8/DataSyntaxDataObject
+   * - Semantic
+     - Properties of Data Syntax Mapping Catalogue
+     - http://data.europa.eu/dr8/DataSyntaxMappingCatalogueDataObject
+   * - Semantic
+     - Properties of Dataset
+     - http://data.europa.eu/dr8/DatasetDataObject
+   * - Semantic
+     - Properties of Dataset Catalogue
+     - http://data.europa.eu/dr8/DatasetCatalogueDataObject
+   * - Semantic
+     - Properties of Forms Structure
+     - http://data.europa.eu/dr8/FormsStructureDataObject
+   * - Semantic
+     - Properties of Hash Code
+     - http://data.europa.eu/dr8/HashCodeDataObject
+   * - Semantic
+     - Properties of Knowledge
+     - http://data.europa.eu/dr8/KnowledgeRepresentation
+   * - Semantic
+     - Properties of Linked Data
+     - http://data.europa.eu/dr8/LinkedDataRepresentation
+   * - Semantic
+     - Properties of Linked Data Event Stream
+     - http://data.europa.eu/dr8/LinkedDataEventStreamRepresentation
+   * - Semantic
+     - Properties of Linked Open Data
+     - http://data.europa.eu/dr8/LinkedOpenDataRepresentation
+   * - Semantic
+     - Properties of Master Data
+     - http://data.europa.eu/dr8/MasterDataDataObject
+   * - Semantic
+     - Properties of Master Data Policy
+     - http://data.europa.eu/dr8/MasterDataPolicyBusinessObject
+   * - Semantic
+     - Properties of Metadata
+     - http://data.europa.eu/dr8/MetadataDataObject
+   * - Semantic
+     - Properties of Metadata Catalogue
+     - http://data.europa.eu/dr8/MetadataCatalogueDataObject
+   * - Semantic
+     - Properties of Ontologies Catalogue
+     - http://data.europa.eu/dr8/OntologiesCatalogueDataObject
+   * - Semantic
+     - Properties of Ontology
+     - http://data.europa.eu/dr8/OntologyDataObject
+   * - Semantic
+     - Properties of Open Data
+     - http://data.europa.eu/dr8/OpenDataRepresentation
+   * - Semantic
+     - Properties of Open Data Policy
+     - http://data.europa.eu/dr8/OpenDataPolicyBusinessObject
+   * - Semantic
+     - Properties of Privacy Policy
+     - http://data.europa.eu/dr8/PrivacyPolicyBusinessObject
+   * - Semantic
+     - Properties of Reference Data
+     - http://data.europa.eu/dr8/ReferenceDataDataObject
+   * - Semantic
+     - Properties of Security Policy
+     - http://data.europa.eu/dr8/SecurityPolicyBusinessObject
+   * - Semantic
+     - Properties of Semantic Agreement
+     - http://data.europa.eu/dr8/SemanticAgreementContract
+   * - Semantic
+     - Properties of Semantic Functional content
+     - http://data.europa.eu/dr8/SemanticFunctionalContentGrouping
+   * - Semantic
+     - Properties of Semantic Governance content
+     - http://data.europa.eu/dr8/SemanticGovernanceContentGrouping
+   * - Semantic
+     - Properties of Semantic Interoperability Agreement
+     - http://data.europa.eu/dr8/SemanticInteroperabilityAgreementContract
+   * - Semantic
+     - Properties of Semantic Specifications Enablers
+     - http://data.europa.eu/dr8/SemanticSpecificationsEnablersGrouping
+   * - Semantic
+     - Properties of Shared Knowledge Content
+     - http://data.europa.eu/dr8/SharedKnowledgeContentGrouping
+   * - Semantic
+     - Properties of Software Components Catalogue
+     - http://data.europa.eu/dr8/SoftwareComponentsCatalogueDataObject
+   * - Semantic
+     - Properties of Virtual Dataset
+     - http://data.europa.eu/dr8/VirtualDatasetDataObject
+   * - Semantic
+     - Properties of Vocabulary
+     - http://data.europa.eu/dr8/VocabularyDataObject
+   * - Technical - Application
+     - Properties of Access Management
+     - http://data.europa.eu/dr8/AccessManagementApplicationComponent
+   * - Technical - Application
+     - Properties of Access Management
+     - http://data.europa.eu/dr8/AccessManagementApplicationService
+   * - Technical - Application
+     - Properties of Accounting
+     - http://data.europa.eu/dr8/AccountingApplicationService
+   * - Technical - Application
+     - Properties of Analytics Enablers
+     - http://data.europa.eu/dr8/AnalyticsEnablersGrouping
+   * - Technical - Application
+     - Properties of API
+     - http://data.europa.eu/dr8/APIApplicationInterface
+   * - Technical - Application
+     - Properties of API Catalogue
+     - http://data.europa.eu/dr8/APICatalogueApplicationComponent
+   * - Technical - Application
+     - Properties of API Catalogue
+     - http://data.europa.eu/dr8/APICatalogueDataObject
+   * - Technical - Application
+     - Properties of API Discovery and Catalogue
+     - http://data.europa.eu/dr8/APIDiscoveryAndCatalogueApplicationService
+   * - Technical - Application
+     - Properties of API Enablers
+     - http://data.europa.eu/dr8/APIEnablersGrouping
+   * - Technical - Application
+     - Properties of Application Presentation Enablers
+     - http://data.europa.eu/dr8/ApplicationPresentationEnablersGrouping
+   * - Technical - Application
+     - Properties of Artificial Intelligence
+     - http://data.europa.eu/dr8/ArtificialIntelligenceApplicationComponent
+   * - Technical - Application
+     - Properties of Artificial Intelligence
+     - http://data.europa.eu/dr8/ArtificialIntelligenceApplicationService
+   * - Technical - Application
+     - Properties of Artificial Intelligence Enablers
+     - http://data.europa.eu/dr8/ArtificialIntelligenceEnablersGrouping
+   * - Technical - Application
+     - Properties of Audit
+     - http://data.europa.eu/dr8/AuditApplicationComponent
+   * - Technical - Application
+     - Properties of Audit
+     - http://data.europa.eu/dr8/AuditApplicationService
+   * - Technical - Application
+     - Properties of Authentication
+     - http://data.europa.eu/dr8/AuthenticationApplicationService
+   * - Technical - Application
+     - Properties of Authorisation
+     - http://data.europa.eu/dr8/AuthorisationApplicationService
+   * - Technical - Application
+     - Properties of Blockchain
+     - http://data.europa.eu/dr8/BlockchainApplicationComponent
+   * - Technical - Application
+     - Properties of Blockchain
+     - http://data.europa.eu/dr8/BlockchainApplicationService
+   * - Technical - Application
+     - Properties of Blockchain Enablers
+     - http://data.europa.eu/dr8/BlockchainEnablersGrouping
+   * - Technical - Application
+     - Properties of Centralized Identity Management
+     - http://data.europa.eu/dr8/CentralizedIdentityManagementApplicationService
+   * - Technical - Application
+     - Properties of Conformance Test Scenario
+     - http://data.europa.eu/dr8/ConformanceTestScenarioBusinessObject
+   * - Technical - Application
+     - Properties of Conformance Testing
+     - http://data.europa.eu/dr8/ConformanceTestingApplicationComponent
+   * - Technical - Application
+     - Properties of Conformance Testing
+     - http://data.europa.eu/dr8/ConformanceTestingApplicationService
+   * - Technical - Application
+     - Properties of Content Management
+     - http://data.europa.eu/dr8/ContentManagementApplicationService
+   * - Technical - Application
+     - Properties of Credential Issuance Service
+     - http://data.europa.eu/dr8/CredentialIssuanceServiceApplicationService
+   * - Technical - Application
+     - Properties of Credential Issuer
+     - http://data.europa.eu/dr8/CredentialIssuerApplicationComponent
+   * - Technical - Application
+     - Properties of Credential Revocation
+     - http://data.europa.eu/dr8/CredentialRevocationApplicationComponent
+   * - Technical - Application
+     - Properties of Credential Revocation Service
+     - http://data.europa.eu/dr8/CredentialRevocationServiceApplicationService
+   * - Technical - Application
+     - Properties of Credential Verification Service
+     - http://data.europa.eu/dr8/CredentialVerificationServiceApplicationService
+   * - Technical - Application
+     - Properties of Credential Verifier
+     - http://data.europa.eu/dr8/CredentialVerifierApplicationComponent
+   * - Technical - Application
+     - Properties of Data Analytics
+     - http://data.europa.eu/dr8/DataAnalyticsApplicationComponent
+   * - Technical - Application
+     - Properties of Data Analytics
+     - http://data.europa.eu/dr8/DataAnalyticsApplicationService
+   * - Technical - Application
+     - Properties of Data Catalogue Management
+     - http://data.europa.eu/dr8/DataCatalogueManagementApplicationService
+   * - Technical - Application
+     - Properties of Data Exchange
+     - http://data.europa.eu/dr8/DataExchangeApplicationComponent
+   * - Technical - Application
+     - Properties of Data Exchange
+     - http://data.europa.eu/dr8/DataExchangeApplicationService
+   * - Technical - Application
+     - Properties of Data Exchange Enablers
+     - http://data.europa.eu/dr8/DataExchangeEnablersGrouping
+   * - Technical - Application
+     - Properties of Data Extraction, Transformation and Loading
+     - http://data.europa.eu/dr8/DataExtractionTransformationAndLoadingApplicationService
+   * - Technical - Application
+     - Properties of Data Extraction, Transformation, and Loading
+     - http://data.europa.eu/dr8/DataExtractionTransformationAndLoadingApplicationComponent
+   * - Technical - Application
+     - Properties of Data Governance
+     - http://data.europa.eu/dr8/DataGovernanceApplicationService
+   * - Technical - Application
+     - Properties of Data Integration
+     - http://data.europa.eu/dr8/DataIntegrationApplicationService
+   * - Technical - Application
+     - Properties of Data Integration Plugins Manager
+     - http://data.europa.eu/dr8/DataIntegrationPluginsManagerApplicationService
+   * - Technical - Application
+     - Properties of Data Management
+     - http://data.europa.eu/dr8/DataManagementApplicationComponent
+   * - Technical - Application
+     - Properties of Data Management
+     - http://data.europa.eu/dr8/DataManagementApplicationService
+   * - Technical - Application
+     - Properties of Data Management Enablers
+     - http://data.europa.eu/dr8/DataManagementEnablersGrouping
+   * - Technical - Application
+     - Properties of Data Persistence
+     - http://data.europa.eu/dr8/DataPersistenceApplicationComponent
+   * - Technical - Application
+     - Properties of Data Persistence
+     - http://data.europa.eu/dr8/DataPersistenceApplicationService
+   * - Technical - Application
+     - Properties of Data Policy Engine
+     - http://data.europa.eu/dr8/DataPolicyEngineApplicationService
+   * - Technical - Application
+     - Properties of Data Publication
+     - http://data.europa.eu/dr8/DataPublicationApplicationComponent
+   * - Technical - Application
+     - Properties of Data Publication
+     - http://data.europa.eu/dr8/DataPublicationApplicationService
+   * - Technical - Application
+     - Properties of Data Quality
+     - http://data.europa.eu/dr8/DataQualityApplicationComponent
+   * - Technical - Application
+     - Properties of Data Quality
+     - http://data.europa.eu/dr8/DataQualityApplicationService
+   * - Technical - Application
+     - Properties of Data Space
+     - http://data.europa.eu/dr8/DataSpaceApplicationService
+   * - Technical - Application
+     - Properties of Data Space Connector
+     - http://data.europa.eu/dr8/DataSpaceConnectorApplicationService
+   * - Technical - Application
+     - Properties of Data Space Connector Consumer
+     - http://data.europa.eu/dr8/DataSpaceConnectorConsumerApplicationService
+   * - Technical - Application
+     - Properties of Data Space Connector Provider
+     - http://data.europa.eu/dr8/DataSpaceConnectorProviderApplicationService
+   * - Technical - Application
+     - Properties of Data Virtualization
+     - http://data.europa.eu/dr8/DataVirtualizationApplicationComponent
+   * - Technical - Application
+     - Properties of Data Virtualization
+     - http://data.europa.eu/dr8/DataVirtualizationApplicationService
+   * - Technical - Application
+     - Properties of Dataspace Enablers
+     - http://data.europa.eu/dr8/DataspaceEnablersGrouping
+   * - Technical - Application
+     - Properties of Decentralized Identity Management
+     - http://data.europa.eu/dr8/DecentralizedIdentityManagementApplicationService
+   * - Technical - Application
+     - Properties of DID Resolution Service
+     - http://data.europa.eu/dr8/DIDResolutionServiceApplicationService
+   * - Technical - Application
+     - Properties of DID Resolver
+     - http://data.europa.eu/dr8/DIDResolverApplicationComponent
+   * - Technical - Application
+     - Properties of Digital Identity Wallet
+     - http://data.europa.eu/dr8/DigitalIdentityWalletApplicationComponent
+   * - Technical - Application
+     - Properties of Digital Identity Wallet Service
+     - http://data.europa.eu/dr8/DigitalIdentityWalletServiceApplicationService
+   * - Technical - Application
+     - Properties of Digital Solution
+     - http://data.europa.eu/dr8/DigitalSolutionApplicationComponent
+   * - Technical - Application
+     - Properties of Digital Solution
+     - http://data.europa.eu/dr8/DigitalSolutionApplicationService
+   * - Technical - Application
+     - Properties of Digital Workplace
+     - http://data.europa.eu/dr8/DigitalWorkplaceApplicationComponent
+   * - Technical - Application
+     - Properties of Digital Workplace
+     - http://data.europa.eu/dr8/DigitalWorkplaceApplicationService
+   * - Technical - Application
+     - Properties of Digital Workplace Enablers
+     - http://data.europa.eu/dr8/DigitalWorkplaceEnablersGrouping
+   * - Technical - Application
+     - Properties of e-Archiving
+     - http://data.europa.eu/dr8/E-ArchivingApplicationComponent
+   * - Technical - Application
+     - Properties of e-Archiving
+     - http://data.europa.eu/dr8/E-ArchivingApplicationService
+   * - Technical - Application
+     - Properties of e-Seal Creation
+     - http://data.europa.eu/dr8/E-SealCreationApplicationService
+   * - Technical - Application
+     - Properties of e-Seal Preservation
+     - http://data.europa.eu/dr8/E-SealPreservationApplicationService
+   * - Technical - Application
+     - Properties of e-Seal Verification and Validation
+     - http://data.europa.eu/dr8/E-SealVerificationAndValidationApplicationService
+   * - Technical - Application
+     - Properties of e-Signature Creation
+     - http://data.europa.eu/dr8/E-SignatureCreationApplicationService
+   * - Technical - Application
+     - Properties of e-Signature Preservation
+     - http://data.europa.eu/dr8/E-SignaturePreservationApplicationService
+   * - Technical - Application
+     - Properties of e-Signature Verification and Validation
+     - http://data.europa.eu/dr8/E-SignatureVerificationAndValidationApplicationService
+   * - Technical - Application
+     - Properties of e-Timestamp Creation
+     - http://data.europa.eu/dr8/E-TimestampCreationApplicationService
+   * - Technical - Application
+     - Properties of e-Timestamp Verification and Validation
+     - http://data.europa.eu/dr8/E-TimestampVerificationAndValidationApplicationService
+   * - Technical - Application
+     - Properties of Federated Data Catalogue Management
+     - http://data.europa.eu/dr8/FederatedDataCatalogueManagementApplicationService
+   * - Technical - Application
+     - Properties of Forms Management
+     - http://data.europa.eu/dr8/FormsManagementApplicationComponent
+   * - Technical - Application
+     - Properties of Forms Management
+     - http://data.europa.eu/dr8/FormsManagementApplicationService
+   * - Technical - Application
+     - Properties of Human Interface
+     - http://data.europa.eu/dr8/HumanInterfaceApplicationInterface
+   * - Technical - Application
+     - Properties of Identification
+     - http://data.europa.eu/dr8/IdentificationApplicationComponent
+   * - Technical - Application
+     - Properties of Identification and Access Enablers
+     - http://data.europa.eu/dr8/IdentificationAndAccessEnablersGrouping
+   * - Technical - Application
+     - Properties of Identity management
+     - http://data.europa.eu/dr8/IdentityManagementApplicationService
+   * - Technical - Application
+     - Properties of Integrity Verification
+     - http://data.europa.eu/dr8/IntegrityVerificationApplicationService
+   * - Technical - Application
+     - Properties of Interoperable Digital Solution
+     - http://data.europa.eu/dr8/InteroperableDigitalSolutionApplicationComponent
+   * - Technical - Application
+     - Properties of Knowledge Discovery
+     - http://data.europa.eu/dr8/KnowledgeDiscoveryApplicationComponent
+   * - Technical - Application
+     - Properties of Knowledge Discovery
+     - http://data.europa.eu/dr8/KnowledgeDiscoveryApplicationService
+   * - Technical - Application
+     - Properties of Knowledge Discovery Enablers
+     - http://data.europa.eu/dr8/KnowledgeDiscoveryEnablersGrouping
+   * - Technical - Application
+     - Properties of Knowledge Triplestore
+     - http://data.europa.eu/dr8/KnowledgeTriplestoreDataObject
+   * - Technical - Application
+     - Properties of Machine to Machine Interface
+     - http://data.europa.eu/dr8/MachineToMachineInterfaceApplicationInterface
+   * - Technical - Application
+     - Properties of Machine Translation
+     - http://data.europa.eu/dr8/MachineTranslationApplicationComponent
+   * - Technical - Application
+     - Properties of Machine Translation
+     - http://data.europa.eu/dr8/MachineTranslationApplicationService
+   * - Technical - Application
+     - Properties of Metadata Management
+     - http://data.europa.eu/dr8/MetadataManagementApplicationComponent
+   * - Technical - Application
+     - Properties of Metadata Management
+     - http://data.europa.eu/dr8/MetadataManagementApplicationService
+   * - Technical - Application
+     - Properties of Observability
+     - http://data.europa.eu/dr8/ObservabilityApplicationService
+   * - Technical - Application
+     - Properties of Observability and Monitoring Enablers
+     - http://data.europa.eu/dr8/ObservabilityAndMonitoringEnablersGrouping
+   * - Technical - Application
+     - Properties of Orchestration
+     - http://data.europa.eu/dr8/OrchestrationApplicationComponent
+   * - Technical - Application
+     - Properties of Orchestration
+     - http://data.europa.eu/dr8/OrchestrationApplicationService
+   * - Technical - Application
+     - Properties of Orchestration Enablers
+     - http://data.europa.eu/dr8/OrchestrationEnablersGrouping
+   * - Technical - Application
+     - Properties of Privacy
+     - http://data.europa.eu/dr8/PrivacyApplicationComponent
+   * - Technical - Application
+     - Properties of Privacy
+     - http://data.europa.eu/dr8/PrivacyApplicationService
+   * - Technical - Application
+     - Properties of Privacy Enablers
+     - http://data.europa.eu/dr8/PrivacyEnablersGrouping
+   * - Technical - Application
+     - Properties of Public Administration Single Window
+     - http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationComponent
+   * - Technical - Application
+     - Properties of Public Administration Single Window
+     - http://data.europa.eu/dr8/PublicAdministrationSingleWindowApplicationService
+   * - Technical - Application
+     - Properties of Registered Electronic Delivery
+     - http://data.europa.eu/dr8/RegisteredElectronicDeliveryApplicationService
+   * - Technical - Application
+     - Properties of Registration
+     - http://data.europa.eu/dr8/RegistrationApplicationService
+   * - Technical - Application
+     - Properties of Request Validation
+     - http://data.europa.eu/dr8/RequestValidationApplicationService
+   * - Technical - Application
+     - Properties of Security Enablers
+     - http://data.europa.eu/dr8/SecurityEnablersGrouping
+   * - Technical - Application
+     - Properties of Self-Soverign Identity
+     - http://data.europa.eu/dr8/SelfSovereignIdentityApplicationComponent
+   * - Technical - Application
+     - Properties of Service Discovery and Registry
+     - http://data.europa.eu/dr8/ServiceDiscoveryAndRegistryApplicationService
+   * - Technical - Application, Technical - Infrastructure
+     - Properties of Service Level Agreement
+     - http://data.europa.eu/dr8/ServiceLevelAgreementContract
+   * - Technical - Application
+     - Properties of Service Registry
+     - http://data.europa.eu/dr8/ServiceRegistryDataObject
+   * - Technical - Application
+     - Properties of Shared Application Content
+     - http://data.europa.eu/dr8/SharedApplicationContentGrouping
+   * - Technical - Application
+     - Properties of Shared Platform
+     - http://data.europa.eu/dr8/SharedPlatformApplicationComponent
+   * - Technical - Application, Technical - Infrastructure
+     - Properties of Technical Agreement
+     - http://data.europa.eu/dr8/TechnicalAgreementContract
+   * - Technical - Application, Technical - Infrastructure
+     - Properties of Technical Governance content
+     - http://data.europa.eu/dr8/TechnicalGovernanceContentGrouping
+   * - Technical - Application, Technical - Infrastructure
+     - Properties of Technical Interoperability Agreement
+     - http://data.europa.eu/dr8/TechnicalInteroperabilityAgreementContract
+   * - Technical - Application
+     - Properties of Test Enablers
+     - http://data.europa.eu/dr8/TestEnablersGrouping
+   * - Technical - Application
+     - Properties of Translation Enablers
+     - http://data.europa.eu/dr8/TranslationEnablersGrouping
+   * - Technical - Application
+     - Properties of Trust Enablers
+     - http://data.europa.eu/dr8/TrustEnablersGrouping
+   * - Technical - Application
+     - Properties of Trust Service Provisioning
+     - http://data.europa.eu/dr8/TrustServiceProvisioningApplicationComponent
+   * - Technical - Application
+     - Properties of User Experience Management Enablers
+     - http://data.europa.eu/dr8/UserExperienceManagementEnablersGrouping
+   * - Technical - Application
+     - Properties of Vocabulary Hub
+     - http://data.europa.eu/dr8/VocabularyHubApplicationService
+   * - Technical - Application
+     - Properties of Web Service
+     - http://data.europa.eu/dr8/WebServiceApplicationInterface
+   * - Technical - Infrastructure
+     - Properties of Access Management Platform
+     - http://data.europa.eu/dr8/AccessManagementPlatformSystemSoftware
+   * - Technical - Infrastructure
+     - Properties of Access Management Service
+     - http://data.europa.eu/dr8/AccessManagementService
+   * - Technical - Infrastructure
+     - Properties of Agenda Management Service
+     - http://data.europa.eu/dr8/AgendaManagementService
+   * - Technical - Infrastructure
+     - Properties of AI Feature Service
+     - http://data.europa.eu/dr8/AIFeatureTechnologyService
+   * - Technical - Infrastructure
+     - Properties of AI Governance Service
+     - http://data.europa.eu/dr8/AIGovernanceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of AI Model Fine-Tuning Service
+     - http://data.europa.eu/dr8/AIModelFineTuningTechnologyService
+   * - Technical - Infrastructure
+     - Properties of AI Model Inference Service
+     - http://data.europa.eu/dr8/AIModelInferenceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of AI Model Lifecycle Management Service
+     - http://data.europa.eu/dr8/AIModelLifecycleManagementTechnologyService
+   * - Technical - Infrastructure
+     - Properties of AI Model Monitoring Service
+     - http://data.europa.eu/dr8/AIModelMonitoringTechnologyService
+   * - Technical - Infrastructure
+     - Properties of AI Model Registry Service
+     - http://data.europa.eu/dr8/AIModelRegistryTechnologyService
+   * - Technical - Infrastructure
+     - Properties of AI Model Training Service
+     - http://data.europa.eu/dr8/AIModelTrainingTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Alerting & Notification Service
+     - http://data.europa.eu/dr8/AlertingNotificationServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Analytical Query Service
+     - http://data.europa.eu/dr8/AnalyticalQueryServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Analytics Infrastructure Enablers
+     - http://data.europa.eu/dr8/AnalyticsInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of API Contract Service
+     - http://data.europa.eu/dr8/APIContractService
+   * - Technical - Infrastructure
+     - Properties of API Gateway
+     - http://data.europa.eu/dr8/APIGatewayTechnologyService
+   * - Technical - Infrastructure
+     - Properties of API Manager
+     - http://data.europa.eu/dr8/APIManagerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Application Integration Infrastructure Enablers
+     - http://data.europa.eu/dr8/ApplicationIntegrationInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Application Server
+     - http://data.europa.eu/dr8/ApplicationServerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Artifact Repository Service
+     - http://data.europa.eu/dr8/ArtifactRepositoryTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Artificial Intelligence Infrastructure Enablers
+     - http://data.europa.eu/dr8/ArtificialIntelligenceInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Audit Event Collection
+     - http://data.europa.eu/dr8/AuditEventCollectionTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Audit Trail & Evidence
+     - http://data.europa.eu/dr8/AuditTrailEvidenceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Backup
+     - http://data.europa.eu/dr8/BackupTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Batch Analytics Processing Service
+     - http://data.europa.eu/dr8/BatchAnalyticsProcessingServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Block Storage
+     - http://data.europa.eu/dr8/BlockStorageTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Blockchain Infrastructure Enablers
+     - http://data.europa.eu/dr8/BlockchainInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Blockchain Ledger
+     - http://data.europa.eu/dr8/BlockchainLedgerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Business Process Manager
+     - http://data.europa.eu/dr8/BusinessProcessManagerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Caching Service
+     - http://data.europa.eu/dr8/CachingServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Cloud Computing Facility
+     - http://data.europa.eu/dr8/CloudComputingFacilityFacility
+   * - Technical - Infrastructure
+     - Properties of Cloud Private Network
+     - http://data.europa.eu/dr8/CloudPrivateNetworkCommunicationNetwork
+   * - Technical - Infrastructure
+     - Properties of Compliance Reporting
+     - http://data.europa.eu/dr8/ComplianceReportingTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Computing Hosting, Networking, and Data Hosting Infrastructure Registry
+     - http://data.europa.eu/dr8/ComputingHostingNetworkingAndDataHostingInfrastructureRegistryTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Computing Infrastructure Enablers
+     - http://data.europa.eu/dr8/ComputingInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Consent Management Service
+     - http://data.europa.eu/dr8/ConsentManagementTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Container
+     - http://data.europa.eu/dr8/ContainerSystemSoftware
+   * - Technical - Infrastructure
+     - Properties of Container Registry
+     - http://data.europa.eu/dr8/ContainerRegistryTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Containers Infrastructure Enablers
+     - http://data.europa.eu/dr8/ContainersInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Containers Manager
+     - http://data.europa.eu/dr8/ContainersManagerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Containers Orchestrator
+     - http://data.europa.eu/dr8/ContainersOrchestratorTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Content Delivery Infrastructure Enablers
+     - http://data.europa.eu/dr8/ContentDeliveryInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Content Delivery Service
+     - http://data.europa.eu/dr8/ContentDeliveryServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Content Management Service
+     - http://data.europa.eu/dr8/ContentManagementService
+   * - Technical - Infrastructure
+     - Properties of Data Lake Infrastructure Enablers
+     - http://data.europa.eu/dr8/DataLakeInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Data Lake Storage
+     - http://data.europa.eu/dr8/DataLakeStorageTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Data Publication Service
+     - http://data.europa.eu/dr8/DataPublicationTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Database Cache Manager
+     - http://data.europa.eu/dr8/DatabaseCacheManagerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Database Infrastructure Enablers
+     - http://data.europa.eu/dr8/DatabaseInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Desktop Computer
+     - http://data.europa.eu/dr8/DesktopComputerDevice
+   * - Technical - Infrastructure
+     - Properties of DevOps & Platform Engineering Infrastructure Enablers
+     - http://data.europa.eu/dr8/DevOpsPlatformEngineeringInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Digital Workplace Infrastructure Enablers
+     - http://data.europa.eu/dr8/DigitalWorkplaceInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Directory Access Service
+     - http://data.europa.eu/dr8/DirectoryAccessTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Directory Service
+     - http://data.europa.eu/dr8/DirectoryService
+   * - Technical - Infrastructure
+     - Properties of Distributed Blockchain Network
+     - http://data.europa.eu/dr8/DistributedBlockchainNetworkTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Distributed File System
+     - http://data.europa.eu/dr8/DistributedFileSystemTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Domain Name Service
+     - http://data.europa.eu/dr8/DomainNameServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of e-Timestamp Service
+     - http://data.europa.eu/dr8/e-TimestampService
+   * - Technical - Infrastructure
+     - Properties of Edge Computing
+     - http://data.europa.eu/dr8/EdgeComputingTechnologyCollaboration
+   * - Technical - Infrastructure
+     - Properties of Enterprise Service Bus
+     - http://data.europa.eu/dr8/EnterpriseServiceBusTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Environment Management Service
+     - http://data.europa.eu/dr8/EnvironmentManagementTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Event Manager
+     - http://data.europa.eu/dr8/EventManagerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of External Facility
+     - http://data.europa.eu/dr8/ExternalFacilityFacility
+   * - Technical - Infrastructure
+     - Properties of External Service
+     - http://data.europa.eu/dr8/ExternalServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Facility Location
+     - http://data.europa.eu/dr8/FacilityLocationLocation
+   * - Technical - Infrastructure
+     - Properties of Federated Identity Provider
+     - http://data.europa.eu/dr8/FederatedIdentityProviderTechnologyService
+   * - Technical - Infrastructure
+     - Properties of File Storage
+     - http://data.europa.eu/dr8/FileStorageTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Firewall
+     - http://data.europa.eu/dr8/FirewallTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Gateway
+     - http://data.europa.eu/dr8/GatewayTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Graph Database Manager
+     - http://data.europa.eu/dr8/GraphDatabaseManagerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of GraphQL Server
+     - http://data.europa.eu/dr8/GraphQLServerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Health & Availability Monitoring
+     - http://data.europa.eu/dr8/HealthAvailabilityMonitoringTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Hosting Facility
+     - http://data.europa.eu/dr8/HostingFacilityFacility
+   * - Technical - Infrastructure
+     - Properties of Hybrid Cloud Facility
+     - http://data.europa.eu/dr8/HybridCloudFacilityFacility
+   * - Technical - Infrastructure
+     - Properties of IaaS
+     - http://data.europa.eu/dr8/IaaSTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Identification Service
+     - http://data.europa.eu/dr8/IdentificationService
+   * - Technical - Infrastructure
+     - Properties of Identity and Access Infrastructure Enablers
+     - http://data.europa.eu/dr8/IdentityAndAccessInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Identity Mapping Service
+     - http://data.europa.eu/dr8/IdentityMappingServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Identity Provider
+     - http://data.europa.eu/dr8/IdentityProviderTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Infrastructure Provisioning Service
+     - http://data.europa.eu/dr8/InfrastructureProvisioningTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Inmutable Database Manager
+     - http://data.europa.eu/dr8/InmutableDatabaseManagerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Integrity Verification Service
+     - http://data.europa.eu/dr8/IntegrityVerificationService
+   * - Technical - Infrastructure
+     - Properties of Load Balancer
+     - http://data.europa.eu/dr8/LoadBalancerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Local Area Network
+     - http://data.europa.eu/dr8/LocalAreaNetworkCommunicationNetwork
+   * - Technical - Infrastructure
+     - Properties of Log Analytics & Search
+     - http://data.europa.eu/dr8/LogAnalyticsSearchTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Log Collection Service
+     - http://data.europa.eu/dr8/LogCollectionServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Log Storage & Retention
+     - http://data.europa.eu/dr8/LogStorageRetentionTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Management Console
+     - http://data.europa.eu/dr8/ManagementConsoleTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Management Infrastructure Enablers
+     - http://data.europa.eu/dr8/ManagementInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Message Broker
+     - http://data.europa.eu/dr8/MessageBrokerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Message Transformation & Mapping Service
+     - http://data.europa.eu/dr8/MessageTransformationMappingServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Networking Infrastructure Enablers
+     - http://data.europa.eu/dr8/NetworkingInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of NoSQL Database Manager
+     - http://data.europa.eu/dr8/NoSQLDatabaseManagerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Object-Oriented Database Manager
+     - http://data.europa.eu/dr8/Object-OrientedDatabaseManagerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Observability
+     - http://data.europa.eu/dr8/ObservabilityApplicationComponent
+   * - Technical - Infrastructure
+     - Properties of On Premise Facility
+     - http://data.europa.eu/dr8/OnPremiseFacilityFacility
+   * - Technical - Infrastructure
+     - Properties of Operating System Platform
+     - http://data.europa.eu/dr8/OperatingSystemPlatform
+   * - Technical - Infrastructure
+     - Properties of Orchestration Infrastructure Enablers
+     - http://data.europa.eu/dr8/OrchestrationInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of PaaS
+     - http://data.europa.eu/dr8/PaaSTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Physical Computing Infrastructure
+     - http://data.europa.eu/dr8/PhysicalComputingInfrastructureEquipment
+   * - Technical - Infrastructure
+     - Properties of Physical Network Infrastructure
+     - http://data.europa.eu/dr8/PhysicalNetworkInfrastructureEquipment
+   * - Technical - Infrastructure
+     - Properties of Physical Power Supply Infrastructure
+     - http://data.europa.eu/dr8/PhysicalPowerSupplyInfrastructureEquipment
+   * - Technical - Infrastructure
+     - Properties of Physical Security Infrastructure
+     - http://data.europa.eu/dr8/PhysicalSecurityInfrastructureEquipment
+   * - Technical - Infrastructure
+     - Properties of Pipeline Service
+     - http://data.europa.eu/dr8/PipelineTechnologyService
+   * - Technical - Infrastructure
+     - Properties of PKI Certificate Manager
+     - http://data.europa.eu/dr8/PKICertificateManagerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Private Cloud Computing Facility
+     - http://data.europa.eu/dr8/PrivateCloudComputingFacilityFacility
+   * - Technical - Infrastructure
+     - Properties of Private Network
+     - http://data.europa.eu/dr8/PrivateNetworkCommunicationNetwork
+   * - Technical - Infrastructure
+     - Properties of Private Subnetwork
+     - http://data.europa.eu/dr8/PrivateSubnetworkCommunicationNetwork
+   * - Technical - Infrastructure
+     - Properties of Protocol Mediation Service
+     - http://data.europa.eu/dr8/ProtocolMediationServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Public Cloud Computing Facility
+     - http://data.europa.eu/dr8/PublicCloudComputingFacilityFacility
+   * - Technical - Infrastructure
+     - Properties of Public Network
+     - http://data.europa.eu/dr8/PublicNetworkCommunicationNetwork
+   * - Technical - Infrastructure
+     - Properties of Recovery
+     - http://data.europa.eu/dr8/RecoveryTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Relational Database Manager
+     - http://data.europa.eu/dr8/RelationalDatabaseManagerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Release Management Service
+     - http://data.europa.eu/dr8/ReleaseManagementTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Remote Desktop
+     - http://data.europa.eu/dr8/RemoteDesktopTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Remote Desktop Client
+     - http://data.europa.eu/dr8/RemoteDesktopClientDevice
+   * - Technical - Infrastructure
+     - Properties of Reporting and Dashboarding
+     - http://data.europa.eu/dr8/ReportingAndDashboardingTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Request Validation Service
+     - http://data.europa.eu/dr8/RequestValidationTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Router
+     - http://data.europa.eu/dr8/RouterTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Saas
+     - http://data.europa.eu/dr8/SaasTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Schedule Management Service
+     - http://data.europa.eu/dr8/ScheduleManagementService
+   * - Technical - Infrastructure
+     - Properties of Secrets & Key Management Service
+     - http://data.europa.eu/dr8/SecretsAndKeyManagementTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Secure Public Network
+     - http://data.europa.eu/dr8/SecurePublicNetworkCommunicationNetwork
+   * - Technical - Infrastructure
+     - Properties of Sensor
+     - http://data.europa.eu/dr8/SensorDevice
+   * - Technical - Infrastructure
+     - Properties of Server
+     - http://data.europa.eu/dr8/ServerNode
+   * - Technical - Infrastructure
+     - Properties of Serverless Orchestrator
+     - http://data.europa.eu/dr8/ServerlessOrchestratorTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Service Registry Service
+     - http://data.europa.eu/dr8/ServiceRegistryTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Shared Infrastructure Content
+     - http://data.europa.eu/dr8/SharedInfrastructureContentGrouping
+   * - Technical - Infrastructure
+     - Properties of Smart Device
+     - http://data.europa.eu/dr8/SmartDeviceDevice
+   * - Technical - Infrastructure
+     - Properties of Source Code Analysis Service
+     - http://data.europa.eu/dr8/SourceCodeAnalysisTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Source Code Management Service
+     - http://data.europa.eu/dr8/SourceCodeManagementTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Storage Infrastructure Enablers
+     - http://data.europa.eu/dr8/StorageInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Streaming Analytics Processing Service
+     - http://data.europa.eu/dr8/StreamingAnalyticsProcessingServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Streaming Server
+     - http://data.europa.eu/dr8/StreamingServerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Technical Infrastructure Functional content
+     - http://data.europa.eu/dr8/TechnicalInfrastructureFunctionalContentGrouping
+   * - Technical - Infrastructure
+     - Properties of Technology Interface
+     - http://data.europa.eu/dr8/TechnologyInterfaceTechnologyInterface
+   * - Technical - Infrastructure
+     - Properties of Telemetry
+     - http://data.europa.eu/dr8/TelemetryTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Token Service
+     - http://data.europa.eu/dr8/TokenServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Traffic Protection Service
+     - http://data.europa.eu/dr8/TrafficProtectionServiceTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Trust Infrastructure Enablers
+     - http://data.europa.eu/dr8/TrustInfrastructureEnablersGrouping
+   * - Technical - Infrastructure
+     - Properties of Virtual Machine
+     - http://data.europa.eu/dr8/VirtualMachineNode
+   * - Technical - Infrastructure
+     - Properties of Virtual Private Network
+     - http://data.europa.eu/dr8/VirtualPrivateNetworkTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Vulnerability Scanning Service
+     - http://data.europa.eu/dr8/VulnerabilityScanningTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Web Server
+     - http://data.europa.eu/dr8/WebServerTechnologyService
+   * - Technical - Infrastructure
+     - Properties of Wide Area Networking
+     - http://data.europa.eu/dr8/WideAreaNetworkingGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Access Control Policy
+     - http://data.europa.eu/dr8/AccessControlPolicyGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Accessibility
+     - http://data.europa.eu/dr8/AccessibilityGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Accessibility
+     - http://data.europa.eu/dr8/AccessibilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Accountability
+     - http://data.europa.eu/dr8/AccountabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Adaptability
+     - http://data.europa.eu/dr8/AdaptabilityGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Adequacy Recognition
+     - http://data.europa.eu/dr8/AdequacyRecognitionGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Agility
+     - http://data.europa.eu/dr8/AgilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Agility Requirements Catalogue
+     - http://data.europa.eu/dr8/AgilityRequirementsCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Alerts and monitoring
+     - http://data.europa.eu/dr8/AlertsAndMonitoringRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of API contract
+     - http://data.europa.eu/dr8/APIContractRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of API Design
+     - http://data.europa.eu/dr8/APIDesignGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Application of Service Monitoring Tools
+     - http://data.europa.eu/dr8/ApplicationOfServiceMonitoringToolsGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Application of Service Monitoring Tools Configuration
+     - http://data.europa.eu/dr8/ApplicationOfServiceMonitoringToolsConfigurationGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Archivability
+     - http://data.europa.eu/dr8/ArchivabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Asynchronous Procesing
+     - http://data.europa.eu/dr8/AsynchronousProcesingGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Auditability
+     - http://data.europa.eu/dr8/AuditabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Authentication
+     - http://data.europa.eu/dr8/AuthenticationRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Authentication Mechanism
+     - http://data.europa.eu/dr8/AuthenticationMechanismGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Authenticity
+     - http://data.europa.eu/dr8/AuthenticityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Authorization
+     - http://data.europa.eu/dr8/AuthorizationRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Availability
+     - http://data.europa.eu/dr8/AvailabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Availability Requirements Catalogue
+     - http://data.europa.eu/dr8/AvailabilityRequirementsCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Big-Data Architecture
+     - http://data.europa.eu/dr8/Big-DataArchitectureGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Caching Strategy
+     - http://data.europa.eu/dr8/CachingStrategyGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Cloud-Native Architecture
+     - http://data.europa.eu/dr8/Cloud-NativeArchitectureGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Coding Standards
+     - http://data.europa.eu/dr8/CodingStandardsGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Compatibility
+     - http://data.europa.eu/dr8/CompatibilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Compliance
+     - http://data.europa.eu/dr8/ComplianceRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Compliance Monitoring and Auditing
+     - http://data.europa.eu/dr8/ComplianceMonitoringAndAuditingGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Compliance with Data Privacy Regulations
+     - http://data.europa.eu/dr8/ComplianceWithDataPrivacyRegulationsGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Confidentiality
+     - http://data.europa.eu/dr8/ConfidentialityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Configurability
+     - http://data.europa.eu/dr8/ConfigurabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Consistency
+     - http://data.europa.eu/dr8/ConsistencyRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Containerization and Orchestration
+     - http://data.europa.eu/dr8/ContainerizationAndOrchestrationGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Content Delivery Network
+     - http://data.europa.eu/dr8/ContentDeliveryNetworkGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Continous Security Monitoring
+     - http://data.europa.eu/dr8/ContinousSecurityMonitoringGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Cross-Border Data Exchange
+     - http://data.europa.eu/dr8/Cross-BorderDataExchangeGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Cross-Border Identification Business
+     - http://data.europa.eu/dr8/Cross-BorderIdentificationBusinessGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Cross-Border Semantic Data Management
+     - http://data.europa.eu/dr8/Cross-BorderSemanticDataManagementGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Cross-border User Authentication Operations
+     - http://data.europa.eu/dr8/Cross-borderUserAuthenticationOperationsGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Data Exchange Deployment
+     - http://data.europa.eu/dr8/DataExchangeDeploymentGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Data Exchanger Operations
+     - http://data.europa.eu/dr8/DataExchangerOperationsGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Data Notification Deployment
+     - http://data.europa.eu/dr8/DataNotificationDeploymentGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Data Protection Measures
+     - http://data.europa.eu/dr8/DataProtectionMeasuresGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Data Subscription Capability
+     - http://data.europa.eu/dr8/DataSubscriptionCapabilityGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Data Subscription Deployment
+     - http://data.europa.eu/dr8/DataSubscriptionDeploymentGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Database Schema Design
+     - http://data.europa.eu/dr8/DatabaseSchemaDesignGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Database Sharding
+     - http://data.europa.eu/dr8/DatabaseShardingGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Deployability
+     - http://data.europa.eu/dr8/DeployabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Deployment stamps
+     - http://data.europa.eu/dr8/DeploymentStampsRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Detail-Level Requirement
+     - http://data.europa.eu/dr8/Detail-LevelRequirementRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Detail-Level RequirementLeftover
+     - http://data.europa.eu/dr8/Detail-LevelRequirementLeftoverRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Public Service Governance Catalogue
+     - http://data.europa.eu/dr8/egovera/DigitalPublicServiceGovernancePrincipleCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Public Service Implementation Catalogue
+     - http://data.europa.eu/dr8/egovera/DigitalPublicServiceImplementationPrincipleCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Public Service Strategy (Public Policy Cycle) Catalogue
+     - http://data.europa.eu/dr8/egovera/DigitalPublicServiceStrategyPrincipleCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Architecture Decision
+     - http://data.europa.eu/dr8/DigitalSolutionArchitectureDecisionGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Architecture Decision Catalogue
+     - http://data.europa.eu/dr8/DigitalSolutionArchitectureDecisionCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Assumption
+     - http://data.europa.eu/dr8/DigitalSolutionAssumptionConstraint
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Business Architecture Decision Catalogue
+     - http://data.europa.eu/dr8/DigitalSolutionBusinessArchitectureDecisionCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Constraint
+     - http://data.europa.eu/dr8/DigitalSolutionConstraintConstraint
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Functional Requirement
+     - http://data.europa.eu/dr8/DigitalSolutionFunctionalRequirementRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution High Availability and Resilience Architecture Decision Catalogue
+     - http://data.europa.eu/dr8/DigitalSolutionHighAvailabilityAndResilienceArchitectureDecisionCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Maintenability & Quality Architecture Decision Catalogue
+     - http://data.europa.eu/dr8/DigitalSolutionMaintenabilityQualityArchitectureDecisionCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Non-Functional Requirement
+     - http://data.europa.eu/dr8/DigitalSolutionNon-FunctionalRequirementRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Non-Functional Requirements Catalogue
+     - http://data.europa.eu/dr8/DigitalSolutionNon-FunctionalRequirementsCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Portability and Scalability Architecture Decision Catalogue
+     - http://data.europa.eu/dr8/DigitalSolutionPortabilityAndScalabilityArchitectureDecisionCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Scalability Architecture Decision Catalogue
+     - http://data.europa.eu/dr8/DigitalSolutionScalabilityArchitectureDecisionCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Security, Privacy and Compliance Architecture Decision Catalogue
+     - http://data.europa.eu/dr8/DigitalSolutionSecurityPrivacyAndComplianceArchitectureDecisionCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Technical Architecture Decision Catalogue
+     - http://data.europa.eu/dr8/DigitalSolutionTechnicalArchitectureDecisionCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Digital Solution Usability Architecture Decision Catalogue
+     - http://data.europa.eu/dr8/DigitalSolutionUsabilityArchitectureDecisionCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Disaster recovery
+     - http://data.europa.eu/dr8/DisasterRecoveryRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Disaster Recovery Plan
+     - http://data.europa.eu/dr8/DisasterRecoveryPlanGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Documentation
+     - http://data.europa.eu/dr8/DocumentationGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Durability
+     - http://data.europa.eu/dr8/DurabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Durability Requirements Catalogue
+     - http://data.europa.eu/dr8/DurabilityRequirementsCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Dynamic Location of Data provider
+     - http://data.europa.eu/dr8/DynamicLocationOfDataProviderGoal
+   * - Unclassified - Non-LOST view
+     - Properties of EIF Interoperability Level
+     - http://data.europa.eu/dr8/EIFInteroperabilityLevelBusinessObject
+   * - Unclassified - Non-LOST view
+     - Properties of EIF Principle
+     - http://data.europa.eu/dr8/EIFPrinciplePrinciple
+   * - Unclassified - Non-LOST view
+     - Properties of EIRA Architecture Building Block
+     - http://data.europa.eu/dr8/EIRAArchitectureBuildingBlockRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of EIRA Dimension
+     - http://data.europa.eu/dr8/EIRADimensionConstraint
+   * - Unclassified - Non-LOST view
+     - Properties of EIRA Library of Interoperability Specifications
+     - http://data.europa.eu/dr8/EIRALibraryOfInteroperabilitySpecificationsContract
+   * - Unclassified - Non-LOST view
+     - Properties of EIRA View
+     - http://data.europa.eu/dr8/EIRAViewRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of EIRA Viewpoint
+     - http://data.europa.eu/dr8/EIRAViewpointRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Elastic Cloud Infrastructure
+     - http://data.europa.eu/dr8/ElasticCloudInfrastructureGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Elasticity
+     - http://data.europa.eu/dr8/ElasticityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Encryption Standards
+     - http://data.europa.eu/dr8/EncryptionStandardsGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Enterprise Architecture Framework (EAF) alignment guidelines
+     - http://data.europa.eu/dr8/EnterpriseArchitectureFrameworkAlignmentGuidelinesGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Event-Driven Architecture
+     - http://data.europa.eu/dr8/Event-DrivenArchitectureGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Extensibility
+     - http://data.europa.eu/dr8/ExtensibilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Extensibility Requirements Catalogue
+     - http://data.europa.eu/dr8/ExtensibilityRequirementsCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Fault tolerance
+     - http://data.europa.eu/dr8/FaultToleranceRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Geodes
+     - http://data.europa.eu/dr8/GeodesRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Horizontal Scaling
+     - http://data.europa.eu/dr8/HorizontalScalingGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Installability
+     - http://data.europa.eu/dr8/InstallabilityGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Integration Thrid-Party Systems
+     - http://data.europa.eu/dr8/IntegrationThrid-PartySystemsGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Integrity
+     - http://data.europa.eu/dr8/IntegrityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Internazionalization and Localization
+     - http://data.europa.eu/dr8/InternazionalizationAndLocalizationGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Interoperability Requirement
+     - http://data.europa.eu/dr8/InteroperabilityRequirementRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Interoperable Solution
+     - http://data.europa.eu/dr8/InteroperableDigitalSolutionArtifact
+   * - Unclassified - Non-LOST view
+     - Properties of Key Interoperability Enabler
+     - http://data.europa.eu/dr8/KeyInteroperabilityEnablerRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Latency
+     - http://data.europa.eu/dr8/LatencyRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Learnability
+     - http://data.europa.eu/dr8/LearnabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Learning
+     - http://data.europa.eu/dr8/LearningGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Legality
+     - http://data.europa.eu/dr8/LegalityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Load Balancing Strategy
+     - http://data.europa.eu/dr8/LoadBalancingStrategyGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Logging
+     - http://data.europa.eu/dr8/LoggingRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Maintainability
+     - http://data.europa.eu/dr8/MaintainabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Managing Self-Description Schemas in the Federated Catalogue
+     - http://data.europa.eu/dr8/ManagingSelf-DescriptionSchemasInTheFederatedCatalogueGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Microservice Architecture
+     - http://data.europa.eu/dr8/MicroserviceArchitectureGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Modularity and reusability
+     - http://data.europa.eu/dr8/ModularityAndReusabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Monetization Strategy
+     - http://data.europa.eu/dr8/MonetizationStrategyGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Monolithic Architecture
+     - http://data.europa.eu/dr8/MonolithicArchitectureGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Network Optimization
+     - http://data.europa.eu/dr8/NetworkOptimizationGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Nonrepudiation
+     - http://data.europa.eu/dr8/NonrepudiationRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Not Implemented Architecture Principles Catalogue
+     - http://data.europa.eu/dr8/egovera/NotImplementedArchitecturePrinciplesCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Observability
+     - http://data.europa.eu/dr8/ObservabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Observability Requirements Catalogue
+     - http://data.europa.eu/dr8/ObservabilityRequirementsCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Operability
+     - http://data.europa.eu/dr8/OperabilityGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Performance Testing and Tuning
+     - http://data.europa.eu/dr8/PerformanceTestingAndTuningGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Pluggability
+     - http://data.europa.eu/dr8/PluggabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Privacy
+     - http://data.europa.eu/dr8/PrivacyRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Problem Statement
+     - http://data.europa.eu/dr8/ProblemStatementGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Provide a Service Catalog
+     - http://data.europa.eu/dr8/ProvideAServiceCatalogGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Provisioning Capability Publication
+     - http://data.europa.eu/dr8/ProvisioningCapabilityPublicationGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Recoverability
+     - http://data.europa.eu/dr8/RecoverabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Replaceability
+     - http://data.europa.eu/dr8/ReplaceabilityGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Replication
+     - http://data.europa.eu/dr8/ReplicationRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Resiliency
+     - http://data.europa.eu/dr8/ResiliencyRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Resiliency Requirements Catalogue
+     - http://data.europa.eu/dr8/ResiliencyRequirementsCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Retention and Data Deletion
+     - http://data.europa.eu/dr8/RetentionAndDataDeletionGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Role-Based Access Control
+     - http://data.europa.eu/dr8/Role-BasedAccessControlGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Scalability
+     - http://data.europa.eu/dr8/ScalabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Scalability for Growth
+     - http://data.europa.eu/dr8/ScalabilityForGrowthGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Scalability Requirements Catalogue
+     - http://data.europa.eu/dr8/ScalabilityRequirementsCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Secure Communications
+     - http://data.europa.eu/dr8/SecureCommunicationsGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Security
+     - http://data.europa.eu/dr8/SecurityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Security Incident Response
+     - http://data.europa.eu/dr8/SecurityIncidentResponseGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Security Incident Response Plan
+     - http://data.europa.eu/dr8/SecurityIncidentResponsePlanGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Security Requirements Catalogue
+     - http://data.europa.eu/dr8/SecurityRequirementsCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Security Testing
+     - http://data.europa.eu/dr8/SecurityTestingGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Semantic Capability
+     - http://data.europa.eu/dr8/SemanticCapabilityGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Serveless Architecture
+     - http://data.europa.eu/dr8/ServelessArchitectureGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Service-Oriented Architecture
+     - http://data.europa.eu/dr8/Service-OrientedArchitectureGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Solution Specification
+     - http://data.europa.eu/dr8/SolutionSpecificationDataObject
+   * - Unclassified - Non-LOST view
+     - Properties of Technology Stack Selection
+     - http://data.europa.eu/dr8/TechnologyStackSelectionGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Tiered levels of support
+     - http://data.europa.eu/dr8/TieredLevelsOfSupportRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Traffic pattern
+     - http://data.europa.eu/dr8/TrafficPatternRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Usability
+     - http://data.europa.eu/dr8/UsabilityRequirement
+   * - Unclassified - Non-LOST view
+     - Properties of Usability Requirements Catalogue
+     - http://data.europa.eu/dr8/UsabilityRequirementsCatalogueGrouping
+   * - Unclassified - Non-LOST view
+     - Properties of Use GNU GPL as License
+     - http://data.europa.eu/dr8/UseGNUGPLAsLicenseGoal
+   * - Unclassified - Non-LOST view
+     - Properties of User Interface
+     - http://data.europa.eu/dr8/UserInterfaceGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Version Control
+     - http://data.europa.eu/dr8/VersionControlGoal
+   * - Unclassified - Non-LOST view
+     - Properties of Vertical Scaling
+     - http://data.europa.eu/dr8/VerticalScalingGoal
+   * - Unclassified - No view
+     - Properties of Achieve Interoperability
+     - http://data.europa.eu/dr8/AchieveInteroperabilityGoal
+   * - Unclassified - No view
+     - Properties of Achieve Legal Interoperability
+     - http://data.europa.eu/dr8/AchieveLegalInteroperabilityGoal
+   * - Unclassified - No view
+     - Properties of Achieve Organisational Interoperability
+     - http://data.europa.eu/dr8/AchieveOrganisationalInteroperabilityGoal
+   * - Unclassified - No view
+     - Properties of Achieve Semantic Interoperability
+     - http://data.europa.eu/dr8/AchieveSemanticInteroperabilityGoal
+   * - Unclassified - No view
+     - Properties of Achieve Technical Interoperability
+     - http://data.europa.eu/dr8/AchieveTechnicalInteroperabilityGoal
+   * - Unclassified - No view
+     - Properties of Analytical Capacity
+     - http://data.europa.eu/dr8/AnalyticalCapacityValue
+   * - Unclassified - No view
+     - Properties of Capability
+     - http://data.europa.eu/dr8/CapabilityRequirement
+   * - Unclassified - No view
+     - Properties of Coordination Capacity
+     - http://data.europa.eu/dr8/CoordinationCapacityValue
+   * - Unclassified - No view
+     - Properties of Creation of Interoperable European Solutions
+     - http://data.europa.eu/dr8/CreationOfInteroperableEuropeanSolutionsDriver
+   * - Unclassified - No view
+     - Properties of Data Contract
+     - http://data.europa.eu/dr8/DataContractDataObject
+   * - Unclassified - No view
+     - Properties of Data Policy
+     - http://data.europa.eu/dr8/DataPolicyDataObject
+   * - Unclassified - No view
+     - Properties of Delivery Capacity
+     - http://data.europa.eu/dr8/DeliveryCapacityValue
+   * - Unclassified - No view
+     - Properties of EIRA Ontology
+     - http://data.europa.eu/dr8/EIRAOntologyMeaning
+   * - Unclassified - No view
+     - Properties of European Interoperability Reference Architecture
+     - http://data.europa.eu/dr8/EuropeanInteroperabilityReferenceArchitectureAssessment
+   * - Unclassified - No view
+     - Properties of Interoperability Dimension
+     - http://data.europa.eu/dr8/InteroperabilityDimensionBusinessObject
+   * - Unclassified - No view
+     - Properties of Interoperable European Solution
+     - http://data.europa.eu/dr8/InteroperableEuropeanSolutionOutcome
+   * - Unclassified - No view
+     - Properties of Key Behavioural IoP Enablers
+     - http://data.europa.eu/dr8/KeyBehaviouralIoPEnablersAssessment
+   * - Unclassified - No view
+     - Properties of Key Governance IoP Enablers
+     - http://data.europa.eu/dr8/KeyGovernanceIoPEnablersAssessment
+   * - Unclassified - No view
+     - Properties of Key Interoperability Enablers
+     - http://data.europa.eu/dr8/KeyInteroperabilityEnablersGrouping
+   * - Unclassified - No view
+     - Properties of Key Structural IoP Enablers
+     - http://data.europa.eu/dr8/KeyStructuralIoPEnablersAssessment
+   * - Unclassified - No view
+     - Properties of Regulatory Capacity
+     - http://data.europa.eu/dr8/RegulatoryCapacityValue
