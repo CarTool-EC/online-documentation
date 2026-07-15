@@ -21,3 +21,5 @@ _build/
 # OS files
 .DS_Store
 Thumbs.dbdocs/build/
+
+_preview_build/
