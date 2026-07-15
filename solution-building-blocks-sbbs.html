@@ -1,0 +1,264 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4. Solution Building Blocks (SBBs) &mdash; Reference Architecture Specification: EIRA &amp; eGovERA 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b55727a9" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. Governance &amp; Lifecycle" href="governance-lifecycle.html" />
+    <link rel="prev" title="3. Architecture Patterns &amp; Case Studies" href="architecture-patterns-case-studies.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Reference Architecture Specification: EIRA & eGovERA
+              <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conceptual-foundations.html">2. Conceptual Foundations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Architecture &amp; Design</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="architecture-building-blocks-abbs.html">1. Architecture Building Blocks (ABBs)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-architecture-views-viewpoints.html">2. Reference Architecture Views &amp; Viewpoints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture-patterns-case-studies.html">3. Architecture Patterns &amp; Case Studies</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Solution Building Blocks (SBBs)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-are-solution-building-block-in-the-eira">4.1. What are Solution Building Block in the EIRA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sbbs-and-standards-or-specifications">4.2. SBBs and standards or specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sbbs-as-cots-oss-or-complete-solutions">4.3. SBBs as COTS, OSS or complete solutions</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Implementation &amp; Governance</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="governance-lifecycle.html">1. Governance &amp; Lifecycle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation-conformance-compliance-testing.html">2. Validation, Conformance &amp; Compliance Testing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendices.html">Appendices</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="frontmatter.html">Interoperability Architecture Solutions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Reference Architecture Specification: EIRA & eGovERA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">4. </span>Solution Building Blocks (SBBs)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/solution-building-blocks-sbbs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="solution-building-blocks-sbbs">
+<h1><span class="section-number">4. </span>Solution Building Blocks (SBBs)<a class="headerlink" href="#solution-building-blocks-sbbs" title="Link to this heading"></a></h1>
+<p>This section aims explain and describe what are the Solution Building
+Blocks (SBBs), which is the purpose and the relationship with other
+relevant aspects such as Architecture Building Blocks or specifications.</p>
+<section id="what-are-solution-building-block-in-the-eira">
+<h2><span class="section-number">4.1. </span>What are Solution Building Block in the EIRA<a class="headerlink" href="#what-are-solution-building-block-in-the-eira" title="Link to this heading"></a></h2>
+<p>Solution Building Blocks represent <strong>concrete implementation choices
+that realise the capabilities</strong> defined by Architecture Building Blocks.
+In EIRA terms, an SBB is an artefact that enables the implementation of
+one or more EIRA ABBs within a Digital Public Service (a Solution). SBBs
+constitute the actual products, technologies selected to fulfil
+architectural requirements. These can be realised in turn by standards
+and specifications.</p>
+<p>Where ABBs define requirements in technology-neutral terms, SBBs
+represent specific technological and implementation decisions. For
+instance, if an ABB defines the requirement for secure electronic
+identification, corresponding SBBs might include specific
+implementations such as eIDAS-compliant identity providers, mobile ID
+solutions, or smart card authentication systems. Multiple SBBs may exist
+to satisfy a single ABB, reflecting different implementation approaches,
+technological choices, or contextual requirements across different
+member states or policy domains.</p>
+<p>The relationship between ABBs and SBBs enables a clear separation
+between architectural requirements and implementation decisions,
+supporting technology neutrality whilst providing concrete guidance for
+solution delivery.</p>
+</section>
+<section id="sbbs-and-standards-or-specifications">
+<h2><span class="section-number">4.2. </span>SBBs and standards or specifications<a class="headerlink" href="#sbbs-and-standards-or-specifications" title="Link to this heading"></a></h2>
+<p>Within the European Interoperability Reference Architecture, Solution
+Building Blocks (SBBs) are architectural constructs that address
+specific interoperability needs and are realised through the application
+of standards and specifications. Standards and specifications themselves
+are not SBBs; rather, they are normative artefacts that define rules,
+structures, or agreements which SBBs rely upon.</p>
+<p>An SBB is therefore defined in terms of a set of applicable standards
+and specifications and is realised by implementing or adopting them.
+This distinction ensures a clear separation between the architectural
+perspective provided by EIRA and the external normative frameworks that
+guide implementation choices.</p>
+<p>In many cases, interoperability is achieved not through bespoke
+technical implementations but through the adoption of commonly agreed
+specifications, such as semantic models, legal frameworks, or
+organisational agreements. EIRA accommodates this by allowing SBBs to be
+realised through specifications.</p>
+<p>When this happens that an SBB is realised through standards or
+specifications, it represents an architectural decision to adopt, apply,
+or govern those specifications in a specific context, whilst preserving
+technology neutrality. Such specification-based SBBs provide a bridge
+between abstract Architecture Building Blocks (ABBs) and concrete
+implementations, offering actionable guidance without mandating specific
+products or platforms.</p>
+<ul class="simple">
+<li><p><strong>Organisational SBBs</strong>, which are realised through organisational
+specifications such as governance frameworks, service level
+agreements, memoranda of understanding, or collaborative arrangements.</p></li>
+<li><p><strong>Semantic SBBs</strong>, which are realised through semantic specifications
+such as data models, vocabularies, taxonomies, metadata schemas, or
+ontologies. In these cases, the SBB represents the adoption or
+governance of a shared semantic artefact, not the artefact itself.</p></li>
+<li><p><strong>Technical SBBs</strong>, which are realised through technical standards,
+protocols, interface definitions, API specifications, or architectural
+patterns that enable technical interoperability.</p></li>
+</ul>
+<p>An example to support the explanations is, for instance, an ABB may
+express the need for semantic interoperability in data exchange. The
+corresponding SBB may define the adoption of a standardised data model
+or vocabulary. The vocabulary specification itself (such as a Core
+Vocabulary or an international standard) remains an external artefact,
+while the SBB captures the architectural choice to use that
+specification to fulfil the interoperability requirement.</p>
+<p>The bottom line is that SBBs realising standards and specifications is
+key and the cornerstone for the development of digital public services:</p>
+<ul class="simple">
+<li><p>It promotes <strong>interoperability by design</strong>, ensuring that solutions
+are built on common foundations from the outset and can interoperate
+without bespoke integration.</p></li>
+<li><p>It <strong>supports technology neutrality</strong> by clearly separating what must
+be achieved from how it is implemented, allowing public
+administrations to retain flexibility while ensuring compatibility.</p></li>
+</ul>
+</section>
+<section id="sbbs-as-cots-oss-or-complete-solutions">
+<h2><span class="section-number">4.3. </span>SBBs as COTS, OSS or complete solutions<a class="headerlink" href="#sbbs-as-cots-oss-or-complete-solutions" title="Link to this heading"></a></h2>
+<p>When Solution Building Blocks take the form of COTS products,
+open-source software, or complete solutions, they represent tangible
+implementations that directly provide the capabilities defined by
+Architecture Building Blocks. These product-based SBBs are characterised
+by their easy deployability, established feature sets, and existing
+support ecosystems. Unlike specification-based SBBs that define “how to
+build,” product-based SBBs represent “what to deploy.”</p>
+<p>As an example, an Architecture Building Block might define the
+requirement for “secure document exchange between public
+administrations.” The corresponding product-based SBB could be an
+e-Delivery Access Point implementation (such as Domibus, an open-source
+solution provided by the European Commission), a commercial secure file
+transfer solution, or a complete document management system with
+built-in interoperability features.</p>
+<p>Following this logic, there are different possibilities for the
+selection and implementation of these SBBs:</p>
+<ul class="simple">
+<li><p><strong>Commercial Off-The-Shelf (COTS) Solutions:</strong> Proprietary software
+products developed and maintained by commercial vendors, licensed for
+use by public administrations. COTS solutions typically offer
+comprehensive functionality, vendor support, regular updates, and
+established deployment practices. Examples include enterprise service
+bus platforms, identity management systems, or document management
+solutions that incorporate European interoperability standards.</p></li>
+<li><p><strong>Open-Source Software (OSS):</strong> Software solutions with publicly
+available source code, licensed under open-source licences that permit
+use, modification, and redistribution. OSS solutions offer
+transparency, flexibility for customisation, community-driven
+development, and typically lower licensing costs. Examples include the
+CEF Building Blocks (such as eDelivery, eSignature, and eID), Apache
+middleware components, or open-source content management systems
+adapted for public administration use.</p></li>
+<li><p><strong>Hybrid Solutions:</strong> Products that combine open-source core
+components with commercial extensions, support arrangements, or
+managed service offerings. These solutions balance the transparency
+and flexibility of OSS with the structured support and additional
+features of commercial products.</p></li>
+<li><p><strong>Complete Integrated Solutions:</strong> Comprehensive platforms or suites
+that address multiple Architecture Building Blocks simultaneously,
+providing end-to-end functionality for specific use cases. Examples
+include integrated e-government platforms, cross-border service
+delivery systems, or domain-specific solutions for areas like
+e-procurement, health information exchange, or social security
+coordination.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="architecture-patterns-case-studies.html" class="btn btn-neutral float-left" title="3. Architecture Patterns &amp; Case Studies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="governance-lifecycle.html" class="btn btn-neutral float-right" title="1. Governance &amp; Lifecycle" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Copyright 2026, European Commission, DIGIT.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
