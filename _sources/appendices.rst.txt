@@ -1477,56 +1477,54 @@ Non-Normative References
 Bibliographic References (Web, Documents, Books, Institutions, etc)
 -------------------------------------------------------------------
 
-.. [1]
-   Digital public services and environments:
+#. Digital public services and environments:
    https://digital-strategy.ec.europa.eu/en/policies/digital-public-services
 
-.. [2]
+#. 
    ArchiMate© licensed downloads:
    https://www.opengroup.org/archimate-licensed-downloads
 
-.. [3]
+#. 
    The Open Group: https://www.opengroup.org/
 
-.. [4]
+#. 
    Public Governance Institute, KU Leuven:
    https://soc.kuleuven.be/io/english/
 
-.. [5]
+#. 
    eGovERA Health Reference Architecture:
    https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/egovera-health
 
-.. [6]
+#. 
    eGovERA Customs Reference Architecture:
    https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/egovera-customs
 
-.. [7]
+#. 
    eGovERA Tax Reference Architecture:
    https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/solution/egovera-taxes
 
-.. [8]
+#. 
    Data Space and Linked Data in Flanders:
    https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/news/egoverac-success-story-data-space-and-linked-data-flanders
 
-.. [9]
+#. 
    Data Space with the Council of Madrid:
    https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/news/egoverac-success-data-space-council-madrid
 
-.. [10]
+#. 
    ViDA invoicing requirements with DG TAXUD:
    https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/news/egoverac-success-vida-e-invoicing-requirements-dg-taxud
 
-.. [11]
+#. 
    EIRA and ITB with CACSA:
    https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/news/first-public-procurement-use-case-eirac-and-itb-cacsa
 
-.. [12]
+#. 
    Semantic versioning: https://semver.org/
 
-.. [13]
+#. 
    Interoperability Architecture Solutions:
    https://interoperable-europe.ec.europa.eu/collection/european-interoperability-reference-architecture-eira
 
-.. [14]
-   Interoperability Architecture GitHub Repositories:
+#. Interoperability Architecture GitHub Repositories:
    https://github.com/CarTool-EC?tab=repositories
