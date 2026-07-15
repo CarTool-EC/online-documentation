@@ -23,3 +23,9 @@ _build/
 Thumbs.dbdocs/build/
 
 _preview_build/
+
+nueva-rama.ps1
+
+cerrar-rama.ps1
+deploy.ps1
+deploy.sh
