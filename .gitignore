@@ -29,3 +29,4 @@ nueva-rama.ps1
 cerrar-rama.ps1
 deploy.ps1
 deploy.sh
+watch_and_deploy.py
