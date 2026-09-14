@@ -1,0 +1,663 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2. Conceptual Foundations &mdash; Reference Architecture Specification: EIRA &amp; eGovERA 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b55727a9" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. Architecture Building Blocks (ABBs)" href="architecture-building-blocks-abbs.html" />
+    <link rel="prev" title="1. Introduction" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Reference Architecture Specification: EIRA & eGovERA
+              <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Conceptual Foundations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-european-interoperability-reference-architecture-eira">2.1. The European Interoperability Reference Architecture, EIRA©</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-egovernment-european-reference-architecture-egovera">2.2. The eGovernment European Reference Architecture, eGovERA©</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#purposes-of-eira-and-egovera">2.3. Purposes of EIRA and eGovERA</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#core-shared-purposes">2.3.1. Core Shared Purposes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#unit-of-analysis">2.4. Unit of analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use-cases-for-the-reference-architectures">2.5. Use cases for the Reference Architectures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-role-of-architecture-principles">2.6. The role of Architecture Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#diving-into-core-components-abbs-sbbs-views-and-viewpoints">2.7. Diving into core components (ABBs, SBBs, views, and viewpoints).</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-eira-ontology">2.8. The (EIRA) Ontology</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#purpose-and-nature">2.8.1. Purpose and Nature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#analysis-of-an-european-public-administration-interoperable-solution">2.8.2. Analysis of an <strong>European public administration Interoperable Solution</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#design-of-a-european-public-administration-interoperable-solution-or-documentation-of-a-existing-european-public-administration-interoperable-solution">2.8.3. Design of a <strong>European public administration Interoperable Solution</strong> or Documentation of a existing European public administration Interoperable Solution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#key-interoperability-enablers-viewpoint">2.9. Key Interoperability Enablers (viewpoint)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#purpose-and-nature-1">2.9.1. Purpose and Nature</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#the-ra-and-related-standards-and-specifications-archimate-paaf">2.10. The RA and related standards and specifications (ArchiMate©, PAAF)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#archimate-and-the-ra">2.10.1. ArchiMate© and the RA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#paaf-and-the-ra">2.10.2. PAAF and the RA</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#references">2.11. References</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Architecture &amp; Design</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="architecture-building-blocks-abbs.html">1. Architecture Building Blocks (ABBs)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference-architecture-views-viewpoints.html">2. Reference Architecture Views &amp; Viewpoints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture-patterns-case-studies.html">3. Architecture Patterns &amp; Case Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solution-building-blocks-sbbs.html">4. Solution Building Blocks (SBBs)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Implementation &amp; Governance</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="governance-lifecycle.html">1. Governance &amp; Lifecycle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation-conformance-compliance-testing.html">2. Validation, Conformance &amp; Compliance Testing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendices.html">Appendices</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="frontmatter.html">Interoperability Architecture Solutions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Reference Architecture Specification: EIRA & eGovERA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2. </span>Conceptual Foundations</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/conceptual-foundations.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="conceptual-foundations">
+<h1><span class="section-number">2. </span>Conceptual Foundations<a class="headerlink" href="#conceptual-foundations" title="Link to this heading"></a></h1>
+<section id="the-european-interoperability-reference-architecture-eira">
+<h2><span class="section-number">2.1. </span>The European Interoperability Reference Architecture, EIRA©<a class="headerlink" href="#the-european-interoperability-reference-architecture-eira" title="Link to this heading"></a></h2>
+<p>The <strong>European Interoperability Reference Architecture (EIRA©)</strong> is a
+<strong>four-view reference architecture</strong> designed to deliver interoperable
+digital public services across borders and sectors in the European
+Union. It serves as a comprehensive framework that defines the required
+capabilities for promoting interoperability through a structured set of
+<strong>Architecture Building Blocks (ABBs)</strong>.</p>
+<p>EIRA© provides a blueprint with recommended best practices, standards,
+and guidelines for designing and implementing systems that are
+efficient, scalable, and interoperable. It operates as a <strong>technology
+and product-neutral, service-oriented architecture (SOA)</strong> that uses
+ArchiMate® as its modelling notation.</p>
+</section>
+<section id="the-egovernment-european-reference-architecture-egovera">
+<h2><span class="section-number">2.2. </span>The eGovernment European Reference Architecture, eGovERA©<a class="headerlink" href="#the-egovernment-european-reference-architecture-egovera" title="Link to this heading"></a></h2>
+<p>The eGovernment European Reference Architecture (eGovERA) provides
+further granularity and domain focus extension of the European
+Interoperability Reference Architecture. Whilst EIRA establishes a
+foundational vocabulary of Architecture Building Blocks at the
+meta-concept level (level 1 granularity), eGovERA delivers level 2 and
+further granularity by expanding these building blocks into detailed
+architecture patterns and implementation guidance. This hierarchical
+relationship ensures that eGovERA maintains full alignment with EIRA’s
+core principles and structure whilst offering the additional specificity
+required for practical solution design and implementation.</p>
+</section>
+<section id="purposes-of-eira-and-egovera">
+<h2><span class="section-number">2.3. </span>Purposes of EIRA and eGovERA<a class="headerlink" href="#purposes-of-eira-and-egovera" title="Link to this heading"></a></h2>
+<p>The European Interoperability Reference Architecture (EIRA) and the
+eGovernment European Reference Architecture (eGovERA) extension share a
+common mission: to enable European public administrations to design and
+deliver digital public services that are interoperable by design,
+efficient in operation, and capable of functioning effectively across
+organisational and national boundaries. Both architectures serve as
+structured frameworks that guide the analysis, design, and
+implementation of solutions aligned with the principles and
+recommendations of the European Interoperability Framework.</p>
+<section id="core-shared-purposes">
+<h3><span class="section-number">2.3.1. </span>Core Shared Purposes<a class="headerlink" href="#core-shared-purposes" title="Link to this heading"></a></h3>
+<p>At their foundation, both EIRA and eGovERA fulfil three essential
+purposes for European public administrations:</p>
+<p><strong>Guidance for solution development:</strong> Both architectures provide
+systematic guidance for creating digital public services that meet
+specific policy objectives and user needs. They offer structured
+approaches to analyse requirements, identify necessary capabilities, and
+design solutions that address the multidimensional nature of
+interoperability challenges. This guidance helps public administrations
+navigate the complexity of cross-border and cross-sector service
+delivery by providing clear frameworks for architectural
+decision-making.</p>
+<p><strong>Best practices and standards:</strong> EIRA and eGovERA embody accumulated
+knowledge from successful digital public service implementations across
+Europe. They incorporate best practices, reference to established
+standards and specifications, and architectural principles that promote
+the creation of systems that are efficient, scalable, secure, and
+interoperable. By consolidating this knowledge into reusable
+architectural components, both architectures enable public
+administrations to benefit from proven approaches rather than repeatedly
+solving similar problems independently.</p>
+<p><strong>Common language:</strong> Perhaps most fundamentally, both architectures
+establish a shared vocabulary and conceptual framework for discussing
+digital public services and their interoperability requirements. This
+common language, expressed through Architecture Building Blocks
+organised according to the LOST views (Legal, Organisational, Semantic,
+and Technical), facilitates communication between diverse stakeholders
+-including policy makers, enterprise architects, solution designers,
+technical implementers, and procurement specialists. By providing this
+shared architectural vocabulary, EIRA and eGovERA reduce complexity,
+enhance coordination between organisations, and lower costs by enabling
+reuse of both architectural knowledge and solution components.</p>
+</section>
+</section>
+<section id="unit-of-analysis">
+<h2><span class="section-number">2.4. </span>Unit of analysis<a class="headerlink" href="#unit-of-analysis" title="Link to this heading"></a></h2>
+<p>The unit of analysis for both the European Interoperability Reference
+Architecture (EIRA) and the eGovernment European Reference Architecture
+(eGovERA) is <strong>an European public administration Interoperable Solution
+encompassing an interoperability enabling legal solution component, an
+interoperability enabling organizational/governance solution component,
+an interoperable semantic solution component, an Interoperable digital
+solution component (Digital Public Service</strong> [1]_Included), and an
+interoperability enabling technical infrastructure solution component.
+As defined by the European Commission, Digital Public Services refers to
+the use of technologies to provide and deliver services at all
+jurisdictional levels (European, national, regional, and local) to
+citizens, businesses, and other public administrations. By adopting the
+<strong>European public administration Interoperable Solution</strong> as the
+fundamental unit of analysis, both reference architectures ensure that
+interoperability considerations are addressed holistically, encompassing
+the complete service delivery context rather than focusing narrowly on
+isolated solution components.</p>
+<p>An <strong>European public administration Interoperable Solution</strong> represents
+the end-to-end capability through which a public administration fulfils
+a public policy objective using digital means. This encompasses not
+merely the technological systems involved, but the entire service
+delivery mechanism across all dimensions required for effective
+interoperable operation. Analysing <strong>European public administration
+Interoperable Solution</strong>s through EIRA and eGovERA requires systematic
+consideration of four interrelated dimensions aligned with the European
+Interoperability Framework: Legal, Organisational, Semantic and
+Technical (application and infrastructure).</p>
+<p>By maintaining the <strong>European public administration Interoperable
+Solution</strong> as the unit of analysis across all four dimensions, EIRA and
+eGovERA ensure that architecture work systematically addresses the
+complete interoperability challenge. This <strong>holistic approach prevents
+the common pitfall of addressing technical interoperability in isolation
+whilst neglecting equally critical legal, organisational, or semantic
+considerations</strong> that determine whether services can genuinely operate
+effectively across borders and organisational boundaries.</p>
+</section>
+<section id="use-cases-for-the-reference-architectures">
+<h2><span class="section-number">2.5. </span>Use cases for the Reference Architectures<a class="headerlink" href="#use-cases-for-the-reference-architectures" title="Link to this heading"></a></h2>
+<p>Both the European Interoperability Reference Architecture (EIRA) and the
+eGovernment European Reference Architecture (eGovERA) serve two primary
+and complementary use cases that support the complete lifecycle of
+digital public service development: Analysis and Design. These use cases
+represent distinct but closely interconnected activities that guide
+public administrations from initial service conception through to
+implementable solution architecture, ensuring that interoperability
+considerations are systematically addressed throughout the development
+process.</p>
+<ul class="simple">
+<li><p><strong>Analysis Use Case:</strong> The Analysis use case refers to the systematic
+activity of examining and documenting the requirements needed for the
+provision and delivery of digital public services that are
+interoperable by design. The output of the Analysis use case is a
+comprehensive understanding of interoperability requirements,
+documented through identification of relevant Architecture Building
+Blocks, specification of functional and non-functional requirements,
+and articulation of constraints and dependencies that will guide
+subsequent design decisions.</p></li>
+<li><p><strong>Design Use Case:</strong> The Design use case refers to the realisation of
+analysis requirements through the identification and specification of
+solutions that will be implemented to address the needs and
+requirements gathered during analysis. The output of the Design use
+case is a documented solution architecture that specifies the mapping
+of Solution Building Blocks to Architecture Building Blocks, the
+selected standards and interoperability specifications, the definition
+of interfaces and integration points, and implementation guidance for
+development or deployment teams, providing a clear blueprint for how
+the digital public service will be implemented to achieve necessary
+interoperability characteristics.</p></li>
+</ul>
+<p>Whilst Analysis and Design represent distinct use cases, they function
+as closely interconnected and often iterative activities within the
+architecture development lifecycle. Analysis findings directly inform
+design decisions by establishing the requirements that solutions must
+satisfy, whilst design activities may reveal gaps or ambiguities in
+analysis that necessitate returning to requirements clarification. Both
+EIRA and eGovERA support this iterative relationship through their
+common vocabulary of Architecture Building Blocks, which provides
+continuity between analysis and design phases—an ABB identified as
+relevant during analysis becomes a design requirement that must be
+satisfied through appropriate SBB selection during design. The
+relationship and lifecycle is defined in the Solution Architecture
+Framework (SAF).</p>
+</section>
+<section id="the-role-of-architecture-principles">
+<h2><span class="section-number">2.6. </span>The role of Architecture Principles<a class="headerlink" href="#the-role-of-architecture-principles" title="Link to this heading"></a></h2>
+<p>Architecture principles play a foundational role in the supported use
+cases by the European Interoperability Reference Architecture (EIRA) and
+the eGovernment European Reference Architecture (eGovERA) establishing
+the fundamental rules and guidelines that govern architectural solution
+design decisions. Within EIRA, an Architecture Principle is defined as a
+principle that enables general rules and guidelines for the use and
+deployment of IT resources and assets across the public organisation.
+This definition aligns with established enterprise architecture
+frameworks, particularly TOGAF(c) and ArchiMate(c), ensuring consistency
+with widely adopted architectural practices whilst addressing the
+specific interoperability context of European digital public services.</p>
+<p>Architecture principles serve multiple critical functions within the
+reference architectures. They provide normative guidance that shapes how
+Architecture Building Blocks should be implemented and how Solution
+Building Blocks should be selected. They establish constraints that
+ensure architectural decisions align with broader policy objectives,
+such as data protection, accessibility, or technological neutrality.
+They promote consistency across different digital public services by
+encouraging common approaches to recurring architectural challenges.</p>
+<p>To support public administrations in applying architecture principles
+consistently, EIRA and eGovERA leverage the European Library of
+Architecture Principles (ELAP). The ELAP is a curated collection of
+architecture principles specifically relevant to the design and
+implementation of interoperable digital public services across Europe.
+Rather than defining principles independently, EIRA and eGovERA
+reference and reuse principles catalogued in ELAP, creating a coherent
+ecosystem where principles are defined once and applied consistently
+across different architectural contexts.</p>
+<p>When using EIRA or eGovERA for analysis and design use cases, architects
+should systematically consider relevant architecture principles from
+ELAP as they make architectural decisions. During analysis, principles
+help identify requirements by clarifying what characteristics the
+digital public service must exhibit. For instance, the principle of
+openness might drive requirements for open data publication or open
+standard adoption. During design, principles guide the evaluation and
+selection of Solution Building Blocks by providing criteria against
+which alternatives can be assessed. For example, the principle of
+technological neutrality would favour solutions based on open
+specifications over proprietary technologies.</p>
+<p>By grounding architectural work in explicit, documented principles
+referenced from ELAP, public administrations ensure that their digital
+public services embody the values and approaches that enable effective
+interoperability across the European public administration landscape.</p>
+</section>
+<section id="diving-into-core-components-abbs-sbbs-views-and-viewpoints">
+<h2><span class="section-number">2.7. </span>Diving into core components (ABBs, SBBs, views, and viewpoints).<a class="headerlink" href="#diving-into-core-components-abbs-sbbs-views-and-viewpoints" title="Link to this heading"></a></h2>
+<p>The European Interoperability Reference Architecture and eGovernment
+European Reference Architecture are structured around several core
+architectural components derived from established architecture
+frameworks such TOGAF(c) and ArchiMate(c). Understanding these
+fundamental components (Architecture Building Blocks, Solution Building
+Blocks, views, and viewpoints) is key for effectively applying the
+reference architectures to digital public service analysis and design.</p>
+<p>As previously introduced, Architecture Building Blocks (ABBs) and
+Solution Building Blocks (SBBs) represent EIRA and eGovERA’s adaptation
+of TOGAF’s building block concept:</p>
+<ul class="simple">
+<li><p><strong>Architecture Building Blocks</strong> define the required capabilities and
+interoperability characteristics that digital public services must
+possess, expressed as technology-neutral requirements aligned with EIF
+principles.</p></li>
+<li><p><strong>Solution Building Blocks</strong> represent the concrete realisations of
+these requirements through specifications, standards, products, or
+implementations.</p></li>
+</ul>
+<p>This distinction, fundamental to TOGAF’s Architecture Development
+Method, enables the separation of “what” must be achieved from “how” it
+will be achieved, supporting both technology neutrality and practical
+implementation guidance. Detailed explanations of ABBs and SBBs,
+including their types, relationships, and application, are provided in
+subsequent sections of this document.</p>
+<p>As already mentioned, the other key aspects and concepts are views and
+viewpoints. These concepts are further discussed and described later in
+the document. However, find below a high-level overview of both
+concepts:</p>
+<ul class="simple">
+<li><p><strong>Views:</strong> In alignment with both TOGAF and ArchiMate, views provide
+perspectives on the architecture that address aspects of the system.
+EIRA and eGovERA organise their Architecture Building Blocks into four
+primary views corresponding to the interoperability levels defined by
+the European Interoperability Framework: Legal, Organisational,
+Semantic, and Technical (LOST).</p></li>
+<li><p><strong>Viewpoints:</strong> Following ArchiMate and TOGAF conventions, viewpoints
+define the conventions or logics for constructing and using views,
+specifying what elements should be included, how they should be
+represented, and what purposes the view serves. EIRA and eGovERA
+define several viewpoints that enable different analytical and design
+perspectives on digital public services, including the High-Level
+Viewpoint (providing an executive overview of focal ABBs across all
+views), or the Key Interoperability Enablers Viewpoint (highlighting
+critical components for achieving interoperability) amongst others.</p></li>
+</ul>
+</section>
+<section id="the-eira-ontology">
+<h2><span class="section-number">2.8. </span>The (EIRA) Ontology<a class="headerlink" href="#the-eira-ontology" title="Link to this heading"></a></h2>
+<p>The EIRA Ontology View provides a meta-level perspective on the European
+Interoperability Reference Architecture by formally defining the
+conceptual model that underpins the entire architecture. Unlike the LOST
+views (Legal, Organisational, Semantic, and Technical) which organise
+Architecture Building Blocks according to interoperability dimensions,
+the Ontology View articulates the fundamental concepts, relationships,
+and structural rules that govern how EIRA itself is constructed and how
+its components interrelate.</p>
+<section id="purpose-and-nature">
+<h3><span class="section-number">2.8.1. </span>Purpose and Nature<a class="headerlink" href="#purpose-and-nature" title="Link to this heading"></a></h3>
+<p>The Ontology View serves as the architectural foundation that defines
+“the architecture of the architecture.” It explicitly models the
+meta-concepts that EIRA employs—such as what constitutes an Architecture
+Building Block, how ABBs relate to Solution Building Blocks, what
+constitutes a view or viewpoint, how interoperability dimensions are
+defined, and what types of relationships can exist between different
+architectural elements. By formalising these meta-level concepts, the
+Ontology View ensures internal consistency within EIRA, provides a
+rigorous foundation for extending or adapting the architecture, enables
+precise communication about EIRA’s structure and components, and
+supports tooling development for EIRA validation, analysis, and
+application.</p>
+<p>This ontological foundation is essential for maintaining EIRA as a
+coherent, well-defined architecture rather than an ad hoc collection of
+concepts. It establishes the “grammar” and “vocabulary” that govern how
+EIRA expresses architectural knowledge, ensuring that new ABBs,
+viewpoints, or other architectural elements can be added systematically
+whilst preserving the architecture’s overall integrity and consistency.</p>
+<p>The Ontology view, as mentioned, introduce the most basic and
+fundamental concepts and relationships between them. To do so, the view
+is organised in two main purposes or aspects: 1) the analysis of a
+<strong>European public administration Interoperable Solution</strong>, or; 2) the
+design or documentation of a <strong>European public administration
+Interoperable Solution</strong>. It important to mention, as the analysis
+related content is at higher level, and is focused on explaining and
+depicting how ABBs are related to the definition of requirements (ABBs
+are requirements), and the definition of these concepts and all related
+ones, are key, as they influence and guide the design and documentation
+of digital public solutions.</p>
+</section>
+<section id="analysis-of-an-european-public-administration-interoperable-solution">
+<h3><span class="section-number">2.8.2. </span>Analysis of an <strong>European public administration Interoperable Solution</strong><a class="headerlink" href="#analysis-of-an-european-public-administration-interoperable-solution" title="Link to this heading"></a></h3>
+<p>The <strong>analysis phase</strong> in the EIRA Ontology View defines the conceptual
+elements used to analyse a target digital public solution and to
+structure the identification of its requirements prior to design. It
+captures why a solution is needed, under which constraints, and which
+interoperability concerns must be addressed, independently of any
+concrete implementation decisions. The analysis phase establishes a
+structured problem space that guides and constrains the subsequent
+design phase.</p>
+<p>More specifically, the analysis phase models how public policy
+objectives, constraints, assumptions, and context are translated into
+digital solution requirements, including functional, non-functional, and
+interoperability requirements. These requirements are derived using EIRA
+views, viewpoints, and dimensions, supported by key interoperability
+enablers and architecture building blocks. The resulting set of digital
+solution requirements provides the basis for architectural decisions
+taken during the design phase.</p>
+</section>
+<section id="design-of-a-european-public-administration-interoperable-solution-or-documentation-of-a-existing-european-public-administration-interoperable-solution">
+<h3><span class="section-number">2.8.3. </span>Design of a <strong>European public administration Interoperable Solution</strong> or Documentation of a existing European public administration Interoperable Solution<a class="headerlink" href="#design-of-a-european-public-administration-interoperable-solution-or-documentation-of-a-existing-european-public-administration-interoperable-solution" title="Link to this heading"></a></h3>
+<p>The <strong>design and documentation phase</strong> in the EIRA Ontology View defines
+the conceptual elements used to specify, structure, and document an
+interoperable digital solution based on the outcomes of the analysis
+phase. It captures how the identified requirements are realised through
+solution building blocks and specifications, while maintaining
+traceability to interoperability concerns and policy drivers established
+earlier.</p>
+<p>In this phase, an interoperable digital solution is modelled as a
+composition of solution building blocks, including application
+presentation enablers, semantic, organisational, legal, and
+infrastructure solutions. These elements are described and constrained
+through solution specifications and interoperability specifications,
+which may be selected or reused from the EIRA Library of
+Interoperability Specifications. The resulting documentation supports
+both the design of new digital public services and the documentation of
+existing ones in a consistent and reusable manner.</p>
+</section>
+</section>
+<section id="key-interoperability-enablers-viewpoint">
+<h2><span class="section-number">2.9. </span>Key Interoperability Enablers (viewpoint)<a class="headerlink" href="#key-interoperability-enablers-viewpoint" title="Link to this heading"></a></h2>
+<p>The Key Interoperability Enablers Viewpoint provides a focused
+perspective on the Architecture Building Blocks that are most critical
+for achieving interoperability in digital public services. Rather than
+presenting the complete architectural landscape as other viewpoints do,
+this viewpoint highlights those specific building blocks whose presence
+and proper implementation are essential conditions for enabling
+effective interoperable operation across organisational and
+jurisdictional boundaries.</p>
+<section id="purpose-and-nature-1">
+<span id="id1"></span><h3><span class="section-number">2.9.1. </span>Purpose and Nature<a class="headerlink" href="#purpose-and-nature-1" title="Link to this heading"></a></h3>
+<p>The Key Interoperability Enablers Viewpoint addresses a fundamental
+challenge that architects and decision-makers face when working with
+comprehensive reference architectures: distinguishing between components
+that are merely relevant and those that are truly critical for achieving
+interoperability. Whilst EIRA encompasses a broad range of Architecture
+Building Blocks addressing various aspects of digital public service
+design, not all ABBs carry equal weight in determining whether a service
+will be interoperable. The Key Interoperability Enablers Viewpoint
+identifies and presents those ABBs that function as foundational
+prerequisites—the components whose absence or inadequate implementation
+would fundamentally compromise interoperability regardless of how well
+other architectural aspects are addressed.</p>
+<p>This viewpoint organises key interoperability enablers according to the
+three interoperability dimensions: Structural, Behavioural, and
+Governance. Structural enablers address the compositional aspects of
+interoperable solutions, focusing on how components are organised and
+shared. Behavioural enablers address the dynamic aspects of
+interoperability, focusing on how information and knowledge are
+exchanged. Governance enablers address the collaborative and policy
+aspects, focusing on the agreements and frameworks that support
+peer-to-peer coordination. By organising enablers across these
+dimensions, the viewpoint ensures comprehensive coverage of
+interoperability concerns whilst maintaining analytical clarity about
+the nature of each enabler’s contribution.</p>
+</section>
+</section>
+<section id="the-ra-and-related-standards-and-specifications-archimate-paaf">
+<h2><span class="section-number">2.10. </span>The RA and related standards and specifications (ArchiMate©, PAAF)<a class="headerlink" href="#the-ra-and-related-standards-and-specifications-archimate-paaf" title="Link to this heading"></a></h2>
+<p>This Reference Architecture developed by the European Commission to
+support public administrations on achieving interoperability, and to do
+so, the RA is tidily related several standards, specifications, and
+frameworks widely adopted for the development of Enterprise
+Architectures and Solution Architectures. These are:</p>
+<ul class="simple">
+<li><p>ArchiMate©</p></li>
+<li><p>PAAF</p></li>
+</ul>
+<section id="archimate-and-the-ra">
+<h3><span class="section-number">2.10.1. </span>ArchiMate© and the RA<a class="headerlink" href="#archimate-and-the-ra" title="Link to this heading"></a></h3>
+<p>The EIRA© is based on and uses ArchiMate© as the core modelling notation
+and language. It is key as ArchiMate© <a class="footnote-reference brackets" href="#id6" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> is a standardised
+architecture modelling notation and language developed and maintained by
+The Open Group <a class="footnote-reference brackets" href="#id7" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>.</p>
+<p>As an international standard, ArchiMate® ensures wide acceptance and
+provides comprehensive coverage of all architecture domains required by
+EIRA©, from business and application layers to technology and
+infrastructure components.</p>
+<p>As an example of the alignment and extension of EIRA© vs ArchiMate©, the
+table below shows the mapping between the EIRA© views and ArchiMate©
+layers, evidencing the total coverage and alignment:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>EIRA© view</p></th>
+<th class="head"><p>ArchiMate© alignment</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Legal view</p></td>
+<td><p>Uses ArchiMate® elements to model
+governance, compliance, and legal
+constraints</p></td>
+</tr>
+<tr class="row-odd"><td><p>Organisational view</p></td>
+<td><p>Maps to ArchiMate® Business Layer
+(business capabilities, processes,
+actors)</p></td>
+</tr>
+<tr class="row-even"><td><p>Semantic view</p></td>
+<td><p>Leverages ArchiMate®
+Data/Information concepts to model
+data representations, metadata, and
+semantic agreements</p></td>
+</tr>
+<tr class="row-odd"><td><p>Technical Application and
+Infrastructure views</p></td>
+<td><p>Maps to ArchiMate® Application and
+Technology Layers</p></td>
+</tr>
+</tbody>
+</table>
+<p>Furthermore, the machine-readability of ArchiMate® models, which can be
+exported in XML format, enables automated processing, validation, and
+integration with other systems, supporting EIRA©’s goals of promoting
+reusability and interoperability.</p>
+<p>Lastly, ArchiMate®’s extensibility allows EIRA© to customise and
+specialise building blocks for specific eGovernment contexts while
+maintaining compliance with core standards, ensuring that solutions
+remain interoperable and reusable across different Member States and
+policy domains. The combination of standardisation, completeness,
+tooling support, and flexibility makes ArchiMate® a solid foundation for
+EIRA©’s mission to enable seamless digital public services across the
+European Union.</p>
+</section>
+<section id="paaf-and-the-ra">
+<h3><span class="section-number">2.10.2. </span>PAAF and the RA<a class="headerlink" href="#paaf-and-the-ra" title="Link to this heading"></a></h3>
+<p>The Public Administration Architecture Framework (PAAF), developed by
+the Public Governance Institute of KU Leuven <a class="footnote-reference brackets" href="#id8" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>, is a comprehensive
+Enterprise Architecture framework designed to model complete public
+administrations. Using ArchiMate© as its modelling language, PAAF
+enables enterprise architects to represent the entire organisational
+landscape—from high-level strategic goals, legal compliance, and policy
+objectives down to operational capabilities and service delivery
+mechanisms. Critically, PAAF accommodates both digital and non-digital
+(manual) processes, making it suitable for capturing the full complexity
+of public sector organisations where traditional and modern service
+delivery methods coexist.</p>
+<p>PAAF and EIRA share a complementary relationship where PAAF operates at
+the enterprise architecture level with a broad organisational
+perspective, while EIRA© focuses specifically on solution architecture
+for interoperable digital public services within the EU context. Both
+frameworks use ArchiMate©, enabling natural alignment across eleven
+primary architectural elements—including stakeholders, strategic goals,
+requirements, principles, capabilities, and digital public
+services—though with different levels of granularity. The relationship
+can be understood as PAAF providing the “whole organisation” view while
+EIRA offers a specialised “zoom-in” on digital public services
+interoperability, making EIRA effectively a focused subset within PAAF’s
+broader organizational scope, with the important distinction that EIRA
+exclusively addresses digital capabilities while PAAF encompasses the
+entire spectrum of service delivery.</p>
+<p>The strategic alignment between PAAF and EIRA bridges the critical gap
+between enterprise-level strategic planning and solution-level
+implementation of interoperable digital services, delivering value in
+both directions. For PAAF users, the alignment provides a clear
+methodology to translate organisational strategies and public value
+objectives into concrete, interoperable digital service designs using
+EIRA’s European interoperability framework. For EIRA users, it offers
+essential organizational context, ensuring digital solutions support
+broader public policies and contribute meaningfully to the
+organisation’s mission across coordination, regulatory, delivery, and
+analytical capacities. This bidirectional alignment enables improved
+architectural coherence, enhanced traceability from policy to
+implementation, and reduced fragmentation, ultimately empowering public
+administrations to pursue digital transformation systematically while
+maintaining both organisational strategic alignment and European
+interoperability compliance.</p>
+</section>
+</section>
+<section id="references">
+<h2><span class="section-number">2.11. </span>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id5" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>European Commission. Digital Public Services definition and guidance for interoperability.</p>
+</aside>
+<aside class="footnote brackets" id="id6" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>ArchiMate® is a modelling language standardized by The Open Group. More information available at: <a class="reference external" href="https://pubs.opengroup.org/architecture/archimate-doc/">https://pubs.opengroup.org/architecture/archimate-doc/</a></p>
+</aside>
+<aside class="footnote brackets" id="id7" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
+<p>The Open Group. ArchiMate® Standard and Specifications. <a class="reference external" href="https://www.opengroup.org/archimate">https://www.opengroup.org/archimate</a></p>
+</aside>
+<aside class="footnote brackets" id="id8" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
+<p>Public Governance Institute, KU Leuven. Public Administration Architecture Framework (PAAF). <a class="reference external" href="https://www.archivesportaleurope.net/">https://www.archivesportaleurope.net/</a></p>
+</aside>
+</aside>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction.html" class="btn btn-neutral float-left" title="1. Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="architecture-building-blocks-abbs.html" class="btn btn-neutral float-right" title="1. Architecture Building Blocks (ABBs)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Copyright 2026, European Commission, DIGIT.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
