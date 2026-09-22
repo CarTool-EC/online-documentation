@@ -18,7 +18,7 @@ Maintenance and evolution of the Reference Architecture
 
 To remain relevant, usable, and aligned with evolving interoperability
 needs, the Reference Architecture is subject to continuous maintenance
-and controlled evolution. This section describes the mechanisms through
+and controlled evolution. This section introduces the mechanisms through
 which changes are identified, assessed, implemented, and released. It
 establishes a structured change management lifecycle and a corresponding
 versioning scheme, ensuring that evolution is predictable, transparent,
@@ -60,10 +60,11 @@ steps:
   published and made publicly available.
 
 .. figure:: ./images/media/image10.svg
-   :width: 4.21795in
+   :width: 5.21795in
    :height: 2.41199in
+   :align: center
 
-   Figure 1 Change Management Process Overview
+   Figure 6: Change Management Process Overview
 
 Semantic versioning Scheme
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,8 +107,9 @@ the Reference Architecture and shows how the evolution of this
 specification is integrated within that lifecycle.
 
 .. figure:: ./images/media/image11.png
-   :width: 4.21795in
-   :height: 2.41199in
+   :width: 6.21795in
+   :height: 4.41199in
+   :align: center
 
 Figure 2 Specification Lifecycle timeline
 
