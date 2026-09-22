@@ -307,7 +307,7 @@ supports tooling development for EIRA validation, analysis, and
 application.
 
 .. figure:: ./images/media/image4.png
-   :width: 7.21795in
+   :width: 8.21795in
    :height: 5.41199in
    :align: center
 
@@ -519,7 +519,7 @@ exclusively addresses digital capabilities while PAAF encompasses the
 entire spectrum of service delivery.
 
 .. figure:: ./images/media/image6.png
-   :width: 7.21795in
+   :width: 8.21795in
    :height: 8.41199in
    :align: center
 

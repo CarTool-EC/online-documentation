@@ -107,11 +107,10 @@ the Reference Architecture and shows how the evolution of this
 specification is integrated within that lifecycle.
 
 .. figure:: ./images/media/image11.png
-   :width: 5.21795in
+   :width: 4.21795in
    :height: 3.41199in
    :align: center
-
-Figure 7: Specification Lifecycle timeline
+    Figure 7: Specification Lifecycle timeline
 
 The specification is designed to support a sustainable lifecycle while
 remaining aligned with the latest changes to the Reference Architecture.
