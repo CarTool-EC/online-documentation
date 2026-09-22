@@ -254,7 +254,7 @@ Method, enables the separation of "what" must be achieved from "how" it
 will be achieved, supporting both technology neutrality and practical
 implementation guidance. Detailed explanations of ABBs and SBBs,
 including their types, relationships, and application, are provided in
-subsequent sections of this document.
+subsequent sections.
 
 As already mentioned, the other key aspects and concepts are views and
 viewpoints. These concepts are further discussed and described later in
@@ -305,6 +305,13 @@ rigorous foundation for extending or adapting the architecture, enables
 precise communication about EIRA's structure and components, and
 supports tooling development for EIRA validation, analysis, and
 application.
+
+.. figure:: ./images/media/image4.svg
+   :width: 8.21795in
+   :height: 7.41199in
+   :align: center
+
+   Figure 1 EIRA Ontology View
 
 This ontological foundation is essential for maintaining EIRA as a
 coherent, well-defined architecture rather than an ad hoc collection of
@@ -396,6 +403,13 @@ identifies and presents those ABBs that function as foundational
 prerequisites—the components whose absence or inadequate implementation
 would fundamentally compromise interoperability regardless of how well
 other architectural aspects are addressed.
+
+.. figure:: ./images/media/image5.svg
+   :width: 8.21795in
+   :height: 7.41199in
+   :align: center
+
+   Figure 2 Key Interoperability Enablers
 
 This viewpoint organises key interoperability enablers according to the
 three interoperability dimensions: Structural, Behavioural, and
@@ -503,6 +517,13 @@ interoperability, making EIRA effectively a focused subset within PAAF's
 broader organizational scope, with the important distinction that EIRA
 exclusively addresses digital capabilities while PAAF encompasses the
 entire spectrum of service delivery.
+
+.. figure:: ./images/media/image6.svg
+   :width: 8.21795in
+   :height: 9.41199in
+   :align: center
+
+   Figure 3 Alignment between PAAF and EIRA
 
 The strategic alignment between PAAF and EIRA bridges the critical gap
 between enterprise-level strategic planning and solution-level
