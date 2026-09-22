@@ -523,7 +523,7 @@ entire spectrum of service delivery.
    :height: 8.41199in
    :align: center
 
-   Figure 3 Alignment between PAAF and EIRA
+  Figure 3 Alignment between PAAF and EIRA
 
 The strategic alignment between PAAF and EIRA bridges the critical gap
 between enterprise-level strategic planning and solution-level

@@ -110,6 +110,7 @@ specification is integrated within that lifecycle.
    :width: 4.21795in
    :height: 3.41199in
    :align: center
+    
     Figure 7: Specification Lifecycle timeline
 
 The specification is designed to support a sustainable lifecycle while
