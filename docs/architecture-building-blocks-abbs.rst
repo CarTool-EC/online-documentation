@@ -4,7 +4,7 @@ Architecture Building Blocks (ABBs)
 Definition and role of Architecture Building Blocks
 ---------------------------------------------------
 
-As introduced in Section 2, Architecture Building Blocks (ABBs) and
+As introduced in previous section, Architecture Building Blocks (ABBs) and
 Solution Building Blocks (SBBs) constitute the fundamental components
 through which EIRA and eGovERA express architectural requirements and
 their realisations. This section provides detailed explanation of
@@ -65,6 +65,10 @@ aspects introduced above. It is relevant to mention and remark that
 these examples might change over time and EIRA versions. However, the
 examples together with the explanations are good and key to understand
 the role of ABBs and their characteristics.
+
+.. figure:: ./images/media/image7.svg
+   :width: 5.21795in
+   :height: 2.41199in
 
 The image above represents the API enablers, which are is a grouping
 that referes to a coherent set of application-level building blocks that
