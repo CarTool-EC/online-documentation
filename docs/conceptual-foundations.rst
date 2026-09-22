@@ -306,7 +306,7 @@ precise communication about EIRA's structure and components, and
 supports tooling development for EIRA validation, analysis, and
 application.
 
-.. figure:: ./images/media/image4.svg
+.. figure:: ./images/media/image4.png
    :width: 8.21795in
    :height: 7.41199in
    :align: center
@@ -404,7 +404,7 @@ prerequisites—the components whose absence or inadequate implementation
 would fundamentally compromise interoperability regardless of how well
 other architectural aspects are addressed.
 
-.. figure:: ./images/media/image5.svg
+.. figure:: ./images/media/image5.png
    :width: 8.21795in
    :height: 7.41199in
    :align: center
@@ -518,7 +518,7 @@ broader organizational scope, with the important distinction that EIRA
 exclusively addresses digital capabilities while PAAF encompasses the
 entire spectrum of service delivery.
 
-.. figure:: ./images/media/image6.svg
+.. figure:: ./images/media/image6.png
    :width: 8.21795in
    :height: 9.41199in
    :align: center

@@ -66,7 +66,7 @@ these examples might change over time and EIRA versions. However, the
 examples together with the explanations are good and key to understand
 the role of ABBs and their characteristics.
 
-.. figure:: ./images/media/image7.svg
+.. figure:: ./images/media/image7.png
    :width: 5.21795in
    :height: 2.41199in
 
