@@ -307,8 +307,8 @@ supports tooling development for EIRA validation, analysis, and
 application.
 
 .. figure:: ./images/media/image4.png
-   :width: 8.21795in
-   :height: 7.41199in
+   :width: 7.21795in
+   :height: 5.41199in
    :align: center
 
    Figure 1 EIRA Ontology View
@@ -406,7 +406,7 @@ other architectural aspects are addressed.
 
 .. figure:: ./images/media/image5.png
    :width: 8.21795in
-   :height: 7.41199in
+   :height: 5.41199in
    :align: center
 
    Figure 2 Key Interoperability Enablers
@@ -519,8 +519,8 @@ exclusively addresses digital capabilities while PAAF encompasses the
 entire spectrum of service delivery.
 
 .. figure:: ./images/media/image6.png
-   :width: 8.21795in
-   :height: 9.41199in
+   :width: 7.21795in
+   :height: 8.41199in
    :align: center
 
    Figure 3 Alignment between PAAF and EIRA

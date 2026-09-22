@@ -67,8 +67,9 @@ examples together with the explanations are good and key to understand
 the role of ABBs and their characteristics.
 
 .. figure:: ./images/media/image7.png
-   :width: 5.21795in
+   :width: 4.21795in
    :height: 2.41199in
+   :align: center
 
 The image above represents the API enablers, which are is a grouping
 that referes to a coherent set of application-level building blocks that
