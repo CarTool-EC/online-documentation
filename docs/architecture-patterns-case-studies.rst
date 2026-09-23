@@ -73,7 +73,7 @@ constraints. To address this, a set of sectoral use cases are provided
 to illustrate how the Reference Architectures are applied in concrete
 policy domains.
 
-eGovERA Health Reference Architecture [5]_
+eGovERA Health Reference Architecture 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The health use case addresses highly sensitive data exchange scenarios,
 including patient identification, electronic health records, and
@@ -84,7 +84,7 @@ can be achieved while respecting strict legal and ethical requirements,
 and how common architectural patterns support continuity of care across
 organisational and national boundaries.
 
-eGovERA Customs Reference Architecture [6]_
+eGovERA Customs Reference Architecture 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The customs use case focuses on interoperability between customs
 authorities, economic operators, and other border management agencies.
@@ -92,7 +92,7 @@ It demonstrates how EIRA supports complex, multi-actor processes such as
 goods declaration, risk analysis, and information sharing across
 jurisdictions.
 
-eGovERA Tax Reference Architecture [7]_
+eGovERA Tax Reference Architecture 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The taxation use case focuses on interoperability scenarios such as
@@ -107,16 +107,16 @@ administrations to retain autonomy over internal systems.
 Case studies, the Reference Architectures in use
 ------------------------------------------------
 
-There are different cases where EIRA and eGovERA have been used by
-public administrations to analyse and design solution (digital public
+There are different cases where EIRA and eGovERA have been `used by
+public administrations <https://interoperable-europe.ec.europa.eu/collection/interoperability-architecture-solutions/success-stories>`_ to analyse and design solution (digital public
 services) interoperable by design and tailored to cover the specific
 needs and requirements of each of their use cases.
 
-eGovERA© success story on a Data Space and Linked Data in Flanders [8]_
+eGovERA© success story on a Data Space and Linked Data in Flanders
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-DG DIGIT helped the Flemish agency for Home Affairs design a Solution
-Architecture Template for “Locally Taxed”, a data space reusing local
+DG DIGIT helped the Flemish agency for Home Affairs design a `Solution
+Architecture Template for “Locally Taxed” <https://interoperable-europe.ec.europa.eu/collection/interoperability-architecture-solutions/news/egoverac-success-story-data-space-and-linked-data-flanders>`_, a data space reusing local
 tax decisions from over 3.000 local governments within the Flemish
 region to power citizen advisory services, producing analysis and a
 partial solution designs models in ArchiMate. Key success factors were
@@ -124,10 +124,10 @@ clear milestones, a multidisciplinary team, and alignment with EU goals.
 The models and methods provide reusable insights for the future Smart
 City/Data Space work and stakeholder-ready templates.
 
-eGovERA success on a Data Space with the Council of Madrid [9]_
+eGovERA success on a Data Space with the Council of Madrid
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-DG DIGIT supported Madrid’s Smart Urban Spaces - specifically
-MercaMadrid - by creating an eGovERA-based SAT and partial solution
+DG DIGIT supported Madrid’s `Smart Urban Spaces - specifically
+MercaMadrid - by creating an eGovERA-based SAT <https://interoperable-europe.ec.europa.eu/collection/interoperability-architecture-solutions/news/egoverac-success-data-space-council-madrid> `_ and partial solution
 model to ensure interoperability across IoT-driven services
 (environment, waste, lighting) via a data space, with outputs in
 ArchiMate for reuse. Benefits include a scalable template to document
@@ -137,12 +137,12 @@ were knowledge dissemination and a model adaptable to other spaces;
 initial complexity was offset by ensuring interoperable exchange between
 the city and providers.
 
-eGovERA success on ViDA e invoicing requirements with DG TAXUD [10]_
+eGovERA success on ViDA e invoicing requirements with DG TAXUD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Under Fiscalis FPG/042, DG TAXUD and DG DIGIT used eGovERA’s Tax
-Reference Architecture to produce SAT models for “B2B intra community
-transactions e Invoicing reporting,” centralizing requirements to
+`Reference Architecture to produce SAT models for “B2B intra community
+transactions e Invoicing reporting, <https://interoperable-europe.ec.europa.eu/collection/interoperability-architecture-solutions/news/dg-taxud-and-digit-strengthen-tax-systems-interoperability> `_ centralizing requirements to
 support Member States implementing ViDA e invoicing. The group (nine
 countries) highlighted clear onboarding, blended sessions, and alignment
 with EIF as key success factors. While benefits must be proven
@@ -151,10 +151,10 @@ standardization, cross border alignment, and reuse; more eGovERA
 centered use cases are encouraged to address change resistance and
 demonstrate impact.
 
-First public procurement use case for EIRA and ITB with CACSA [11]_
+First public procurement use case for EIRA and ITB with CACSA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Valencia’s CACSA applied EIRA and the Interoperability Test Bed across a
+Valencia’s `CACSA applied EIRA and the Interoperability Test Bed <https://interoperable-europe.ec.europa.eu/collection/interoperability-architecture-solutions/news/first-public-procurement-use-case-eirac-and-itb-cacsa>`_ across a
 full public procurement for a new “Sede Electrónica,” using EIRA to
 structure technical specifications and ITB for quality control. This
 aligned procurement with EIF, expressing capabilities as Architecture
@@ -164,20 +164,3 @@ how EIRA+ITB can improve specification clarity, comparability, and
 assurance, offering a replicable blueprint for other public
 administrations seeking interoperable, cross border ready digital public
 services
-
-References
-----------
-
-.. [5] eGovernment European Reference Architecture Health Domain. See appendices for domain-specific reference architecture documentation.
-
-.. [6] eGovernment European Reference Architecture Customs Domain. See appendices for domain-specific reference architecture documentation.
-
-.. [7] eGovernment European Reference Architecture Tax Domain. See appendices for domain-specific reference architecture documentation.
-
-.. [8] European Commission, DG DIGIT. Flanders Data Space Case Study: Locally Taxed Initiative. Available in the appendices and case study collection.
-
-.. [9] European Commission, DG DIGIT. Madrid Smart Urban Spaces Case Study. Available in the appendices and case study collection.
-
-.. [10] European Commission, DG TAXUD and DG DIGIT. ViDA e-Invoicing Reference Architecture Case Study under Fiscalis Framework. Available in the appendices.
-
-.. [11] European Commission. CACSA Valencia Public Procurement Case Study: EIRA and Interoperability Test Bed Application. Available in the appendices and best practices documentation.
