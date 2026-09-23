@@ -93,7 +93,7 @@ Architecture (EIRA) and the eGovernment European Reference Architecture
 encompassing an interoperability enabling legal solution component, an
 interoperability enabling organizational/governance solution component,
 an interoperable semantic solution component, an Interoperable digital
-solution component (Digital Public Service**\  [1]_Included), and an
+solution component (Digital Public Service** Included), and an
 interoperability enabling technical infrastructure solution component.
 As defined by the European Commission, Digital Public Services refers to
 the use of technologies to provide and deliver services at all
@@ -433,7 +433,7 @@ so, the RA is tidily related several standards, specifications, and
 frameworks widely adopted for the development of Enterprise
 Architectures and Solution Architectures. These are:
 
-- ArchiMate©
+- `ArchiMate© <https://www.opengroup.org/standards/archimate>`_ [2]_
 
 - PAAF
 
@@ -441,9 +441,9 @@ ArchiMate© and the RA
 ~~~~~~~~~~~~~~~~~~~~~
 
 The EIRA© is based on and uses ArchiMate© as the core modelling notation
-and language. It is key as ArchiMate© [2]_ is a standardised
+and language. It is key as `ArchiMate© <https://www.opengroup.org/standards/archimate>`_ is a standardised
 architecture modelling notation and language developed and maintained by
-The Open Group [3]_.
+`The Open Group <https://www.opengroup.org/>`_.
 
 As an international standard, ArchiMate® ensures wide acceptance and
 provides comprehensive coverage of all architecture domains required by
@@ -492,7 +492,7 @@ PAAF and the RA
 ~~~~~~~~~~~~~~~
 
 The Public Administration Architecture Framework (PAAF), developed by
-the Public Governance Institute of KU Leuven [4]_, is a comprehensive
+the `Public Governance Institute of KU Leuven <https://soc.kuleuven.be/io/onderzoek/project/files/KU_Leuven_PAA_model>`_, is a comprehensive
 Enterprise Architecture framework designed to model complete public
 administrations. Using ArchiMate© as its modelling language, PAAF
 enables enterprise architects to represent the entire organisational
@@ -522,8 +522,7 @@ entire spectrum of service delivery.
    :width: 8.21795in
    :height: 8.41199in
    :align: center
-
-  Figure 3 Alignment between PAAF and EIRA
+Figure 3 Alignment between PAAF and EIRA
 
 The strategic alignment between PAAF and EIRA bridges the critical gap
 between enterprise-level strategic planning and solution-level
@@ -541,14 +540,3 @@ implementation, and reduced fragmentation, ultimately empowering public
 administrations to pursue digital transformation systematically while
 maintaining both organisational strategic alignment and European
 interoperability compliance.
-
-References
-----------
-
-.. [1] European Commission. Digital Public Services definition and guidance for interoperability.
-
-.. [2] ArchiMate® is a modelling language standardized by The Open Group. More information available at: https://pubs.opengroup.org/architecture/archimate-doc/
-
-.. [3] The Open Group. ArchiMate® Standard and Specifications. https://www.opengroup.org/archimate
-
-.. [4] Public Governance Institute, KU Leuven. Public Administration Architecture Framework (PAAF). https://www.archivesportaleurope.net/

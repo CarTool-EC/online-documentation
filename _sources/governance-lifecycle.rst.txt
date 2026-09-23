@@ -71,7 +71,7 @@ Semantic versioning Scheme
 
 As introduced when describing the change management process, changes to
 the Reference Architecture are categorised into three types in alignment
-with the semantic versioning schema [12]_: major, minor.
+with the `semantic versioning schema <https://semver.org/>`_: major, minor.
 
 There are three types of changes that are considered in the change
 management process:
@@ -140,7 +140,7 @@ that the Reference Architecture remains relevant, practical, and aligned
 with real interoperability needs. Feedback can be submitted through the
 following channels.
 
-The Interoperable Europe Portal Collection [13]_
+The Interoperable Europe Portal Collection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Reference Architecture is made available through the
@@ -148,33 +148,23 @@ Interoperability Europe Portal, which serves as the European
 Commission’s one-stop shop for the publication of interoperable
 solutions.
 
-Through the general collection for the action and the specific solution
+Through the `general collection for the action <https://interoperable-europe.ec.europa.eu/collection/interoperability-architecture-solutions>`_ and the specific solution
 for the Reference Architecture, users can contact the EC functional
 mailbox to provide feedback. This channel enables users to submit
 comments, suggestions, and requests for improvement related to the
 Reference Architecture and its release components.
 
-The Interoperable Architecture Solutions GitHub Space
+The Interoperable Architecture Solutions GitLab Space
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The action also maintains a GitHub space [14]_ where the different
+The action also maintains a `GitLab space <https://code.europa.eu/eira>`_ where the different
 architecture solutions are stored, managed, and published. These
 repositories constitute the authoritative source for the content
 published on the Interoperable Europe Portal.
 
-Users can provide feedback directly through these repositories by using
-the GitHub Issues functionality. As all release components of the EIRA
-and eGovERA are publicly available. All feedback received through GitHub
+Users can provide feedback directly through these repositories by creating issues. As all release components of the EIRA
+and eGovERA are publicly available. All feedback received through GitLab
 is processed in accordance with the change management process described
 earlier in this specification. Regardless of the outcome of the analysis
 (whether a change request leads to implementation or is rejected) users
 receive a response explaining the rationale behind the decision.
-
-References
-----------
-
-.. [12] Semantic Versioning 2.0.0 specification. https://semver.org/
-
-.. [13] Interoperable Europe Portal. European Commission's one-stop shop for interoperable solutions. https://interoperable-europe.ec.europa.eu/
-
-.. [14] Interoperable Architecture Solutions GitHub Repository. GitHub organization maintaining EIRA and eGovERA components. https://github.com/european-commission-empl/interoperable-europe-architecture
