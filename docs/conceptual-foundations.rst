@@ -433,9 +433,9 @@ so, the RA is tidily related several standards, specifications, and
 frameworks widely adopted for the development of Enterprise
 Architectures and Solution Architectures. These are:
 
-- `ArchiMate© <https://www.opengroup.org/standards/archimate>`_ [2]_
+- `ArchiMate© <https://www.opengroup.org/standards/archimate>`_
 
-- PAAF
+- `PAAF <https://soc.kuleuven.be/io/onderzoek/project/files/KU_Leuven_PAA_model>`_
 
 ArchiMate© and the RA
 ~~~~~~~~~~~~~~~~~~~~~
