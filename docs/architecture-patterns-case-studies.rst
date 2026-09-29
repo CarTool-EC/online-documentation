@@ -126,8 +126,8 @@ City/Data Space work and stakeholder-ready templates.
 
 eGovERA success on a Data Space with the Council of Madrid
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-DG DIGIT supported Madrid’s `Smart Urban Spaces - specifically
-MercaMadrid - by creating an eGovERA-based SAT <https://interoperable-europe.ec.europa.eu/collection/interoperability-architecture-solutions/news/egoverac-success-data-space-council-madrid> `_ and partial solution
+DG DIGIT supported `Madrid’s Smart Urban Spaces - specifically
+MercaMadrid - by creating an eGovERA-based SAT <https://interoperable-europe.ec.europa.eu/collection/interoperability-architecture-solutions/news/egoverac-success-data-space-council-madrid>`_ and partial solution
 model to ensure interoperability across IoT-driven services
 (environment, waste, lighting) via a data space, with outputs in
 ArchiMate for reuse. Benefits include a scalable template to document
@@ -141,8 +141,8 @@ eGovERA success on ViDA e invoicing requirements with DG TAXUD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Under Fiscalis FPG/042, DG TAXUD and DG DIGIT used eGovERA’s Tax
-`Reference Architecture to produce SAT models for “B2B intra community
-transactions e Invoicing reporting, <https://interoperable-europe.ec.europa.eu/collection/interoperability-architecture-solutions/news/dg-taxud-and-digit-strengthen-tax-systems-interoperability> `_ centralizing requirements to
+Reference Architecture to produce `SAT models for “B2B intra community
+transactions e Invoicing reporting <https://interoperable-europe.ec.europa.eu/collection/interoperability-architecture-solutions/news/dg-taxud-and-digit-strengthen-tax-systems-interoperability>`_,  centralizing requirements to
 support Member States implementing ViDA e invoicing. The group (nine
 countries) highlighted clear onboarding, blended sessions, and alignment
 with EIF as key success factors. While benefits must be proven
