@@ -168,3 +168,18 @@ is processed in accordance with the change management process described
 earlier in this specification. Regardless of the outcome of the analysis
 (whether a change request leads to implementation or is rejected) users
 receive a response explaining the rationale behind the decision.
+
+How to Provide Feedback
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Users are encouraged to share comments, questions, suggestions, and
+change requests on this specification. Feedback can be provided in
+either of the following ways:
+
+- **Opening an issue** in the `GitLab space <https://code.europa.eu/eira>`_
+  of the Interoperable Architecture Solutions action.
+- **Sending the request by email** to the functional mailbox
+  `DIGIT-EIRA@ec.europa.eu <mailto:DIGIT-EIRA@ec.europa.eu>`_.
+
+All feedback received through these channels is analysed in accordance
+with the change management process described in this chapter.
