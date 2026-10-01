@@ -6,6 +6,8 @@ copyright = '© Copyright 2026, European Commission, DIGIT'
 html_show_sphinx = False
 author = 'Interoperability Architecture Solutions Action'
 release = '1.0.0'
+# Shown below the search box in the sidebar (see _templates/layout.html)
+version = '7.0.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

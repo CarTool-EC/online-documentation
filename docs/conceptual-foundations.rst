@@ -306,7 +306,7 @@ precise communication about EIRA's structure and components, and
 supports tooling development for EIRA validation, analysis, and
 application.
 
-.. figure:: ./images/media/image4.png
+.. figure:: ./images/media/eira-ontology-view.png
    :width: 8.21795in
    :height: 5.41199in
    :align: center
@@ -404,7 +404,7 @@ prerequisites—the components whose absence or inadequate implementation
 would fundamentally compromise interoperability regardless of how well
 other architectural aspects are addressed.
 
-.. figure:: ./images/media/image5.png
+.. figure:: ./images/media/key-interoperability-enablers.png
    :width: 8.21795in
    :height: 5.41199in
    :align: center
@@ -518,11 +518,12 @@ broader organizational scope, with the important distinction that EIRA
 exclusively addresses digital capabilities while PAAF encompasses the
 entire spectrum of service delivery.
 
-.. figure:: ./images/media/image6.png
+.. figure:: ./images/media/paaf-eira-alignment.png
    :width: 8.21795in
    :height: 8.41199in
    :align: center
-Figure 3 Alignment between PAAF and EIRA
+
+   Figure 3 Alignment between PAAF and EIRA
 
 The strategic alignment between PAAF and EIRA bridges the critical gap
 between enterprise-level strategic planning and solution-level

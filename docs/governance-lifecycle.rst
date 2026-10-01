@@ -59,7 +59,7 @@ steps:
   Reference Architecture and its release components are formally
   published and made publicly available.
 
-.. figure:: ./images/media/image10.svg
+.. figure:: ./images/media/change-management-process.svg
    :width: 5.21795in
    :height: 2.41199in
    :align: center
@@ -106,7 +106,7 @@ provisions. The following figure shows the overall evolution logic of
 the Reference Architecture and shows how the evolution of this
 specification is integrated within that lifecycle.
 
-.. figure:: ./images/media/image11.png
+.. figure:: ./images/media/specification-lifecycle-timeline.png
    :width: 7.21795in
    :height: 4.41199in
    :align: center

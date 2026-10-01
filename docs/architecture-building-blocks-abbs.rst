@@ -66,7 +66,7 @@ these examples might change over time and EIRA versions. However, the
 examples together with the explanations are good and key to understand
 the role of ABBs and their characteristics.
 
-.. figure:: ./images/media/image7.png
+.. figure:: ./images/media/api-enablers.png
    :width: 3.21795in
    :height: 1.41199in
    :align: center

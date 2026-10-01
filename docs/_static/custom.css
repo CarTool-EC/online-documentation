@@ -96,3 +96,12 @@ div.body {
 .rst-content table.docutils {
     width: 100%;
 }
+
+/* ===== Sidebar version label ===== */
+
+.wy-side-nav-search .sidebar-version {
+    margin-top: 0.75rem;
+    color: #d6dde3;
+    font-size: 13px;
+    font-weight: 400;
+}

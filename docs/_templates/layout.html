@@ -1,0 +1,8 @@
+{% extends "!layout.html" %}
+
+{%- block sidebartitle %}
+  {{ super() }}
+  {%- if version %}
+  <div class="sidebar-version">v{{ version }}</div>
+  {%- endif %}
+{%- endblock %}
