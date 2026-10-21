@@ -39,9 +39,4 @@ on designing and implementing interoperable digital public services across the E
 
    appendices
 
-.. toctree::
-   :hidden:
-
-   frontmatter
-
 

@@ -1193,17 +1193,77 @@ organised by view following the LOST interoperability layers.
 Abbreviations list
 ------------------
 
-+------------------+---------------+-----------------------------------+
-| **Abbreviation** | **Term**      | **Description**                   |
-+==================+===============+===================================+
-| XXX              | XX            | XXXX                              |
-+------------------+---------------+-----------------------------------+
-| XXX              | XX            | XXXX                              |
-+------------------+---------------+-----------------------------------+
-| XXX              | XX            | XXXX                              |
-+------------------+---------------+-----------------------------------+
-| XXX              | XX            | XXXX                              |
-+------------------+---------------+-----------------------------------+
++----------+----------------------+-----------------------------------+
+| Abbr     | Term                 | Description                       |
+| eviation |                      |                                   |
++==========+======================+===================================+
+| ABB      | Architecture         | Abstract, reusable element        |
+|          | Building Block       | defining required capabilities.   |
++----------+----------------------+-----------------------------------+
+| AIM      | Architecture         | Method structuring architecture   |
+|          | Implementation       | lifecycle phases and processes.   |
+|          | Method               |                                   |
++----------+----------------------+-----------------------------------+
+| COTS     | Commercial           | Proprietary software product used |
+|          | Off-The-Shelf        | for implementation.               |
++----------+----------------------+-----------------------------------+
+| DBC      | Digital Business     | Capability required to support    |
+|          | Capability           | digital public services.          |
++----------+----------------------+-----------------------------------+
+| DPS      | Digital Public       | Service delivered by public       |
+|          | Service              | administrations using ICT.        |
++----------+----------------------+-----------------------------------+
+| eGovERA  | eGovernment European | Extension of EIRA providing more  |
+|          | Reference            | detailed and domain-specific      |
+|          | Architecture         | architectures.                    |
++----------+----------------------+-----------------------------------+
+| EIF      | European             | Framework for enabling            |
+|          | Interoperability     | interoperable digital public      |
+|          | Framework            | services across the EU.           |
++----------+----------------------+-----------------------------------+
+| EIRA     | European             | Reference architecture defining   |
+|          | Interoperability     | interoperability capabilities and |
+|          | Reference            | building blocks.                  |
+|          | Architecture         |                                   |
++----------+----------------------+-----------------------------------+
+| ELAP     | European Library of  | Repository of architecture        |
+|          | Architecture         | principles supporting EIRA and    |
+|          | Principles           | eGovERA.                          |
++----------+----------------------+-----------------------------------+
+| GITB     | Generic              | Standardised framework for        |
+|          | Interoperability     | interoperability testing.         |
+|          | Test Bed             |                                   |
++----------+----------------------+-----------------------------------+
+| IDS      | Interoperability     | Technical service supporting data |
+|          | Data Service         | exchange.                         |
++----------+----------------------+-----------------------------------+
+| IMM      | Interoperability     | Tool for assessing                |
+|          | Maturity Model       | interoperability maturity.        |
++----------+----------------------+-----------------------------------+
+| NIFO     | National             | Provides country insights and     |
+|          | Interoperability     | best practices.                   |
+|          | Framework            |                                   |
+|          | Observatory          |                                   |
++----------+----------------------+-----------------------------------+
+| OSS      | Open-Source Software | Software with publicly available  |
+|          |                      | source code.                      |
++----------+----------------------+-----------------------------------+
+| RA       | Reference            | A standardised architectural      |
+|          | Architecture         | framework                         |
++----------+----------------------+-----------------------------------+
+| SAF      | Solution             | Framework guiding problem         |
+|          | Architecture         | analysis and solution design.     |
+|          | Framework            |                                   |
++----------+----------------------+-----------------------------------+
+| SBB      | Solution Building    | Concrete implementation of one or |
+|          | Block                | more ABBs.                        |
++----------+----------------------+-----------------------------------+
+| SOA      | Service-Oriented     | Architectural style based on      |
+|          | Architecture         | loosely coupled services.         |
++----------+----------------------+-----------------------------------+
+| TDL      | Test Description     | Language used to define test      |
+|          | Language             | cases in GITB.                    |
++----------+----------------------+-----------------------------------+
 
 Templates for ABB/SBB definition and capability assessment.
 -----------------------------------------------------------
